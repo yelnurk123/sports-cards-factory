@@ -1,17 +1,20 @@
-# GRAND ROSTER v3.2 — Sports Legends Card Farm
+# GRAND ROSTER v3.3 — Sports Legends Card Farm
+**v3.3 (2026-08-08, hub, user-ruled):** soccer canon reinstates **League Pack** (tier 2, was registered but absent from roster file) and **World Star Pack** (tier 8, 4 cards already registered) — soccer 16 packs/64, totals now **117 packs · 468 baseline cards**. World Star rung home assigned in the rung price table spec (queue 4). **The Mamba: user RULED INCLUDE** with respectful framing (row live at pending). Five identity-adjacent names (approval item 5): user ruled swap-all; replacement names pending hub proposal + user sign-off.
 **v3.2 (2026-08-08, hub):** MMA GOAT pack 4th slot swapped — v3.1 listed McGregor twice (The Notorious + Conor McSwagger); slot now **Fedor the Last Emperor** *(Emelianenko)*. Approval items 1 and 4 resolved by user directive (2026-08-08): NFL, cricket, athletics, esports all confirmed; esports parody-moniker rule confirmed canon. The Mamba remains open — card row exists in manifest-basketball.csv at status `hold` pending user call.
-### 115 packs · 460 baseline cards · 16 evolutions · 13 foils → 5,980+ Index entries · 13 sports
+### 117 packs · 468 baseline cards · 16 evolutions · 13 foils → 6,084 Index entries · 13 sports
 Structure rule: ~45 price rungs (reference-shaped curve); 2–3 sport packs share each rung. Index shows all slots from day one (locked). Launch: tiers 1–2 of every sport (26 packs, 104 cards live); rest in waves.
 Format: **Pack — 4 cards** *(real-world sources)*
 
-## SOCCER (14 packs, 56)
+## SOCCER (16 packs, 64)
 - Street Pack — Ronnie Magic, Zizou, Bendham, Terry Henry *(Ronaldinho, Zidane, Beckham, Henry)*
 - Sunday League Pack — Stevie G, Lamps, Scholsey, Pirlo the Architect *(Gerrard, Lampard, Scholes, Pirlo)*
+- League Pack — K. M'Bop, Erik the Robot, Kelvin De Bruyne, Mo Pharaoh *(Mbappé, Haaland, De Bruyne, Salah — v3.3 reinstatement, was registered but unlisted)*
 - Academy Pack — Jude Bell, Vini V., Rodri Engine, Sonny *(Bellingham, Vinícius, Rodri, Son)*
 - Pro Pack — Harry K., Griezy, Kun, El Pistolero *(Kane, Griezmann, Agüero, Suárez)*
 - All-League Pack — Xavi Brain, Iniesta Ghost, Busi, Captain Puyol *(Xavi, Iniesta, Busquets, Puyol)*
 - Star Pack — Kaka Smile, Rivaldo Lefty, Figo the Galactico, Baggio Ponytail *(Kaká, Rivaldo, Figo, Baggio)*
 - Superstar Pack — Zlatan the Lion, Wazza, Drogba the Drog, Eto'o Cheetah *(Ibrahimović, Rooney, Drogba, Eto'o)*
+- World Star Pack — Luka Magic, Ramos the Wall, Manuel Sweeper, Ney Flair *(Modrić, Ramos, Neuer, Neymar — v3.3 reinstatement, 4 cards already registered)*
 - Icon Pack — Gigi Wall, Iker Saint, Paolo M., Canna Wall *(Buffon, Casillas, Maldini, Cannavaro)*
 - Legend Pack — Johan Total, Marco Volley, Romario Short, Totti the King *(Cruyff, Van Basten, Romário, Totti)*
 - World Class Pack — Lewy, Benzy, Toni the Sniper, Alessandro Del *(Lewandowski, Benzema, Kroos, Del Piero)*
@@ -178,12 +181,12 @@ Format: **Pack — 4 cards** *(real-world sources)*
 ## ECONOMY MAPPING
 - 115 packs interleave onto ~45 price rungs (2–3 sports per rung). Rung prices cloned from the reference curve ($100 → Dd).
 - Conveyor whitelist = sport selection per rung. Auto-Buy mutation filters unchanged.
-- Index: 460 × 13 = **5,980 entries** + 16 evolutions. Largest mountain on the platform in this genre by ~2.8×.
+- Index: 468 × 13 = **6,084 entries** + 16 evolutions. Largest mountain on the platform in this genre by ~2.8×.
 
 ## APPROVAL ITEMS
 1. ~~**NFL, Cricket, Athletics, Esports**~~ — **RESOLVED YES, all four** (user directive 2026-08-08: hub ordered to author all of them).
 2. Launch = 104 cards live / 460 visible — confirm or scale back.
-3. **The Mamba ⚠** — OPEN. Row authored at status `hold`; user decision pending.
+3. ~~**The Mamba ⚠**~~ — **RULED INCLUDE with respectful framing** (user, 2026-08-08). Row live at `pending`.
 4. ~~**Esports naming rule**~~ — **CONFIRMED** (user standing rule 2026-08-08: parody monikers, never brands).
-5. Weakest-name watch list (flagged for swap): Sasha the Bear, Adam the Aussie, Justin the Vet, Bo the Wrestler, Gianluca V., Tyson Z (vs Tyson Track), "King" overuse audit (6 kings — vary a few). **Hub additions 2026-08-08 (identity-adjacent names, user call):** Jackie 42 (jersey number), Chip the Brave (team name), Drew the Saint (team name), Jerry the Logo (league logo), Dak the Star (team nickname).
+5. Weakest-name watch list (flagged for swap): Sasha the Bear, Adam the Aussie, Justin the Vet, Bo the Wrestler, Gianluca V., Tyson Z (vs Tyson Track), "King" overuse audit (6 kings — vary a few). **Hub additions 2026-08-08:** Jackie 42, Chip the Brave, Drew the Saint, Jerry the Logo, Dak the Star — **user ruled swap all five**; replacement names pending hub proposal + sign-off before roster edit.
 6. Rung mapping: I'll produce the rung-by-rung price table (which pack sits at which price) as the next spec artifact — it needs the economy sheet merged in.
