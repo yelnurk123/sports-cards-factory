@@ -1,6 +1,7 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.1
-### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.2 (names) and Economy v1 (values).
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.2
+### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.3 (names) and Economy v1 (values).
 **v1.1 (2026-08-08, hub):** baseball pose library extended with pitching poses (windup / delivery / follow-through) — the roster carries dedicated pitcher packs (All-Star, Ace, Eternal) and the batting-only library would have forced invention. Signature-features column now lives in the per-sport manifests (closes checklist item).
+**v1.2 (2026-08-08, hub):** added §7b Roblox moderation guardrails (grounded in Roblox Community Standards) after Lane B's policy audit + box-cf-3 nipple-removal regen. Female-athlete modesty-layer rule added ahead of tennis/athletics/MMA production.
 
 ## 1. Core principle
 Each progression system answers a different question, so each owns a different visual zone. They never fight.
@@ -59,6 +60,12 @@ Ungraded → standard card. Graded → card returns **in a clear slab case** wit
 - **Pose library (per sport):** boxing (champion pose / uppercut), soccer (bicycle kick / strike), basketball (dunk / jump shot), baseball (batting stance / swing / pitching windup / full delivery), NFL (throw / carry), MMA (stance / ground), racing (helmet off / podium), tennis (serve / forehand), WWE (entrance pose / taunt), golf (backswing / putt), cricket (cover drive / bowl), athletics (lightning pose / finish line), esports (chair + headset pose / keyboard flair).
 - **Backdrop library (per sport):** ring, night stadium, arena, sunset ballpark, stadium tunnel, octagon, racetrack grid, Centre Court, entrance ramp, 18th green, cricket ground, track finish, dark LAN arena.
 - **Watermark:** bottom strip cropped/covered by frame in every output.
+
+## 7b. Roblox moderation guardrails (grounded in Roblox Community Standards, 2026-08-08)
+- **Allowed:** shirtless male athletes with flat, muscle-shaped pectorals — our glossy toy-plastic aesthetic reads as figures, not skin. Boxing/MMA/WWE bare-chested rows are compliant by design.
+- **Prohibited (explicit):** any depiction of nipples. **Prompt clause on every bare-chested male row: "smooth toy plastic chest, no nipples."** Any render showing nipples = **instant reject + regen** (same class as a baked frame). Precedent: box-cf-3 regen, Lane B, 2026-08-08.
+- **Female athletes:** modesty layer mandatory — every female row wears a sports top as part of its generic kit. Shirtless female depiction = prohibited, no exceptions. Applies to tennis, athletics, MMA (Contender/Queen packs), and any future female rows.
+- **Erratic moderation insurance:** before mass-producing all 468, upload 2–3 approved cards (incl. one shirtless boxer) as a live decal-moderation canary test. Roblox image moderation is famously inconsistent; a false reject on launch day is worse than a test now. Logged as decision-queue item.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).

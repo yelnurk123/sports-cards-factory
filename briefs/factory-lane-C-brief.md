@@ -18,7 +18,7 @@ You are a production line for a Roblox trading-card game. Generate base card art
 Ratio 2:3 · 1K · opaque. Output: `/mnt/agents/output/cards/base/{id}.png`
 
 ## Hard rules
-1. Frameless always — baked frame = reject. 2. No team/league/brand identities (logos/numbers/single-team patterns/sponsor marks). 3. Recognition via 2–3 signature features (never likeness, never face tattoo). 4. Distinct pose AND palette within each pack. 5. Crop bottom 64px watermark strip before registering. 6. Failures: regen + log reason in manifest `qc_note`. 7. Statuses are the queue — resume from first `pending`, never restart. 8. Re-read the manifest before each pack.
+1. Frameless always — baked frame = reject. 2. No team/league/brand identities (logos/numbers/single-team patterns/sponsor marks). 3. Recognition via 2–3 signature features (never likeness, never face tattoo). 4. Distinct pose AND palette within each pack. 5. Crop bottom 64px watermark strip before registering. 6. Failures: regen + log reason in manifest `qc_note`. 7. Statuses are the queue — resume from first `pending`, never restart. 8. Re-read the manifest before each pack. 9. **Roblox moderation (art spec §7b):** bare-chested male rows prompt "smooth toy plastic chest, no nipples" — nipple depiction = instant reject + regen. Female athlete rows always wear a sports top (modesty layer); shirtless female = prohibited.
 
 ## Rhythm
 4 generations per pack (parallel) → contact sheet to `/mnt/agents/output/art-tests/laneC-<pack>.png` → QC → mark rows `generated`. Report per pack, one line each. Sheets await hub approval before cards count as `approved`.
