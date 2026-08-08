@@ -14,8 +14,8 @@ Sports-legends reskin of a proven Roblox idle card farm (Anime Card Farm, ~23k C
 - `/mnt/agents/output/cards/` — base/ (generated PNGs), manifest-*.csv (the queue; statuses pending→generated→approved)
 - `/mnt/agents/output/art-tests/` — all test cards and batch sheets
 
-## Production state (as of 2026-08-08)
-45/464 registered. Boxing 17/40 (Lane B), soccer 28/60 (Lane A, includes reinstated League pack). QC fixes logged: Terry Henry sleeves, Ronnie grin, Ney tats. Cleanup flag: soc-gt-1 needs frameless regen (Lane A owns). Locked look: glossy blocky toy portraits, 2:3, frameless, signature features. 3 factory lanes running: A=soccer/tennis/golf/cricket/athletics, B=boxing/MMA/WWE/basketball, C=NFL/baseball/racing/esports.
+## Production state (as of 2026-08-08, hub update)
+45/464 registered. Boxing 17/40 cards generated, manifest now full 40 rows (backfilled: Prospect/Title/Legend/Heavy/British/Warrior; 23 pending). Soccer 28/60 (Lane A, includes reinstated League pack; soc-gt-1 frameless regen DONE by Lane A). Manifests authored and pushed: NFL (40), baseball (40), MMA (40), basketball (40 — The Mamba at status `hold`). All new manifests carry `qc_note` column. **Lane C unblocked** (start: first pending NFL row). **Lane B queue:** boxing depth 23 → MMA → basketball → WWE (WWE manifest pending). Band rule v1 (documented in commits): pack-name anchors take their band, remaining tiers fill the ladder ascending; final rung→band map lands with the rung price table spec. Locked look unchanged: glossy blocky toy portraits, 2:3, frameless, signature features.
 
 ## Your standing rules
 - **No time frames, ever** — sequence by dependency and decision gates, never durations.
@@ -25,13 +25,15 @@ Sports-legends reskin of a proven Roblox idle card farm (Anime Card Farm, ~23k C
 - **Parody discipline** — recognizable silhouette, unmistakably not the person; no teams/leagues/logos/likeness; deceased legends respectful; esports = parody monikers not brands.
 
 ## Decision queue (your open items)
-1. Author remaining 11 sport manifests (signature features/pose/backdrop/palette per card) — factories are blocked without them. Order: NFL & baseball (Lane C waits), MMA & basketball (Lane B), tennis/golf/cricket/athletics/esports.
-2. Approve factory sheets at sport checkpoints (mark rows `approved`).
-3. Roster items: The Mamba inclusion (respect), "King" overuse audit (6 kings), esports naming comfort, WWE distance.
-4. Economy: rung-by-rung price table finalization (which pack at which rung).
+1. ~~Author sport manifests~~ — IN PROGRESS. Done: NFL, baseball, MMA, basketball, boxing backfill (2026-08-08). Remaining: tennis, golf, cricket, athletics (Lane A next), esports, racing (Lane C after NFL/baseball), WWE (Lane B), plus soccer manifest backfill (roster v3 packs missing rows: Academy/Pro/Sunday League already generated + 9 pending packs).
+2. Approve factory sheets at sport checkpoints (mark rows `approved`). Boxing checkpoint READY: all 17 generated rows await sheet review.
+3. Roster items: The Mamba inclusion (row on `hold` — USER CALL), "King" overuse audit (hub owns, queued), ~~esports naming comfort~~ (CONFIRMED 2026-08-08), WWE distance (manifest authoring lens).
+4. Economy: rung-by-rung price table finalization (which pack at which rung; includes final rung→band map — economy v1 table is missing several roster v3 packs).
 5. Next specs: base blockout script for Studio, then the master build spec for Kimi Code.
 6. Sports-cards engine audit (reuse decision — user's repo, one pass to flag what grafts).
 7. Gift system guardrails (approved in principle: progression-gated receiving + daily limit — write into spec).
+8. NEW 2026-08-08: **World Star pack question** — 4 cards registered (soc-ws-1..4: Luka Magic, Ramos the Wall, Manuel Sweeper, Ney Flair) but pack not in roster v3 (soccer canon = 60 with League reinstated). Reinstate as 16th pack (soccer 64, total 468) or retire the cards. USER CALL.
+9. NEW 2026-08-08: identity-adjacent name flags (roster watch list): Jackie 42, Chip the Brave, Drew the Saint, Jerry the Logo, Dak the Star. USER CALL on swaps.
 
 ## Cadence
 Factories report per pack; you review per sport; you decide, they execute. If a lane reports a pattern (2+ same-kind QC failures), you fix the template/manifest, not the lane.
