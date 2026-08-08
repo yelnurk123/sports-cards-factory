@@ -15,7 +15,7 @@ Sports-legends reskin of a proven Roblox idle card farm (Anime Card Farm, ~23k C
 - `/mnt/agents/output/art-tests/` — all test cards and batch sheets
 
 ## Production state (as of 2026-08-08, hub update)
-45/468 registered (roster v3.3: League + World Star reinstated into soccer canon; totals 117 packs / 468 baseline). Boxing 17/40 cards generated, manifest now full 40 rows (backfilled: Prospect/Title/Legend/Heavy/British/Warrior; 23 pending). Soccer 28/60 (Lane A, includes reinstated League pack; soc-gt-1 frameless regen DONE by Lane A). Manifests authored and pushed: NFL (40), baseball (40), MMA (40), basketball (40 — The Mamba APPROVED by user 2026-08-08, respectful framing, row live at pending). All new manifests carry `qc_note` column. **Lane C unblocked** (start: first pending NFL row). **Lane B queue:** boxing depth 23 → MMA → basketball → WWE (WWE manifest pending). Band rule v1 (documented in commits): pack-name anchors take their band, remaining tiers fill the ladder ascending; final rung→band map lands with the rung price table spec. Locked look unchanged: glossy blocky toy portraits, 2:3, frameless, signature features.
+45/468 registered (roster v3.3: League + World Star reinstated into soccer canon; totals 117 packs / 468 baseline). Boxing 17/40 cards generated, manifest now full 40 rows (backfilled: Prospect/Title/Legend/Heavy/British/Warrior; 23 pending). Soccer 28/60 (Lane A, includes reinstated League pack; soc-gt-1 frameless regen DONE by Lane A). **ALL 13 SPORT MANIFESTS AUTHORED (468 rows live).** NFL, baseball, MMA, basketball, boxing (full 40), soccer (full 64), tennis, golf, cricket, athletics, esports, racing, WWE. All lanes have full runways; no factory is manifest-blocked. QC flags live: box-im-2 Byson REGEN (baked frame, hub ruling — row back at pending; registered PNGs on file = 45, one to be replaced). Moderation canon: art spec §7b (v1.2) — toy-plastic chest clause, female modesty layer, canary-test recommendation; mirrored as hard rule 8 (factory handoff) and rule 9 (all lane briefs). NFL bands anchor-fixed (Pro pack→Pro, All-Pro→All-Star). Band rule v1 (documented in commits): pack-name anchors take their band, remaining tiers fill the ladder ascending; final rung→band map lands with the rung price table spec. Locked look unchanged: glossy blocky toy portraits, 2:3, frameless, signature features.
 
 ## Your standing rules
 - **No time frames, ever** — sequence by dependency and decision gates, never durations.
@@ -25,13 +25,14 @@ Sports-legends reskin of a proven Roblox idle card farm (Anime Card Farm, ~23k C
 - **Parody discipline** — recognizable silhouette, unmistakably not the person; no teams/leagues/logos/likeness; deceased legends respectful; esports = parody monikers not brands.
 
 ## Decision queue (your open items)
-1. ~~Author sport manifests~~ — IN PROGRESS. Done: NFL, baseball, MMA, basketball, boxing backfill (2026-08-08). Remaining: tennis, golf, cricket, athletics (Lane A next), esports, racing (Lane C after NFL/baseball), WWE (Lane B), plus soccer manifest backfill (roster v3 packs missing rows: Academy/Pro/Sunday League already generated + 9 pending packs).
-2. Approve factory sheets at sport checkpoints (mark rows `approved`). Boxing checkpoint READY: all 17 generated rows await sheet review.
+1. ~~Author sport manifests~~ — **DONE 2026-08-08. All 13 sports, 468 rows.**
+2. Approve factory sheets at sport checkpoints (mark rows `approved`). Boxing checkpoint READY: 16 generated rows await sheet review (box-im-2 excluded pending regen). Soccer checkpoint: 28 generated rows await review.
 3. Roster items: ~~The Mamba inclusion~~ (RULED INCLUDE 2026-08-08), "King" overuse audit (hub owns, queued), ~~esports naming comfort~~ (CONFIRMED 2026-08-08), WWE distance (manifest authoring lens).
 4. Economy: rung-by-rung price table finalization (which pack at which rung; includes final rung→band map — economy v1 table is missing several roster v3 packs).
 5. Next specs: base blockout script for Studio, then the master build spec for Kimi Code.
 6. Sports-cards engine audit (reuse decision — user's repo, one pass to flag what grafts).
 7. Gift system guardrails (approved in principle: progression-gated receiving + daily limit — write into spec).
+8. NEW 2026-08-08: **Live moderation canary test** (art spec §7b) — before mass production, upload 2–3 approved cards incl. one shirtless boxer as a decal-moderation test. Roblox image moderation is erratic; verify our style passes cleanly.
 8. ~~World Star pack question~~ — RULED 2026-08-08: reinstated as 16th soccer pack (roster v3.3; soccer 64, total 468). Rung home assigned in rung price table spec (queue 4).
 9. Identity-adjacent name flags — RULED 2026-08-08: swap all five (Jackie 42, Chip the Brave, Drew the Saint, Jerry the Logo, Dak the Star). Hub proposing replacement names for user sign-off, THEN roster + 3 manifests update in one pass (baseball, NFL, basketball rows carry the old names).
 
