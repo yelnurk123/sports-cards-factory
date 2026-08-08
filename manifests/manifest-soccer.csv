@@ -1,24 +1,24 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-soc-st-1,Ronnie Magic,Street,Rookie,"wild curly hair, huge samba smile",rainbow-flick juggle,street court colorful walls,yellow/green,generated,"yellow+green Brazil-adjacent but generic solid — keep"
-soc-st-2,Zizou,Street,Rookie,"bald, neat dark goatee, elegant calm",instep maestro strike,night stadium floodlights,white/navy,generated,
-soc-st-3,Bendham,Street,Rookie,"stylish swept-back dark hair, confident charm",free-kick curled follow-through,packed stadium evening,red/white,generated,
-soc-st-4,Terry Henry,Street,Rookie,"short cropped dark hair, cool composed smile",striker volley mid-swing,stadium floodlights roaring crowd,solid red/white trim,generated,"REGEN: white sleeves = Arsenal pattern, replaced with trim"
-soc-sl-1,Stevie G,Sunday League,Prospect,"short hair, gritty captain face, lung-busting midfielder build",driven long-range strike,rainy stadium,crimson/white,generated,"backfilled row; card already registered"
-soc-sl-2,Lamps,Sunday League,Prospect,"clean-cut short hair, intelligent late-run eyes, stocky build",late-box-run finish,stadium lights,blue/white,generated,"backfilled row; card already registered"
-soc-sl-3,Scholsey,Sunday League,Prospect,"ginger hair, pale quiet-assassin face, compact build",thunderbolt volley,stadium afternoon,white/black,generated,"backfilled row; card already registered"
-soc-sl-4,Pirlo the Architect,Sunday League,Prospect,"long flowing dark hair, beard, maestro calm eyes",curled free-kick follow-through,evening stadium,navy/white,generated,"backfilled row; card already registered"
-soc-lg-1,K. M'Bop,League,Prospect,"short tight haircut, explosive grin, lightning-fast build",full-sprint dribble,stadium tunnel lights,blue/white,generated,
-soc-lg-2,Erik the Robot,League,Prospect,"tall blond athletic build, icy stare",power header leap,stadium night,blue/navy,generated,
-soc-lg-3,Kelvin Laser,League,Prospect,"strawberry-blond hair + beard, focused passer eyes",through-ball pass stance,stadium lights,sky blue/white,generated,
-soc-lg-4,Mo Pharaoh,League,Prospect,"curly black hair + beard, electric smile",cut-inside left-foot curl,stadium crowd,red/white,generated,
+soc-st-1,Ronnie Magic,Street,Rookie,"wild curly hair, huge samba smile",rainbow-flick juggle,street court colorful walls,yellow/green,approved,"yellow+green Brazil-adjacent but generic solid — keep"
+soc-st-2,Zizou,Street,Rookie,"bald, neat dark goatee, elegant calm",instep maestro strike,night stadium floodlights,white/navy,approved,
+soc-st-3,Bendham,Street,Rookie,"stylish swept-back dark hair, confident charm",free-kick curled follow-through,packed stadium evening,red/white,approved,
+soc-st-4,Terry Henry,Street,Rookie,"short cropped dark hair, cool composed smile",striker volley mid-swing,stadium floodlights roaring crowd,solid red/white trim,approved,"REGEN: white sleeves = Arsenal pattern, replaced with trim"
+soc-sl-1,Stevie G,Sunday League,Prospect,"short hair, gritty captain face, lung-busting midfielder build",driven long-range strike,rainy stadium,crimson/white,approved,"backfilled row; card already registered"
+soc-sl-2,Lamps,Sunday League,Prospect,"pale skin tone, clean-cut dark brown hair, intelligent late-run eyes, stocky build",late-box-run finish,stadium lights,blue/white,pending,"REGEN (hub ruling 2026-08-08): card rendered blond anime hair - Lampard is dark-haired; fails fan-guess floor; hair color pinned"
+soc-sl-3,Scholsey,Sunday League,Prospect,"pale skin tone, ginger hair, pale quiet-assassin face, compact build",thunderbolt volley,stadium afternoon,white/black,pending,"REGEN (hub ruling 2026-08-08): card rendered brown hair - ginger is THE Scholes signature and the row already said it; model ignored it. Also red+black kit combo drifts toward single-club identity"
+soc-sl-4,Pirlo the Architect,Sunday League,Prospect,"long flowing dark hair, beard, maestro calm eyes",curled free-kick follow-through,evening stadium,navy/white,approved,"backfilled row; card already registered"
+soc-lg-1,K. M'Bop,League,Prospect,"short tight haircut, explosive grin, lightning-fast build",full-sprint dribble,stadium tunnel lights,blue/white,approved,
+soc-lg-2,Erik the Robot,League,Prospect,"tall blond athletic build, icy stare",power header leap,stadium night,blue/navy,approved,
+soc-lg-3,Kelvin Laser,League,Prospect,"pale skin tone, strawberry-blond hair + beard, focused passer eyes",through-ball pass stance,stadium lights,steel/white,pending,"REGEN (hub ruling 2026-08-08): sky-blue kit = single-club identity breach (City); row palette fixed sky blue/white -> steel/white. Features (orange beard) were strong - keep them. Save new art as soc-lg-3-kelvin-laser.png"
+soc-lg-4,Mo Pharaoh,League,Prospect,"curly black hair + beard, electric smile",cut-inside left-foot curl,stadium crowd,red/white,approved,
 soc-ac-1,Jude Bell,Academy,Pro,"deep brown skin tone, short dark cropped hair, tall elegant frame",arms-wide crowd soak,stadium night,emerald/white,pending,"REGEN (hub ruling 2026-08-08): fails fan-guess floor - card is light-skinned generic toy, pose mismatch (running, not arms-wide), white/gold = single-club palette drift; features strengthened per spec 7c"
 soc-ac-2,Vini V.,Academy,Pro,"rich dark skin tone, short black twists, electric samba smile",touchline dance dribble,stadium crowd,teal/white,pending,"REGEN (hub ruling 2026-08-08): fails fan-guess floor - card is orange-tan with spiky anime hair (should be dark skin + short twists), kit drifted navy vs row teal/white; features strengthened per spec 7c"
-soc-ac-3,Rodri Engine,Academy,Pro,"short hair, metronome calm face, anchor build",tempo-setting pass stance,stadium lights,slate/white,generated,"backfilled row; card already registered"
-soc-ac-4,Sonny,Academy,Pro,"short black hair, beaming smile, two-footed forward build",curling far-corner finish,stadium night,white/charcoal,generated,"backfilled row; card already registered"
-soc-pr-1,Harry K.,Pro,Pro,"short light-brown hair, stubble, striker's cold eyes",first-time penalty-box strike,stadium afternoon,white/steel,generated,"backfilled row; card already registered"
-soc-pr-2,Griezy,Pro,Pro,"longish hair, playful grin, slight forward build",volley-and-dance,stadium crowd,crimson/charcoal,generated,"backfilled row; card already registered"
-soc-pr-3,Kun,Pro,Pro,"short hair, stocky explosive build, boyish grin",sharp-angle poacher finish,stadium night,white/royal,generated,"backfilled row; card already registered"
-soc-pr-4,El Pistolero,Pro,Pro,"short hair, toothy fierce grin, bulldog forward build",acrobatic volley,roaring stadium,charcoal/crimson,generated,"backfilled row; card already registered"
+soc-ac-3,Rodri Engine,Academy,Pro,"light olive skin tone, short dark hair, trimmed goatee, metronome calm face",tempo-setting pass stance,stadium lights,slate/white,pending,"REGEN (hub ruling 2026-08-08): card rendered full sky-blue kit = single-club identity breach (City), row says slate/white; features strengthened per spec 7c"
+soc-ac-4,Sonny,Academy,Pro,"short black hair, beaming smile, two-footed forward build",curling far-corner finish,stadium night,white/charcoal,approved,"backfilled row; card already registered"
+soc-pr-1,Harry K.,Pro,Pro,"pale skin tone, short light-brown hair, stubble, striker's cold eyes",first-time penalty-box strike,stadium afternoon,white/steel,pending,"REGEN (hub ruling 2026-08-08): card rendered blond spiky hair - Kane is light-brown haired; fails fan-guess floor; features pinned"
+soc-pr-2,Griezy,Pro,Pro,"longish hair, playful grin, slight forward build",volley-and-dance,stadium crowd,crimson/charcoal,approved,"backfilled row; card already registered"
+soc-pr-3,Kun,Pro,Pro,"tan skin tone, short dark hair, clean-shaven boyish grin, stocky explosive build",sharp-angle poacher finish,stadium night,white/royal,pending,"REGEN (hub ruling 2026-08-08): card added full beard + aggressive shout (Kun = clean-shaven boyish grin) and drifted sky-blue kit (City); features pinned"
+soc-pr-4,El Pistolero,Pro,Pro,"short hair, toothy fierce grin, bulldog forward build",acrobatic volley,roaring stadium,charcoal/crimson,approved,"backfilled row; card already registered"
 soc-al-1,Xavi Brain,All-League,All-Star,"short hair, neat beard, scanning playmaker eyes",360-scan pivot pass,stadium night,burgundy/charcoal,pending,
 soc-al-2,Iniesta Ghost,All-League,All-Star,"receding hair, ghost-quiet pale face, slight build",ghost-through-gaps dribble,stadium lights,white/charcoal,pending,
 soc-al-3,Busi,All-League,All-Star,"tall lanky build, short hair, understated calm face",no-look single-touch layoff,stadium afternoon,slate/white,pending,
@@ -31,10 +31,10 @@ soc-ss-1,Zlatan the Lion,Superstar,Champion,"man-bun, lion swagger stare, tall i
 soc-ss-2,Wazza,Superstar,Champion,"stocky bulldog build, receding hair, fierce grin",acrobatic overhead strike,stadium crowd,white/charcoal,pending,
 soc-ss-3,Drogba the Drog,Superstar,Champion,"shaved head, powerful striker frame, big-game smile",chest-down-and-volley,stadium night final,royal/white,pending,
 soc-ss-4,Eto'o Cheetah,Superstar,Champion,"short hair, cheetah-quick striker build, bright smile",sprint-onto-through-ball finish,stadium afternoon,amber/charcoal,pending,
-soc-ws-1,Luka Magic,World Star,Champion,"short dark hair + beard, deep-focus playmaker eyes",outside-foot trivela pass,night stadium,croatia-free red/white→white/blue,generated,
-soc-ws-2,Ramos the Wall,World Star,Champion,"long dark hair tied back, beard, warrior stare",dominant header rise,stadium lights,white/red,generated,
-soc-ws-3,Manuel Sweeper,World Star,Champion,"tall keeper build, short brown hair, calm authority",goalkeeper full-stretch dive,goalbox night stadium,black/neon,generated,
-soc-ws-4,Ney Flair,World Star,Champion,"styled mohawk-ish hair, tattoo-free arms, showman grin",stepover dribble flair,stadium crowd,blue/yellow-free→teal/white,generated,
+soc-ws-1,Luka Magic,World Star,Champion,"short dark hair + beard, deep-focus playmaker eyes",outside-foot trivela pass,night stadium,croatia-free red/white→white/blue,approved,
+soc-ws-2,Ramos the Wall,World Star,Champion,"long dark hair tied back, beard, warrior stare",dominant header rise,stadium lights,white/red,approved,
+soc-ws-3,Manuel Sweeper,World Star,Champion,"tall keeper build, short brown hair, calm authority",goalkeeper full-stretch dive,goalbox night stadium,black/neon,approved,
+soc-ws-4,Ney Flair,World Star,Champion,"tan skin tone, styled mohawk-ish hair, tattoo-free arms, showman grin",stepover dribble flair,stadium crowd,teal/white,pending,"REGEN (hub ruling 2026-08-08): card has full tattoo sleeves - row demands tattoo-free arms (identity drift); mohawk + grin + teal kit are right, keep them. Palette field cleaned"
 soc-ic-1,Gigi Wall,Icon,Icon,"tall keeper frame, beard, commanding smile",full-stretch fingertip save,goalbox night,charcoal/lime,pending,
 soc-ic-2,Iker Saint,Icon,Icon,"short hair, saint-calm keeper eyes, agile build",reflex one-hand save,stadium lights,white/silver,pending,
 soc-ic-3,Paolo M.,Icon,Icon,"elegant dark hair, defensive maestro face, tall build",perfect standing tackle,sepia stadium,burgundy/grey,pending,
@@ -59,7 +59,7 @@ soc-et-1,Zico 10,Eternal,Eternal,"80s curly hair, free-kick maestro eyes, beard"
 soc-et-2,Platini Elegant,Eternal,Eternal,"receding 80s hair, elegant schemer face",elegant outside-foot pass,sepia stadium,charcoal/gold,pending,
 soc-et-3,Gianluca V.,Eternal,Eternal,"bald, intense striker face, charismatic grin",acrobatic volley,stadium night,navy/white,pending,
 soc-et-4,Kalle,Eternal,Eternal,"80s blond hair, powerful forward build, executive smile",power-and-polish strike,sepia stadium,crimson/cream,pending,
-soc-gt-1,Leo the GOAT,GOAT,GOAT,"brown beard, dark swept hair",bicycle kick,night stadium,white/sky-blue,generated,
-soc-gt-2,C. Roni,GOAT,GOAT,"chiseled jaw, short black hair, intense stare",siu-style leap header,stadium floodlights,red/white,generated,
-soc-gt-3,Pello,GOAT,GOAT,"70s short afro, joyous king smile",classic overhead kick,sepia vintage stadium,yellow/green,generated,
-soc-gt-4,Diego D10S,GOAT,GOAT,"curly 80s hair, fiery passionate face",mazy dribble glide,vintage stadium,blue/white,generated,
+soc-gt-1,Leo the GOAT,GOAT,GOAT,"brown beard, dark swept hair",bicycle kick,night stadium,white/sky-blue,approved,
+soc-gt-2,C. Roni,GOAT,GOAT,"chiseled jaw, short black hair, intense stare",siu-style leap header,stadium floodlights,red/white,approved,
+soc-gt-3,Pello,GOAT,GOAT,"70s short afro, joyous king smile",classic overhead kick,sepia vintage stadium,yellow/green,approved,
+soc-gt-4,Diego D10S,GOAT,GOAT,"curly 80s hair, fiery passionate face",mazy dribble glide,vintage stadium,blue/white,approved,
