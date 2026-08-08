@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.5
-### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.4 (names) and Economy v1.1 (values).
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.6
+### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.5 (names) and Economy v1.1 (values).
+**v1.6 (2026-08-08, hub):** pose-menu expansion + pose-family diversity rule (§7); NEW §7d band-scaled backdrop intensity (rarer = more spectacular); §7c gains optional slot 6 "signature props" (persona caricature, e.g., Ney's gold chains); §7b gains WWE gear-coverage rule (no underpants-only figures). All base-art layer — overlays untouched.
 **v1.5 (2026-08-08, hub):** §7c formula v2 — added ethnic-presentation slot (Packio ruling) + the anti-default rule (renders ignoring pinned features = reject, no exceptions for "looks good anyway").
 **v1.4 (2026-08-08, hub):** added §7c resemblance floor — the two-sided recognition doctrine (ceiling AND floor), the signature-feature formula, and the 3-second fan test. Triggered by the Jude Bell audit: 28 soccer seed cards predate the pipeline, and several fail the floor.
 **v1.3 (2026-08-08, hub):** foil tier 6 renamed Prizm→Prism (Panini trademark adjacency; "prism" generic word). Chrome retained — generic finish term, watch-logged in the IP audit.
@@ -60,7 +61,8 @@ Ungraded → standard card. Graded → card returns **in a clear slab case** wit
 - **Ratio:** 2:3 portrait, opaque backdrop, no text/logos baked in.
 - **Signature features (per card, 2–3):** the recognizable non-likeness traits (bald + gap grin = Byson; beard + swept hair = Leo; flat cap + round cheeks = Bambino). Full column to be added to all 460 roster rows.
 - **Generic-uniform rule:** no teams, leagues, logos, jersey numbers, national stripe patterns, single-club color identities, sponsor marks, face tattoos, or photo reference.
-- **Pose library (per sport):** boxing (champion pose / uppercut), soccer (bicycle kick / strike), basketball (dunk / jump shot), baseball (batting stance / swing / pitching windup / full delivery), NFL (throw / carry), MMA (stance / ground), racing (helmet off / podium), tennis (serve / forehand), WWE (entrance pose / taunt), golf (backswing / putt), cricket (cover drive / bowl), athletics (lightning pose / finish line), esports (chair + headset pose / keyboard flair).
+- **Pose menu (per sport — pick from these families, vary within AND across packs):** boxing (champion pose / uppercut / jab clinic / counter guard / showman taunt), soccer (bicycle kick / volley / strike / header rise / dribble move / free-kick follow-through / keeper dive / celebration), basketball (dunk / jump shot / fadeaway / block / no-look pass), baseball (batting stance / swing / pitching windup / full delivery / celebration point), NFL (throw / carry / catch / celebration / pass-rush charge), MMA (stance / ground / strike launch / victory roar), racing (helmet off / podium / finger-to-sky / jump-for-joy), tennis (serve / forehand / backhand / volley / fist-pump), WWE (entrance pose / taunt / signature taunt variant / title lift), golf (backswing / putt / fist-pump / recovery touch), cricket (cover drive / bowl / slash / celebration charge), athletics (lightning pose / finish line / blocks start / celebration pose / field-event clearance), esports (chair + headset / keyboard flair / stand-up celebration / trophy lift).
+- **Pose-family diversity rule:** no two cards in a pack share a pose family, and no plain "running with ball / generic stance" defaults unless that movement IS the player's signature (e.g., a sprinter's stride). The seed-era soccer sameness (near-identical running poses) was a pre-pipeline defect, not a style.
 - **Backdrop library (per sport):** ring, night stadium, arena, sunset ballpark, stadium tunnel, octagon, racetrack grid, Centre Court, entrance ramp, 18th green, cricket ground, track finish, dark LAN arena.
 - **Watermark:** bottom strip cropped/covered by frame in every output.
 
@@ -68,6 +70,7 @@ Ungraded → standard card. Graded → card returns **in a clear slab case** wit
 - **Allowed:** shirtless male athletes with flat, muscle-shaped pectorals — our glossy toy-plastic aesthetic reads as figures, not skin. Boxing/MMA/WWE bare-chested rows are compliant by design.
 - **Prohibited (explicit):** any depiction of nipples. **Prompt clause on every bare-chested male row: "smooth toy plastic chest, no nipples."** Any render showing nipples = **instant reject + regen** (same class as a baked frame). Precedent: box-cf-3 regen, Lane B, 2026-08-08.
 - **Female athletes:** modesty layer mandatory — every female row wears a sports top as part of its generic kit. Shirtless female depiction = prohibited, no exceptions. Applies to tennis, athletics, MMA (Contender/Queen packs), and any future female rows.
+- **WWE gear-coverage rule:** wrestling figures never render in underpants/briefs alone — briefs read as underwear to moderation. WWE uniform slot = full wrestling gear: long tights, singlet, or trunks WITH visible tights/knee pads/boots. Bare male chest stays allowed under the smooth-toy-plastic rule; the coverage rule governs below the waist. Boxing/MMA shorts are athletic gear and unaffected.
 - **Erratic moderation insurance:** before mass-producing all 468, upload 2–3 approved cards (incl. one shirtless boxer) as a live decal-moderation canary test. Roblox image moderation is famously inconsistent; a false reject on launch day is worse than a test now. Logged as decision-queue item.
 
 ## 7c. Resemblance floor — the two-sided recognition doctrine
@@ -86,9 +89,22 @@ Every card must pass BOTH sides of the line:
 
 **Anti-default rule:** image models fall back to a generic light-skinned toy when any slot is unpinned, and they freely invent hair, beards, tattoos, and kit colors. Every slot must be pinned in the row; a render that ignores a pinned feature (full hair instead of shaved, brown instead of ginger) = reject, no matter how good it looks otherwise.
 
+**Optional slot 6 — signature props (persona caricature).** 0–2 per card, only when the prop IS part of the persona: papakha, goggles, backward cap, bandana, gold chains, sweatband, cowboy hat, foam finger. Rules: (a) serves recognition, never random comedy; (b) non-branded, no logos; (c) era-appropriate; (d) props live in base art like any feature — QC judges "does this make the player MORE guessable," if no, reject. Pilot: Ney Flair (gold chains + street backdrop).
+
 **Manifests never carry real names.** The card→player mapping lives only in the roster's source parentheticals (private canon). If a parody name collides with a *different* real person (case: "Jude Bell" = a real white footballer), that name is a parody defect — it points fans at the wrong human. Rename.
 
 **Hub QC gate update:** sheet review now checks the floor (fan test) alongside the ceiling (no likeness/kit/logos), row↔art match, and palette discipline. A card can be technically clean and still fail — generic = regen.
+
+## 7d. Band-scaled backdrop intensity (rarer = more spectacular)
+The backdrop column pins the LOCATION; the card's band pins the SPECTACLE. Bands already own the ribbon — now they scale the backdrop too, so rarity reads from two zones at a glance. Lanes apply this mapping on top of every row's backdrop:
+| Bands | Backdrop treatment |
+|---|---|
+| Rookie / Prospect | humble origins: street court, training ground, small club, daylight, minimal crowd |
+| Pro / All-Star | working stadium: standard arena, decent crowd, evening light |
+| Champion / Icon | big-stage: night stadium, packed stands, dramatic floodlights, atmosphere haze |
+| Legend / Immortal | spectacle: pyro/glow accents, golden light, roaring full arena, confetti hints |
+| Eternal / GOAT | legendary spectacle: golden-hour monument vibes, arena-of-legends glow, full celebration atmosphere |
+**Guardrails:** spectacle lives BEHIND the subject (upper half/edges); the figure stays lit and readable; the foil frame must remain clearly visible against the backdrop (foil owns the frame — no competition). Vintage/sepia backdrops (Cooperstown, retro packs) scale in grain/atmosphere, not pyro.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
