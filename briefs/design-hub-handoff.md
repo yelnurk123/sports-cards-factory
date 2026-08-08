@@ -34,7 +34,7 @@ Sports-legends reskin of a proven Roblox idle card farm (Anime Card Farm, ~23k C
 7. Gift system guardrails (approved in principle: progression-gated receiving + daily limit — write into spec).
 8. NEW 2026-08-08: **Live moderation canary test** (art spec §7b) — before mass production, upload 2–3 approved cards incl. one shirtless boxer as a decal-moderation test. Roblox image moderation is erratic; verify our style passes cleanly.
 8. ~~World Star pack question~~ — RULED 2026-08-08: reinstated as 16th soccer pack (roster v3.3; soccer 64, total 468). Rung home assigned in rung price table spec (queue 4).
-9. Identity-adjacent name flags — RULED 2026-08-08: swap all five (Jackie 42, Chip the Brave, Drew the Saint, Jerry the Logo, Dak the Star). Hub proposing replacement names for user sign-off, THEN roster + 3 manifests update in one pass (baseball, NFL, basketball rows carry the old names).
+9. ~~Identity-adjacent name flags~~ — DONE v3.4: full IP audit (specs/ip-audit-2026-08-08.md). 5 user-approved swaps + 24 Tier A renames applied across roster/manifests/economy/art-spec (jersey numbers, real surnames, verbatim handles, WWE trademarks, brand adjacency in packs/evolutions/foils). Tier B watch list logged (real-nickname names, accepted parody practice). Card IDs unchanged, no regen needed. OPEN: style items (weakest names, King overuse ~15 kings — proposals in audit doc, user sign-off).
 
 ## Cadence
 Factories report per pack; you review per sport; you decide, they execute. If a lane reports a pattern (2+ same-kind QC failures), you fix the template/manifest, not the lane.
