@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.6
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.7
 ### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.5 (names) and Economy v1.1 (values).
+**v1.7 (2026-08-08, hub):** added §7e expression doctrine — user-flagged smiley-face drift. Sports cards are in-action portraits: default expression is competitive intensity, smiles are a persona feature, not a default.
 **v1.6 (2026-08-08, hub):** pose-menu expansion + pose-family diversity rule (§7); NEW §7d band-scaled backdrop intensity (rarer = more spectacular); §7c gains optional slot 6 "signature props" (persona caricature, e.g., Ney's gold chains); §7b gains WWE gear-coverage rule (no underpants-only figures). All base-art layer — overlays untouched.
 **v1.5 (2026-08-08, hub):** §7c formula v2 — added ethnic-presentation slot (Packio ruling) + the anti-default rule (renders ignoring pinned features = reject, no exceptions for "looks good anyway").
 **v1.4 (2026-08-08, hub):** added §7c resemblance floor — the two-sided recognition doctrine (ceiling AND floor), the signature-feature formula, and the 3-second fan test. Triggered by the Jude Bell audit: 28 soccer seed cards predate the pipeline, and several fail the floor.
@@ -105,6 +106,14 @@ The backdrop column pins the LOCATION; the card's band pins the SPECTACLE. Bands
 | Legend / Immortal | spectacle: pyro/glow accents, golden light, roaring full arena, confetti hints |
 | Eternal / GOAT | legendary spectacle: golden-hour monument vibes, arena-of-legends glow, full celebration atmosphere |
 **Guardrails:** spectacle lives BEHIND the subject (upper half/edges); the figure stays lit and readable; the foil frame must remain clearly visible against the backdrop (foil owns the frame — no competition). Vintage/sepia backdrops (Cooperstown, retro packs) scale in grain/atmosphere, not pyro.
+
+## 7e. Expression doctrine — faces in action, not smiles by default
+Image models default to a smiley toy face unless forbidden; that default is now banned. These are sports cards: the face should be DOING something.
+- **Default expression = competitive intensity** — focus, exertion, grimace, dead-eyed competitor stare, roar, clenched jaw. Matches the pose: a card mid-strike should look like it costs something.
+- **Smile is a persona feature, not a default.** Allowed ONLY when: (a) the row's face descriptor explicitly pins a smile-type expression ("showman grin", "samba smile", "joyful grin"), (b) the player's signature IS the smile (Ronnie Magic, Grillmaster George, Guga Smile, Oscar Goldenboy, Shaq Attack, Frankie Smile — smile carries their recognition), or (c) a celebration pose.
+- **Neutral descriptors render non-smiling.** Rows reading calm/focused/determined/stoic/cold/serious must NOT come back smiling. A smile on one of those = the model ignored a pinned feature = reject under the anti-default rule.
+- **Pack balance:** at most 1–2 smiling faces per 4-card pack. Four grinning athletes in one pack = QC fail on the sheet, whoever's at fault.
+- **The render must match the row's stated expression literally** — "scowl" means scowl, "playful grin" means playful grin. Expression is a pinned slot like any other.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
