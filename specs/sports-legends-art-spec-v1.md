@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.3
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.4
 ### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.4 (names) and Economy v1.1 (values).
+**v1.4 (2026-08-08, hub):** added §7c resemblance floor — the two-sided recognition doctrine (ceiling AND floor), the signature-feature formula, and the 3-second fan test. Triggered by the Jude Bell audit: 28 soccer seed cards predate the pipeline, and several fail the floor.
 **v1.3 (2026-08-08, hub):** foil tier 6 renamed Prizm→Prism (Panini trademark adjacency; "prism" generic word). Chrome retained — generic finish term, watch-logged in the IP audit.
 **v1.1 (2026-08-08, hub):** baseball pose library extended with pitching poses (windup / delivery / follow-through) — the roster carries dedicated pitcher packs (All-Star, Ace, Eternal) and the batting-only library would have forced invention. Signature-features column now lives in the per-sport manifests (closes checklist item).
 **v1.2 (2026-08-08, hub):** added §7b Roblox moderation guardrails (grounded in Roblox Community Standards) after Lane B's policy audit + box-cf-3 nipple-removal regen. Female-athlete modesty-layer rule added ahead of tennis/athletics/MMA production.
@@ -67,6 +68,23 @@ Ungraded → standard card. Graded → card returns **in a clear slab case** wit
 - **Prohibited (explicit):** any depiction of nipples. **Prompt clause on every bare-chested male row: "smooth toy plastic chest, no nipples."** Any render showing nipples = **instant reject + regen** (same class as a baked frame). Precedent: box-cf-3 regen, Lane B, 2026-08-08.
 - **Female athletes:** modesty layer mandatory — every female row wears a sports top as part of its generic kit. Shirtless female depiction = prohibited, no exceptions. Applies to tennis, athletics, MMA (Contender/Queen packs), and any future female rows.
 - **Erratic moderation insurance:** before mass-producing all 468, upload 2–3 approved cards (incl. one shirtless boxer) as a live decal-moderation canary test. Roblox image moderation is famously inconsistent; a false reject on launch day is worse than a test now. Logged as decision-queue item.
+
+## 7c. Resemblance floor — the two-sided recognition doctrine
+Every card must pass BOTH sides of the line:
+- **Ceiling (unchanged): unmistakably NOT the person.** No face likeness, no kit identity, no logos, no photo reference. The blocky toy face stays generic by design — no card will ever look like a real player's *face*, for all 468.
+- **Floor (new): unmistakably THAT parody.** A fan shown the card + its parody name should place the player in **3 seconds**. "Some footballer" = fail, same as a likeness = fail.
+
+**The name does ~40% of recognition; features + pose must do the other 60%.** Weak rows ("short dark hair, tall frame") describe thousands of athletes — the image model then falls back to its default generic toy. Garbage in, generic out.
+
+**Signature-feature formula (per card, 2–3 features covering all four slots):**
+1. **Skin tone** — explicitly stated (deep brown / tan / pale...). Not likeness; Byson already does this. Without it the model defaults light, which alone failed Jude Bell and Vini V.
+2. **Hair** — style AND color (short twists, cornrows, man-bun, flat cap + round cheeks).
+3. **Facial hair / build** — beard, clean-cut, stocky, towering, etc.
+4. **Signature gesture or celebration** — carried in the pose column where one exists (arms-wide soak, samba dance, mobot, lightning pose). Pose is recognition gold and costs nothing.
+
+**Manifests never carry real names.** The card→player mapping lives only in the roster's source parentheticals (private canon). If a parody name collides with a *different* real person (case: "Jude Bell" = a real white footballer), that name is a parody defect — it points fans at the wrong human. Rename.
+
+**Hub QC gate update:** sheet review now checks the floor (fan test) alongside the ceiling (no likeness/kit/logos), row↔art match, and palette discipline. A card can be technically clean and still fail — generic = regen.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
