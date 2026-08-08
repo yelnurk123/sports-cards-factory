@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.4
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.5
 ### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.4 (names) and Economy v1.1 (values).
+**v1.5 (2026-08-08, hub):** §7c formula v2 — added ethnic-presentation slot (Packio ruling) + the anti-default rule (renders ignoring pinned features = reject, no exceptions for "looks good anyway").
 **v1.4 (2026-08-08, hub):** added §7c resemblance floor — the two-sided recognition doctrine (ceiling AND floor), the signature-feature formula, and the 3-second fan test. Triggered by the Jude Bell audit: 28 soccer seed cards predate the pipeline, and several fail the floor.
 **v1.3 (2026-08-08, hub):** foil tier 6 renamed Prizm→Prism (Panini trademark adjacency; "prism" generic word). Chrome retained — generic finish term, watch-logged in the IP audit.
 **v1.1 (2026-08-08, hub):** baseball pose library extended with pitching poses (windup / delivery / follow-through) — the roster carries dedicated pitcher packs (All-Star, Ace, Eternal) and the batting-only library would have forced invention. Signature-features column now lives in the per-sport manifests (closes checklist item).
@@ -76,11 +77,14 @@ Every card must pass BOTH sides of the line:
 
 **The name does ~40% of recognition; features + pose must do the other 60%.** Weak rows ("short dark hair, tall frame") describe thousands of athletes — the image model then falls back to its default generic toy. Garbage in, generic out.
 
-**Signature-feature formula (per card, 2–3 features covering all four slots):**
+**Signature-feature formula v2 (per card, features covering all five slots):**
 1. **Skin tone** — explicitly stated (deep brown / tan / pale...). Not likeness; Byson already does this. Without it the model defaults light, which alone failed Jude Bell and Vini V.
-2. **Hair** — style AND color (short twists, cornrows, man-bun, flat cap + round cheeks).
-3. **Facial hair / build** — beard, clean-cut, stocky, towering, etc.
-4. **Signature gesture or celebration** — carried in the pose column where one exists (arms-wide soak, samba dance, mobot, lightning pose). Pose is recognition gold and costs nothing.
+2. **Ethnic presentation** — where it is a major recognition carrier (Filipino Pacquiao, Korean Son, Slavic Klitschkos). Category-level appearance, not likeness: it guides tone/eye-shape/hair texture inside the same generic blocky face. Added after the Packio ruling (2026-08-08).
+3. **Hair** — style AND color (short twists, cornrows, man-bun, flat cap + round cheeks).
+4. **Facial hair / build** — beard, clean-cut, stocky, towering, etc.
+5. **Signature gesture or celebration** — carried in the pose column where one exists (arms-wide soak, samba dance, mobot, lightning pose). Pose is recognition gold and costs nothing.
+
+**Anti-default rule:** image models fall back to a generic light-skinned toy when any slot is unpinned, and they freely invent hair, beards, tattoos, and kit colors. Every slot must be pinned in the row; a render that ignores a pinned feature (full hair instead of shaved, brown instead of ginger) = reject, no matter how good it looks otherwise.
 
 **Manifests never carry real names.** The card→player mapping lives only in the roster's source parentheticals (private canon). If a parody name collides with a *different* real person (case: "Jude Bell" = a real white footballer), that name is a parody defect — it points fans at the wrong human. Rename.
 
