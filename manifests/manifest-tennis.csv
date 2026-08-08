@@ -1,12 +1,12 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-ten-cl-1,Andy Muzz,Club,Rookie,"fair Scottish skin tone, tousled hair, determined dour face, wiry grinder build",grinding backhand return,overcast grass court,navy/white,pending,
-ten-cl-2,Naomi Ace,Club,Rookie,"brown skin tone, Japanese-Haitian features, braided hair, calm focused face, powerful athletic build",booming first serve,night hard court,pink/charcoal,pending,
-ten-cl-3,Carlitos,Club,Rookie,"tan Spanish skin tone, short dark hair, huge boyish grin, explosive all-court build",full-stretch forehand rocket,sunny clay court,crimson/white,pending,
-ten-cl-4,Jannik Fox,Club,Rookie,"fair Italian skin tone, red hair, tall lean build, icy calm face",metronomic two-handed backhand,hard court lights,white/forest,pending,
-ten-ng-1,Coco the Kid,Next Gen,Prospect,"deep brown skin tone, tied-back braids, bright young-star smile, speedy athletic build",flying defensive forehand,night hard court,coral/white,pending,
-ten-ng-2,Iga the Wall,Next Gen,Prospect,"fair Polish skin tone, ponytail under cap, intense baseline focus, athletic build",heavy-topspin forehand,clay court,white/navy,pending,
-ten-ng-3,Aryna the Tiger,Next Gen,Prospect,"fair Belarusian skin tone, high ponytail, tiger-roar intensity, powerful frame",roaring first serve,hard court lights,white/charcoal,pending,
-ten-ng-4,Elena Ice,Next Gen,Prospect,"fair Kazakh-Russian skin tone, tall build, ponytail, ice-calm expression",effortless flat serve,grass court,ice/white,pending,
+ten-cl-1,Andy Muzz,Club,Rookie,"fair Scottish skin tone, tousled hair, determined dour face, wiry grinder build",grinding backhand return,overcast grass court,navy/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-cl-2,Naomi Ace,Club,Rookie,"brown skin tone, Japanese-Haitian features, braided hair, calm focused face, powerful athletic build",booming first serve,night hard court,pink/charcoal,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-cl-3,Carlitos,Club,Rookie,"tan Spanish skin tone, short dark hair, huge boyish grin, explosive all-court build",full-stretch forehand rocket,sunny clay court,crimson/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-cl-4,Jannik Fox,Club,Rookie,"fair Italian skin tone, red hair, tall lean build, icy calm face",metronomic two-handed backhand,hard court lights,white/forest,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-ng-1,Coco the Kid,Next Gen,Prospect,"deep brown skin tone, tied-back braids, bright young-star smile, speedy athletic build",flying defensive forehand,night hard court,coral/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-ng-2,Iga the Wall,Next Gen,Prospect,"fair Polish skin tone, ponytail under cap, intense baseline focus, athletic build",heavy-topspin forehand,clay court,white/navy,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-ng-3,Aryna the Tiger,Next Gen,Prospect,"fair Belarusian skin tone, high ponytail, tiger-roar intensity, powerful frame",roaring first serve,hard court lights,white/charcoal,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+ten-ng-4,Elena Ice,Next Gen,Prospect,"fair Kazakh-Russian skin tone, tall build, ponytail, ice-calm expression",effortless flat serve,grass court,ice/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
 ten-tr-1,Andre Ace,Tour,Pro,"fair skin tone, flowing 90s hair, rebel-charmer grin, wiry build",return-of-serve crouch-and-fire,90s hard court,teal/white,pending,
 ten-tr-2,Venus Power,Tour,Pro,"deep brown skin tone, tall elegant power build, beaded braids, commanding smile",towering first serve,grass court,white/forest,pending,
 ten-tr-3,Boris Boom-Boom,Tour,Pro,"fair German skin tone, reddish-blond hair, booming power frame, intense 80s face",diving volley,grass court,white/charcoal,pending,
