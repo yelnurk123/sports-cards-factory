@@ -1,4 +1,5 @@
-# GRAND ROSTER v3.4 — Sports Legends Card Farm
+# GRAND ROSTER v3.5 — Sports Legends Card Farm
+**v3.5 (2026-08-08, hub, user-approved "go on all"):** Jude Bell → **Jude Anthem** (real-footballer collision), Vini V. → **Vini Samba** (near-real nickname); style pass applied — King overuse varied (Kenenisa the Metronome, Carl the Legend, Totti of Rome, Arnie the Charger, David the 800 Maestro) and weakest names swapped (Sasha the Siberian, Adam the Silk, Justin Nitro, Bo the Blue Chip, Gianluca the Bald Eagle, Tyson Crosshair — also resolves the Tyson Z/Tyson Track collision). IDs unchanged; card art unaffected (names are metadata).
 **v3.3 (2026-08-08, hub, user-ruled):** soccer canon reinstates **League Pack** (tier 2, was registered but absent from roster file) and **World Star Pack** (tier 8, 4 cards already registered) — soccer 16 packs/64, totals now **117 packs · 468 baseline cards**. World Star rung home assigned in the rung price table spec (queue 4). **The Mamba: user RULED INCLUDE** with respectful framing (row live at pending).
 **v3.4 (2026-08-08, hub):** full IP audit (see `specs/ip-audit-2026-08-08.md`). Applied: 5 user-approved swaps (Jackie Steals Home, Chip Hotcorner, Drew Bayou, Jerry Mr. Clutch, Dak the Comeback) + Tier A audit renames — jersey numbers out (Travis the Showman, Joe Comeback, Jerry Surehands, Troy Three Rings), real surnames out (Kelvin Laser, Rush St-Punch), verbatim esports handles transformed (Helvijs the Clutch, Aspas the Dart, Danil Deagle, Park the Sovereign, Dandy the Face, Lim the Star King), WWE trademark monikers re-parodied (El Fuego, The Chieftain, The Opportunist, The Scorpion Icon, Hot Roddy, The Common Dream), brand adjacency removed from packs (Drop Zone, CRT) and evolutions (The Mega Moment, Skyhook Gold). Card IDs unchanged; no art regen needed (no text is baked into art).
 **v3.2 (2026-08-08, hub):** MMA GOAT pack 4th slot swapped — v3.1 listed McGregor twice (The Notorious + Conor McSwagger); slot now **Fedor the Last Emperor** *(Emelianenko)*. Approval items 1 and 4 resolved by user directive (2026-08-08): NFL, cricket, athletics, esports all confirmed; esports parody-moniker rule confirmed canon. The Mamba remains open — card row exists in manifest-basketball.csv at status `hold` pending user call.
@@ -10,18 +11,18 @@ Format: **Pack — 4 cards** *(real-world sources)*
 - Street Pack — Ronnie Magic, Zizou, Bendham, Terry Henry *(Ronaldinho, Zidane, Beckham, Henry)*
 - Sunday League Pack — Stevie G, Lamps, Scholsey, Pirlo the Architect *(Gerrard, Lampard, Scholes, Pirlo)*
 - League Pack — K. M'Bop, Erik the Robot, Kelvin Laser, Mo Pharaoh *(Mbappé, Haaland, De Bruyne, Salah — v3.3 reinstatement, was registered but unlisted)*
-- Academy Pack — Jude Bell, Vini V., Rodri Engine, Sonny *(Bellingham, Vinícius, Rodri, Son)*
+- Academy Pack — Jude Anthem, Vini Samba, Rodri Engine, Sonny *(Bellingham, Vinícius, Rodri, Son)*
 - Pro Pack — Harry K., Griezy, Kun, El Pistolero *(Kane, Griezmann, Agüero, Suárez)*
 - All-League Pack — Xavi Brain, Iniesta Ghost, Busi, Captain Puyol *(Xavi, Iniesta, Busquets, Puyol)*
 - Star Pack — Kaka Smile, Rivaldo Lefty, Figo the Galactico, Baggio Ponytail *(Kaká, Rivaldo, Figo, Baggio)*
 - Superstar Pack — Zlatan the Lion, Wazza, Drogba the Drog, Eto'o Cheetah *(Ibrahimović, Rooney, Drogba, Eto'o)*
 - World Star Pack — Luka Magic, Ramos the Wall, Manuel Sweeper, Ney Flair *(Modrić, Ramos, Neuer, Neymar — v3.3 reinstatement, 4 cards already registered)*
 - Icon Pack — Gigi Wall, Iker Saint, Paolo M., Canna Wall *(Buffon, Casillas, Maldini, Cannavaro)*
-- Legend Pack — Johan Total, Marco Volley, Romario Short, Totti the King *(Cruyff, Van Basten, Romário, Totti)*
+- Legend Pack — Johan Total, Marco Volley, Romario Short, Totti of Rome *(Cruyff, Van Basten, Romário, Totti)*
 - World Class Pack — Lewy, Benzy, Toni the Sniper, Alessandro Del *(Lewandowski, Benzema, Kroos, Del Piero)*
 - Galactico Pack — R9 Phenomenon, Al the Shearer, Michael Speed, Batigol *(Ronaldo Nazário, Shearer, Owen, Batistuta)*
 - Immortal Pack — Der Kaiser, Garrincha Joy, Eusébio Panther, Sir Bobby *(Beckenbauer, Garrincha, Eusébio, Charlton)*
-- Eternal Pack — Zico 10, Platini Elegant, Gianluca V., Kalle *(Zico, Platini, Vialli, Rummenigge)*
+- Eternal Pack — Zico 10, Platini Elegant, Gianluca the Bald Eagle, Kalle *(Zico, Platini, Vialli, Rummenigge)*
 - GOAT Pack — Leo the GOAT, C. Roni, Pello, Diego D10S *(Messi, C. Ronaldo, Pelé, Maradona)*
 
 ## BASKETBALL (10 packs, 40)
@@ -69,12 +70,12 @@ Format: **Pack — 4 cards** *(real-world sources)*
 - Legend Pack — Roy Superman, B-Hop the Executioner, James Lights Out, Shane Sugar *(Jones Jr, Hopkins, Toney, Mosley)*
 - Heavy Pack — The Bronze Bomber, Anthony Big Josh, Dr. Steelhammer, Dr. Ironfist *(Wilder, Joshua, W. Klitschko, V. Klitschko)*
 - British Pack — Simply the Best, Nigel the Dark Destroyer, Naseem the Prince, Frank the People's Champ *(Eubank, Benn, Hamed, Bruno)*
-- Warrior Pack — David the Tuaminator, David the Hayemaker, Dereck War, Sasha the Bear *(Tua, Haye, Chisora, Povetkin)*
+- Warrior Pack — David the Tuaminator, David the Hayemaker, Dereck War, Sasha the Siberian *(Tua, Haye, Chisora, Povetkin)*
 - Immortal Pack — Muhammad Bali, Mike Byson, Sugar Rey, Joey Louis *(Ali, Tyson, Robinson, Louis)*
 
 ## MMA (10 packs, 40)
 - Regional Pack — Gamebred, Daniel DC, Alex the Great, Izzy Stylebender *(Masvidal, Cormier, Volkanovski, Adesanya)*
-- Prospect Pack — Sean Sugar Show, Ilia the Matador, Paddy the Baddy, Bo the Wrestler *(O'Malley, Topuria, Pimblett, Nickal)*
+- Prospect Pack — Sean Sugar Show, Ilia the Matador, Paddy the Baddy, Bo the Blue Chip *(O'Malley, Topuria, Pimblett, Nickal)*
 - Contender Pack — The Lioness, Mighty Mouse, The Nigerian Nightmare, Rowdy Ronda *(Nunes, Johnson, Usman, Rousey)*
 - Title Pack — The Iceman, Rush St-Punch, The Predator, The Spider *(Liddell, St-Pierre, Ngannou, Silva)*
 - Striker Pack — Max Blessed, Dustin Diamond, Justin the Highlight, Charles Do Bronx *(Holloway, Poirier, Gaethje, Oliveira)*
@@ -117,10 +118,10 @@ Format: **Pack — 4 cards** *(real-world sources)*
 ## GOLF (6 packs, 24)
 - Clubhouse Pack — Scottie Steady, Brooks Major, Annika Ace, Viktor the Viking *(Scheffler, Koepka, Sörenstam, Hovland)*
 - Tour Pack — Rory Ace, Bryson the Scientist, Phil Leftson, Tom Clutch *(McIlroy, DeChambeau, Mickelson, Watson)*
-- International Pack — Vijay the Fijian, DJ the Long Ball, Justin the Olympic, Adam the Aussie *(Singh, Johnson, Rose, Scott)*
+- International Pack — Vijay the Fijian, DJ the Long Ball, Justin the Olympic, Adam the Silk *(Singh, Johnson, Rose, Scott)*
 - Major Pack — Greg the Shark, Gary Knight, Supermex, Ben Hawk *(Norman, Player, Trevino, Hogan)*
 - Masters Pack — Ernie the Big Easy, Nick the Knight, Bernhard the German, Jose Maria the Artist *(Els, Faldo, Langer, Olazábal)*
-- Legend Pack — Tiger Forest, Goldie Bear, Arnie the King, Seve the Magician *(Woods, Nicklaus, Palmer, Ballesteros)*
+- Legend Pack — Tiger Forest, Goldie Bear, Arnie the Charger, Seve the Magician *(Woods, Nicklaus, Palmer, Ballesteros)*
 
 ## CRICKET (6 packs, 24) — NEW SPORT, needs yes
 - Gully Pack — Babar Elegant, Joe the Anchor, Kane the Kiwi, Steve the Technician *(Babar, Root, Williamson, Smith)*
@@ -138,16 +139,16 @@ Format: **Pack — 4 cards** *(real-world sources)*
 - Tactical Pack — Niko the Rifle, Adil the Headshot, Robin the Estonian, Helvijs the Clutch *(CS: NiKo, ScreaM, ropz, broky)*
 - CRT Pack — Patric the Ninja, Left Wrong, Olof the Master, Pasha the Bicep *(CS retro: f0rest, GeT_RiGhT, olofmeister, pashaBiceps)*
 - Drop Zone Pack — Tyler Blue, Turner the Builder, Booga, Felix the Juicer *(Fortnite: Ninja, Tfue, Bugha, xQc)*
-- Aim God Pack — Mike the Cloud, Tyson Z, El Diablo, Aspas the Dart *(Valorant/FPS: shroud, TenZ, yay, aspas)*
+- Aim God Pack — Mike the Cloud, Tyson Crosshair, El Diablo, Aspas the Dart *(Valorant/FPS: shroud, TenZ, yay, aspas)*
 - Ancient Pack — Dandy the Face, Clement the Captain, Johan the Flower, Topias the Son *(Dota: Dendi, Puppey, N0tail, Topson)*
 - Emperor Pack — Lim the Star King, Lee the Weapon, Joona the Phenomenon, Manuel the Orc King *(RTS: BoxeR, Flash, Serral, Grubby)*
 
 ## ATHLETICS (5 packs, 20) — NEW SPORT, needs yes
 - Track Pack — Shelly the Pocket Rocket, Sha'Carri the Flame, Allyson the Queen, Dina Dash *(Fraser-Pryce, Richardson, Felix, Asher-Smith)*
-- Sprint Pack — Yohan the Silver, Justin the Vet, Asafa the Starter, Tyson Track *(Blake — renamed from "the Beast", WWE owns that slot — Gatlin, Powell, Gay)*
-- Distance Pack — Mo the Mobot, Kenenisa the King, Eliud the Philosopher, David the 800 King *(Farah, Bekele, Kipchoge, Rudisha)*
+- Sprint Pack — Yohan the Silver, Justin Nitro, Asafa the Starter, Tyson Track *(Blake — renamed from "the Beast", WWE owns that slot — Gatlin, Powell, Gay)*
+- Distance Pack — Mo the Mobot, Kenenisa the Metronome, Eliud the Philosopher, David the 800 Maestro *(Farah, Bekele, Kipchoge, Rudisha)*
 - Field Pack — Yelena Sky, Faith the Mile Queen, Jakob the Viking, Jonathan the Triple Jumper *(Isinbayeva, Kipyegon, Ingebrigtsen, Edwards)*
-- GOAT Pack — Usain Lightning, Carl the King, Michael Gold Shoes, Mondo Sky *(Bolt, Lewis, Johnson, Duplantis)*
+- GOAT Pack — Usain Lightning, Carl the Legend, Michael Gold Shoes, Mondo Sky *(Bolt, Lewis, Johnson, Duplantis)*
 
 ---
 
@@ -164,9 +165,9 @@ Format: **Pack — 4 cards** *(real-world sources)*
 10. **The Silver Arrow** — 2× Ayrton Supreme + 2× Schumi + 1× Juan Maestro (racing)
 11. **Calendar Slam** — 2× Roger Majestic + 2× Rafa the Clay King + 1× Novak Smashovic (tennis)
 12. **The Mega Moment** — 2× Dwayne the Boulder + 2× Boulder Cold Steve + 1× The Gravedigger (WWE)
-13. **The Grand Slam** — 2× Tiger Forest + 2× Goldie Bear + 1× Arnie the King (golf)
+13. **The Grand Slam** — 2× Tiger Forest + 2× Goldie Bear + 1× Arnie the Charger (golf)
 14. **The Ashes Urn** — 2× The Little Master + 2× King Kohli + 1× Shane the Spin King (cricket)
-15. **Lightning Strike** — 2× Usain Lightning + 2× Carl the King + 1× Michael Gold Shoes (athletics)
+15. **Lightning Strike** — 2× Usain Lightning + 2× Carl the Legend + 1× Michael Gold Shoes (athletics)
 16. **World Champion** — 2× The Demon King + 2× Sasha Simple + 1× Tyler Blue (esports)
 
 ---
@@ -189,5 +190,5 @@ Format: **Pack — 4 cards** *(real-world sources)*
 2. Launch = 104 cards live / 468 visible — confirm or scale back.
 3. ~~**The Mamba ⚠**~~ — **RULED INCLUDE with respectful framing** (user, 2026-08-08). Row live at `pending`.
 4. ~~**Esports naming rule**~~ — **CONFIRMED** (user standing rule 2026-08-08: parody monikers, never brands).
-5. ~~Identity-adjacent name flags~~ — **RESOLVED v3.4** (full IP audit applied; `specs/ip-audit-2026-08-08.md`: Tier A renames applied, Tier B watch list logged — real-athlete nicknames as card names are accepted parody practice, monitored). Remaining open: weakest-name style list (Sasha the Bear, Adam the Aussie, Justin the Vet, Bo the Wrestler, Gianluca V., Tyson Z vs Tyson Track) + "King" overuse audit (~15 kings — hub proposes varies for user sign-off).
+5. ~~Identity-adjacent name flags~~ — **RESOLVED v3.4** (full IP audit applied; `specs/ip-audit-2026-08-08.md`: Tier A renames applied, Tier B watch list logged — real-athlete nicknames as card names are accepted parody practice, monitored). Remaining open: weakest-name style list (Sasha the Siberian, Adam the Silk, Justin Nitro, Bo the Blue Chip, Gianluca the Bald Eagle, Tyson Crosshair vs Tyson Track) + "King" overuse audit (~15 kings — hub proposes varies for user sign-off).
 6. Rung mapping: I'll produce the rung-by-rung price table (which pack sits at which price) as the next spec artifact — it needs the economy sheet merged in.
