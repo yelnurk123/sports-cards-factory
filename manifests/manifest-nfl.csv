@@ -12,20 +12,20 @@ nfl-ap-2,Christian Run-CMC,All-Pro,All-Star,"fair skin tone, short brown hair, l
 nfl-ap-3,Saquon Quads,All-Pro,All-Star,"deep brown skin tone, massive legs build, short hair, bright eager smile",hurdle-leap carry,night stadium crowd,blue/white,approved,
 nfl-ap-4,JT the Horse,All-Pro,All-Star,"brown skin tone, dreadlocks, powerful low-center build, determined face",goal-line power carry,end-zone crowd,graphite/silver,approved,
 nfl-st-1,Cheetah,Star,All-Star,"deep brown skin tone, short hair, goatee, blazing sprinter frame",after-catch full-sprint carry,open-field stadium,sunset orange/white,approved,
-nfl-st-2,Justin Jet,Star,All-Star,"brown skin tone, short twists, megawatt grin, lean smooth build",griddy-dance celebration carry,night stadium lights,amethyst/grey,approved,"user overruled hub palette flag 2026-08-08: solid-color adjacency accepted within tolerance"
+nfl-st-2,Justin Jet,Star,All-Star,"brown skin tone, short twists, megawatt grin, lean smooth build",griddy-dance celebration carry,night stadium lights,amethyst/grey,approved,user overruled hub palette flag 2026-08-08: solid-color adjacency accepted within tolerance
 nfl-st-3,Ja'Marr the Tiger,Star,All-Star,"brown skin tone, short dreads, calm assassin face, strong hands",toe-tap sideline snag,stadium corner lights,amber/charcoal,approved,"user overruled hub palette flag 2026-08-08: solid-color adjacency accepted within tolerance""amber+charcoal Bengals-adjacent but generic solid, palette hub-pinned - keep"
 nfl-st-4,Cooper Triple Crown,Star,All-Star,"fair skin tone, reddish-blond hair and beard, focused route eyes",sharp-cut route catch,sunny stadium,white/royal,approved,
 nfl-ch-1,Travis the Showman,Champion,Champion,"fair skin tone, fresh fade haircut, mustache-stubble combo, showman grin",first-down point carry,tunnel entrance swagger,scarlet/white,approved,"scarlet+white Chiefs-adjacent but generic solid, palette hub-pinned - keep"
 nfl-ch-2,Rob the Gronk,Champion,Champion,"fair skin tone, buzz cut, giant frame, big goofy grin",ball-spike celebration pose,party crowd end zone,teal/white,approved,
 nfl-ch-3,Calvin Megatron,Champion,Champion,"deep brown skin tone, very tall long-limbed frame, quiet calm face",triple-coverage jump catch,night stadium,steel/grey,approved,
 nfl-ch-4,Larry Fitz,Champion,Champion,"brown skin tone, long dreadlocks, gentle veteran smile, sure hands",contested catch strong hands,sunset stadium glow,plum/white,approved,
-nfl-lg-1,Joe Comeback,Legend,Legend,"fair skin tone, 70s feathered hair, ice-cool smile, slender build",vintage four-step dropback,sepia classic stadium,crimson/cream,pending,
-nfl-lg-2,Jerry Surehands,Legend,Legend,"deep brown skin tone, short hair, chiseled focused face, sculpted frame",vintage slant-and-go catch,classic stadium afternoon,silver/white,pending,
-nfl-lg-3,Walter Sweetness,Legend,Legend,"brown skin tone, 70s short afro, warm dignified smile, gliding runner build",high-step vintage carry,sepia grass stadium,brown/cream,pending,
-nfl-lg-4,Lawrence Terror,Legend,Legend,"deep brown skin tone, bald, ferocious glare, coiled pass-rusher frame",bull-rush charge pose,classic night stadium,navy/white,pending,
+nfl-lg-1,Joe Comeback,Legend,Legend,"fair skin tone, 70s feathered hair, ice-cool smile, slender build",vintage four-step dropback,sepia classic stadium,crimson/cream,generated,user face doctrine: tempered pinned smile to ice-cool composed game face
+nfl-lg-2,Jerry Surehands,Legend,Legend,"deep brown skin tone, short hair, chiseled focused face, sculpted frame",vintage slant-and-go catch,classic stadium afternoon,silver/white,generated,
+nfl-lg-3,Walter Sweetness,Legend,Legend,"brown skin tone, 70s short afro, warm dignified smile, gliding runner build",high-step vintage carry,sepia grass stadium,brown/cream,generated,
+nfl-lg-4,Lawrence Terror,Legend,Legend,"deep brown skin tone, bald, ferocious glare, coiled pass-rusher frame",bull-rush charge pose,classic night stadium,navy/white,generated,
 nfl-im-1,Tom 7 Rings,Immortal,Immortal,"fair skin tone, clean-cut jaw, short brown hair, ultra-competitive stare",pocket-maestro deep strike,modern night stadium,slate/white,pending,
 nfl-im-2,Peyton the Sheriff,Immortal,Immortal,"fair skin tone, high forehead, short hair, audibling pointing hand",point-and-throw at the line,sunny stadium,navy/cream,pending,
-nfl-im-3,Drew Bayou,Immortal,Immortal,"fair skin tone, short brown hair, warm underdog smile, compact build",lightning quick-release throw,roaring dome stadium,white/charcoal,pending,
+nfl-im-3,Drew Bayou,Immortal,Immortal,"fair skin tone, short brown hair, warm underdog smile, compact build",lightning quick-release throw,roaring dome stadium,white/charcoal,pending,user face doctrine: tempered pinned smile to warm-determined
 nfl-im-4,Aaron the Hail Mary,Immortal,Immortal,"fair skin tone, short hair, scruffy beard, calm assassin face",off-balance hail-mary heave,night stadium chaos,teal/grey,pending,
 nfl-df-1,Prime Time,Defense,Immortal,"brown skin tone, bandana under helmet, megawatt confident smile, high-step swagger",interception-return high-step,neon night stadium,black/gold,pending,
 nfl-df-2,Ed Ballhawk,Defense,Immortal,"deep brown skin tone, short dreads, goatee, centerfield hawk eyes",leaping interception snag,rainy stadium,violet/charcoal,pending,
