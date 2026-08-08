@@ -1,8 +1,8 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-bsb-sd-1,Jackie Steals Home,Sandlot,Rookie,"deep brown skin tone, short 40s haircut, dignified determined face, athletic compact build",fearless swing,sepia vintage ballpark,white/cream,pending,
-bsb-sd-2,Lou Ironhorse,Sandlot,Rookie,"fair skin tone, 30s slicked hair, sturdy dependable face, broad shoulders",classic upright stance,old-time ballpark,navy/white,pending,
-bsb-sd-3,Bob Clemente,Sandlot,Rookie,"warm brown skin tone, Puerto Rican features, short dark hair, warm proud smile, lithe build",graceful powerful swing,sunset ballpark,white/charcoal,pending,
-bsb-sd-4,Mick Mantle,Sandlot,Rookie,"fair skin tone, blond crew cut, boyish grin, switch-hitter shoulders",switch-side power swing,50s sepia ballpark,cream/forest,pending,
+bsb-sd-1,Jackie Steals Home,Sandlot,Rookie,"deep brown skin tone, short 40s haircut, dignified determined face, athletic compact build",fearless swing,sepia vintage ballpark,white/cream,generated,
+bsb-sd-2,Lou Ironhorse,Sandlot,Rookie,"fair skin tone, 30s slicked hair, sturdy dependable face, broad shoulders",classic upright stance,old-time ballpark,navy/white,generated,
+bsb-sd-3,Bob Clemente,Sandlot,Rookie,"warm brown skin tone, Puerto Rican features, short dark hair, warm proud smile, lithe build",graceful powerful swing,sunset ballpark,white/charcoal,generated,
+bsb-sd-4,Mick Mantle,Sandlot,Rookie,"fair skin tone, blond crew cut, boyish grin, switch-hitter shoulders",switch-side power swing,50s sepia ballpark,cream/forest,generated,
 bsb-ll-1,Fernando the Kid,Little League,Prospect,"brown skin tone, Dominican features, long dreadlocks, huge joyful grin",bat-flip follow-through,sunset ballpark,sand/teal,pending,
 bsb-ll-2,Ronnie A.,Little League,Prospect,"brown skin tone, Venezuelan features, short twists, electric smile, dynamic wiry build",first-pitch ambush swing,night ballpark,crimson/white,pending,
 bsb-ll-3,Juan Smooth,Little League,Prospect,"brown skin tone, Dominican features, short hair, relaxed confident smile",patient shuffle-step stance,ballpark crowd,slate/white,pending,
