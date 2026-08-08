@@ -1,8 +1,8 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-mma-rg-1,Gamebred,Regional,Rookie,"tan Cuban-Peruvian skin tone, short hair, scruffy beard, backyard brawler smirk",flying-knee lunge,neon octagon,black/red,pending,
-mma-rg-2,Daniel DC,Regional,Rookie,"deep brown skin tone, stocky powerful build, short hair, big warm smile",high-crotch lift slam,octagon crowd,black/white,pending,
-mma-rg-3,Alex the Great,Regional,Rookie,"tan Mediterranean skin tone, short stocky powerhouse build, shaved head, beard",relentless pressure stance,octagon lights,black/gold,pending,
-mma-rg-4,Izzy Stylebender,Regional,Rookie,"deep brown skin tone, Nigerian features, tall slim frame, short fade, showtime smirk",matrix-lean counter stance,dark octagon spotlights,black/teal,pending,
+mma-rg-1,Gamebred,Regional,Rookie,"tan Cuban-Peruvian skin tone, short hair, scruffy beard, backyard brawler smirk",flying-knee lunge,neon octagon,black/red,generated,
+mma-rg-2,Daniel DC,Regional,Rookie,"deep brown skin tone, stocky powerful build, short hair, big warm smile",high-crotch lift slam,octagon crowd,black/white,generated,
+mma-rg-3,Alex the Great,Regional,Rookie,"tan Mediterranean skin tone, short stocky powerhouse build, shaved head, beard",relentless pressure stance,octagon lights,black/gold,generated,
+mma-rg-4,Izzy Stylebender,Regional,Rookie,"deep brown skin tone, Nigerian features, tall slim frame, short fade, showtime smirk",matrix-lean counter stance,dark octagon spotlights,black/teal,generated,
 mma-pr-1,Sean Sugar Show,Prospect,Prospect,"fair skin tone, colorful dyed curls, lanky frame, sniper grin",sniper jab stance,neon octagon,pink/teal,pending,
 mma-pr-2,Ilia the Matador,Prospect,Prospect,"olive Georgian-Spanish skin tone, short dark hair, trimmed beard, matador confidence",bullfighter boxing combo,octagon crowd,burgundy/charcoal,pending,
 mma-pr-3,Paddy the Baddy,Prospect,Prospect,"fair skin tone, messy blond mop hair, cheeky grin",chaotic crowd-pleaser stance,roaring arena octagon,lime/charcoal,pending,
@@ -38,4 +38,4 @@ mma-kg-4,Cody No Love,King,Immortal,"fair skin tone, short hair, cocky swagger g
 mma-gt-1,The Notorious,GOAT,GOAT,"fair Irish skin tone, sharp beard, slicked-back hair, billionaire-strut swagger",strut-with-belt pose,vegas-style octagon,emerald/gold,pending,
 mma-gt-2,The Eagle,GOAT,GOAT,"olive Dagestani skin tone, fluffy papakha hat, beard, relentless wrestler build",cage-mauling ground pose,octagon crowd,white/black,pending,
 mma-gt-3,Jon Bones,GOAT,GOAT,"deep brown skin tone, tall long reach, short hair, genius smirk",spinning-elbow stance,octagon spotlights,black/silver,pending,
-mma-gt-4,Fedor the Last Emperor,GOAT,GOAT,"fair Russian skin tone, Slavic features, stocky heavyset build, emotionless stoic face, balding short hair",calm sambo throw,pride-era arena,black/red,pending,"v3.2 roster swap: replaced duplicate McGregor slot (was Conor McSwagger)"
+mma-gt-4,Fedor the Last Emperor,GOAT,GOAT,"fair Russian skin tone, Slavic features, stocky heavyset build, emotionless stoic face, balding short hair",calm sambo throw,pride-era arena,black/red,pending,v3.2 roster swap: replaced duplicate McGregor slot (was Conor McSwagger)
