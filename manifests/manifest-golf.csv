@@ -1,12 +1,12 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-glf-ch-1,Scottie Steady,Clubhouse,Rookie,"fair skin tone, short brown hair, calm deadpan face, shuffling footwork",metronome iron swing,sunny 18th green,navy/white,pending,
-glf-ch-2,Brooks Major,Clubhouse,Rookie,"fair skin tone, muscular gym-built frame, short hair, stone-cold major face",booming driver backswing,18th green,charcoal/white,pending,
-glf-ch-3,Annika Ace,Clubhouse,Rookie,"fair Swedish skin tone, short blond hair, visor, precise athletic build",textbook fairway swing,18th green morning,sky/white,pending,
-glf-ch-4,Viktor the Viking,Clubhouse,Rookie,"fair Norwegian skin tone, blond viking stubble, big grin, athletic build",happy-warrior driver swing,18th green,forest/white,pending,
-glf-tr-1,Rory Ace,Tour,Pro,"fair Northern Irish skin tone, curly brown hair, boyish grin, powerful compact build",flowing driver backswing,18th green,emerald/white,pending,
-glf-tr-2,Bryson the Scientist,Tour,Pro,"fair skin tone, flat cap, bulky scientist muscles, intense analytic face",single-plane power swing,range-side 18th green,crimson/white,pending,
-glf-tr-3,Phil Leftson,Tour,Pro,"fair skin tone, lefty stance, dark hair, showman grin",lefty flop shot,18th green crowd,charcoal/white,pending,
-glf-tr-4,Tom Clutch,Tour,Pro,"fair skin tone, 70s cap, friendly midwest smile, wiry build",vintage bump-and-run putt,sepia links green,cream/navy,pending,
+glf-ch-1,Scottie Steady,Clubhouse,Rookie,"fair skin tone, short brown hair, calm deadpan face, shuffling footwork",metronome iron swing,sunny 18th green,navy/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-ch-2,Brooks Major,Clubhouse,Rookie,"fair skin tone, muscular gym-built frame, short hair, stone-cold major face",booming driver backswing,18th green,charcoal/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-ch-3,Annika Ace,Clubhouse,Rookie,"fair Swedish skin tone, short blond hair, visor, precise athletic build",textbook fairway swing,18th green morning,sky/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-ch-4,Viktor the Viking,Clubhouse,Rookie,"fair Norwegian skin tone, blond viking stubble, big grin, athletic build",happy-warrior driver swing,18th green,forest/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-tr-1,Rory Ace,Tour,Pro,"fair Northern Irish skin tone, curly brown hair, boyish grin, powerful compact build",flowing driver backswing,18th green,emerald/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-tr-2,Bryson the Scientist,Tour,Pro,"fair skin tone, flat cap, bulky scientist muscles, intense analytic face",single-plane power swing,range-side 18th green,crimson/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-tr-3,Phil Leftson,Tour,Pro,"fair skin tone, lefty stance, dark hair, showman grin",lefty flop shot,18th green crowd,charcoal/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
+glf-tr-4,Tom Clutch,Tour,Pro,"fair skin tone, 70s cap, friendly midwest smile, wiry build",vintage bump-and-run putt,sepia links green,cream/navy,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
 glf-in-1,Vijay the Fijian,International,All-Star,"brown Fijian-Indian skin tone, tall build, dark stubble, range-rat grind face",towering driver swing,18th green,black/white,pending,
 glf-in-2,DJ the Long Ball,International,All-Star,"fair skin tone, tall frame, beard, laid-back cool face",effortless long-drive backswing,18th green,slate/white,pending,
 glf-in-3,Justin the Olympic,International,All-Star,"fair English skin tone, short hair, gold-medal smile, precise build",pure iron at the flag,18th green,white/gold,pending,
