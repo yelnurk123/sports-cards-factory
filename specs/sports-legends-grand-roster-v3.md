@@ -1,4 +1,5 @@
-# GRAND ROSTER v3.1 — Sports Legends Card Farm
+# GRAND ROSTER v3.2 — Sports Legends Card Farm
+**v3.2 (2026-08-08, hub):** MMA GOAT pack 4th slot swapped — v3.1 listed McGregor twice (The Notorious + Conor McSwagger); slot now **Fedor the Last Emperor** *(Emelianenko)*. Approval items 1 and 4 resolved by user directive (2026-08-08): NFL, cricket, athletics, esports all confirmed; esports parody-moniker rule confirmed canon. The Mamba remains open — card row exists in manifest-basketball.csv at status `hold` pending user call.
 ### 115 packs · 460 baseline cards · 16 evolutions · 13 foils → 5,980+ Index entries · 13 sports
 Structure rule: ~45 price rungs (reference-shaped curve); 2–3 sport packs share each rung. Index shows all slots from day one (locked). Launch: tiers 1–2 of every sport (26 packs, 104 cards live); rest in waves.
 Format: **Pack — 4 cards** *(real-world sources)*
@@ -77,7 +78,7 @@ Format: **Pack — 4 cards** *(real-world sources)*
 - Queen Pack — Valentina Bullet, Weili the Storm, Rose Thug, Cris the Machine *(Shevchenko, Zhang, Namajunas, Cyborg)*
 - Pioneer Pack — BJ the Prodigy, Frankie the Jersey, Dom the Dominator, Urijah the California Kid *(Penn, Edgar, Cruz, Faber)*
 - King Pack — Jose the King of Rio, Henry Triple C, TJ Killashaw, Cody No Love *(Aldo, Cejudo, Dillashaw, Garbrandt)*
-- GOAT Pack — The Notorious, The Eagle, Jon Bones, Conor McSwagger *(McGregor, Nurmagomedov, Jones, McGregor alt)*
+- GOAT Pack — The Notorious, The Eagle, Jon Bones, Fedor the Last Emperor *(McGregor, Nurmagomedov, Jones, Emelianenko — v3.2 swap, was duplicate McGregor)*
 
 ## RACING (8 packs, 32)
 - Karting Pack — Seb Zoom, Jeff Wonder, Seb Rally, Kenny Blocks *(Vettel, Gordon, Loeb, Block)*
@@ -180,9 +181,9 @@ Format: **Pack — 4 cards** *(real-world sources)*
 - Index: 460 × 13 = **5,980 entries** + 16 evolutions. Largest mountain on the platform in this genre by ~2.8×.
 
 ## APPROVAL ITEMS
-1. **NFL, Cricket, Athletics, Esports** — sports beyond the original list. Yes/no each.
+1. ~~**NFL, Cricket, Athletics, Esports**~~ — **RESOLVED YES, all four** (user directive 2026-08-08: hub ordered to author all of them).
 2. Launch = 104 cards live / 460 visible — confirm or scale back.
-3. **The Mamba ⚠** — include with respectful framing, or hold.
-4. **Esports naming rule** — parody targets monikers/handles' soundalikes, never legal-brand treatment (Faker → The Demon King). Confirm comfort.
-5. Weakest-name watch list (flagged for swap): Sasha the Bear, Adam the Aussie, Justin the Vet, Bo the Wrestler, Gianluca V., Tyson Z (vs Tyson Track), "King" overuse audit (6 kings — vary a few).
+3. **The Mamba ⚠** — OPEN. Row authored at status `hold`; user decision pending.
+4. ~~**Esports naming rule**~~ — **CONFIRMED** (user standing rule 2026-08-08: parody monikers, never brands).
+5. Weakest-name watch list (flagged for swap): Sasha the Bear, Adam the Aussie, Justin the Vet, Bo the Wrestler, Gianluca V., Tyson Z (vs Tyson Track), "King" overuse audit (6 kings — vary a few). **Hub additions 2026-08-08 (identity-adjacent names, user call):** Jackie 42 (jersey number), Chip the Brave (team name), Drew the Saint (team name), Jerry the Logo (league logo), Dak the Star (team nickname).
 6. Rung mapping: I'll produce the rung-by-rung price table (which pack sits at which price) as the next spec artifact — it needs the economy sheet merged in.
