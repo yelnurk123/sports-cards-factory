@@ -31,6 +31,7 @@ Ratio 2:3, resolution 1K, background opaque.
 6. **Failures:** regenerate with a corrected prompt, log the reason in the manifest `qc_note` column, move on. Never ship a QC fail.
 7. **Statuses are the queue.** If interrupted, resume from the first `pending` row. Never restart from zero.
 8. **Roblox moderation (art spec §7b).** Bare-chested male rows: prompt includes "smooth toy plastic chest, no nipples" — any nipple depiction = instant reject + regen (same class as baked frame). Female athlete rows always wear a sports top (modesty layer); shirtless female = prohibited.
+9. **Batch gate:** 2–3 packs (8–12 cards) per batch, push, stop, await hub/user greenlight. One-line reports per pack. Regen single cards, never whole packs, unless 2+ share a failure kind (then stop and report the pattern).
 
 ## Batch rhythm
 - 4 generations per pack (parallel), then assemble the pack contact sheet (labels: card name + pack name + running depth), then QC against the rules, then update manifest statuses.
