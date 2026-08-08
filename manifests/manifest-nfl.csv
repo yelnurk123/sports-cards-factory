@@ -1,8 +1,8 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-nfl-cp-1,Pat the Magician,Campus,Rookie,"light-brown skin tone, mixed-heritage features, curly short hair, light beard stubble, playful grin",sidearm no-look throw,stadium tunnel lights,crimson/white,pending,
-nfl-cp-2,Josh the Cannon,Campus,Rookie,"fair skin tone, tall powerhouse build, short light-brown hair, confident grin",full-body deep launch throw,snowy night stadium,royal/white,pending,
-nfl-cp-3,Joe Cool,Campus,Rookie,"fair skin tone, slick blond hair, calm smirk, slim cool build",relaxed pocket throw,tunnel archway glow,amber/charcoal,pending,
-nfl-cp-4,Jalen Philly,Campus,Rookie,"deep brown skin tone, short dark hair, trimmed beard, composed leader face",tuck-and-throw dual-threat move,night stadium huddle lights,steel/teal,pending,
+nfl-cp-1,Pat the Magician,Campus,Rookie,"light-brown skin tone, mixed-heritage features, curly short hair, light beard stubble, playful grin",sidearm no-look throw,stadium tunnel lights,crimson/white,generated,
+nfl-cp-2,Josh the Cannon,Campus,Rookie,"fair skin tone, tall powerhouse build, short light-brown hair, confident grin",full-body deep launch throw,snowy night stadium,royal/white,generated,
+nfl-cp-3,Joe Cool,Campus,Rookie,"fair skin tone, slick blond hair, calm smirk, slim cool build",relaxed pocket throw,tunnel archway glow,amber/charcoal,generated,
+nfl-cp-4,Jalen Philly,Campus,Rookie,"deep brown skin tone, short dark hair, trimmed beard, composed leader face",tuck-and-throw dual-threat move,night stadium huddle lights,steel/teal,generated,
 nfl-pr-1,Lamar Action Jackson,Pro,Pro,"deep brown skin tone, short dreadlocks, electric grin, wiry explosive build",spin-move breakaway carry,night stadium floodlights,magenta/silver,pending,
 nfl-pr-2,Dak the Comeback,Pro,Pro,"rich brown skin tone, short cropped hair, goatee, broad reassuring smile",play-action deep throw,packed stadium evening,slate/white,pending,
 nfl-pr-3,Russ Moon,Pro,Pro,"brown skin tone, short dark hair, neat beard, upbeat grin",high-arching moonball launch,dusk stadium glow,teal/grey,pending,
