@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.2
-### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.3 (names) and Economy v1 (values).
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.3
+### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.4 (names) and Economy v1.1 (values).
+**v1.3 (2026-08-08, hub):** foil tier 6 renamed Prizm→Prism (Panini trademark adjacency; "prism" generic word). Chrome retained — generic finish term, watch-logged in the IP audit.
 **v1.1 (2026-08-08, hub):** baseball pose library extended with pitching poses (windup / delivery / follow-through) — the roster carries dedicated pitcher packs (All-Star, Ace, Eternal) and the batting-only library would have forced invention. Signature-features column now lives in the per-sport manifests (closes checklist item).
 **v1.2 (2026-08-08, hub):** added §7b Roblox moderation guardrails (grounded in Roblox Community Standards) after Lane B's policy audit + box-cf-3 nipple-removal regen. Female-athlete modesty-layer rule added ahead of tennis/athletics/MMA production.
 
@@ -33,7 +34,7 @@ Rookie · Prospect · Pro · All-Star · Champion · Icon · Legend · Immortal 
 | 3 | Gold | gold metallic |
 | 4 | Platinum | dark platinum + shine |
 | 5 | Holo | rainbow gradient holo |
-| 6 | Prizm | checkerboard prizm border |
+| 6 | Prism | checkerboard prism border |
 | 7 | Chrome | mirror chrome |
 | 8 | Sapphire | deep blue crystalline |
 | 9 | Ruby | deep red crystalline |

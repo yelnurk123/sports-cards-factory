@@ -1,5 +1,6 @@
-# SPORTS LEGENDS CARD FARM — ECONOMY & NUMBERS SPEC v1
+# SPORTS LEGENDS CARD FARM — ECONOMY & NUMBERS SPEC v1.1
 ### The numbers backbone. Cloned from the reference's frame-confirmed economy; reskinned to sports. Kimi Code builds against this file + the Grand Roster + the flow reconstruction.
+**v1.1 (2026-08-08, hub):** IP audit renames propagated — foil tier Prizm→Prism (Panini trademark adjacency), rung-table pack names (Esports Battle Bus→Drop Zone, Esports Pajama→CRT), evolution names (WrestleMania Moment→The Mega Moment, Lakers Gold→Skyhook Gold). No numbers changed.
 
 ## 0. Canon sources
 Reference numbers from the KB teardown (284-screen frame pass, 2026-08-07) + our screenshot sessions (user-confirmed current prices). Where the two disagreed, screenshots win on price, teardown wins on mechanics.
@@ -33,7 +34,7 @@ Card base = **pack rung price ÷ 10**. The 4 cards inside a pack spread 0.7× / 
 | 3 | Gold | 2 | 10 | Galactic | 50 |
 | 4 | Platinum | 3 | 11 | Cosmic | 100 |
 | 5 | Holo | 5 | 12 | Owner | 200 |
-| 6 | Prizm | 8 | 13 | **One of One** | 400 |
+| 6 | Prism | 8 | 13 | **One of One** | 400 |
 | 7 | Chrome | 12 | | | |
 (v1 tunable; anchors fixed by measurement. Foil rolls at pack spawn and shows on the pack.)
 
@@ -111,13 +112,13 @@ Price rule: pack price per rung; card base center = price ÷ 10; timer = pack op
 | 29 | $25B | $2.5B | 60min | Basketball Immortal · Athletics Distance |
 | 30 | $50B | $5B | 70min | Soccer GOAT tier approaches · Racing Heritage |
 | 31 | $100B | $10B | 80min | NFL Legend · MMA Queen |
-| 32 | $200B | $20B | 90min | Baseball Slugger · Esports Pajama |
+| 32 | $200B | $20B | 90min | Baseball Slugger · Esports CRT |
 | 33 | $400B | $40B | 100min | Basketball Dynasty · WWE Next Era |
 | 34 | $700B | $70B | 110min | MMA Pioneer · Tennis Elegant |
 | 35 | $1.5T | $150B | 120min | Racing Champion · Cricket Legend |
 | 36 | $3.0T | $300B | 130min | Golf Masters · Athletics Field |
 | 37 | $6.0T | $600B | 140min | Basketball Eternal · Baseball Legend |
-| 38 | $12T | $1.2T | 150min | Esports Battle Bus · MMA King |
+| 38 | $12T | $1.2T | 150min | Esports Drop Zone · MMA King |
 | 39 | $25T | $2.5T | 165min | WWE Extreme · NFL Immortal |
 | 40 | $50T | $5T | 180min | WWE Main Event · Boxing Warrior |
 | 41 | $100T | $10T | 195min | Tennis Major · Boxing Heavy |
@@ -137,8 +138,8 @@ Reference pattern: evolution cards price ~2–5 rungs above their ingredient ban
 | The Thrilla | $2.0Qn | | Champion's Camp | $6.0T |
 | The Eternal Debate | $10.0Qn | | The Silver Arrow | $4.0T |
 | Galactico XI | $1.5T | | Calendar Slam | $3.0T |
-| Dream Team '92 | $8.0Qn | | WrestleMania Moment | $8.0T |
-| Lakers Gold | $1.5Qn | | The Grand Slam | $2.5T |
+| Dream Team '92 | $8.0Qn | | The Mega Moment | $8.0T |
+| Skyhook Gold | $1.5Qn | | The Grand Slam | $2.5T |
 | The Hail Mary | $5.0Qn | | The Ashes Urn | $2.0T |
 | Sandlot Immortal | $1.0Qn | | Lightning Strike | $2.5T |
 | Heavyweight Crown | $500T | | World Champion (esports) | $12.0T |

@@ -1,5 +1,5 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-bsb-sd-1,Jackie 42,Sandlot,Rookie,"short 40s haircut, dignified determined face, athletic compact build",fearless swing,sepia vintage ballpark,white/cream,pending,
+bsb-sd-1,Jackie Steals Home,Sandlot,Rookie,"short 40s haircut, dignified determined face, athletic compact build",fearless swing,sepia vintage ballpark,white/cream,pending,
 bsb-sd-2,Lou Ironhorse,Sandlot,Rookie,"30s slicked hair, sturdy dependable face, broad shoulders",classic upright stance,old-time ballpark,navy/white,pending,
 bsb-sd-3,Bob Clemente,Sandlot,Rookie,"short dark hair, warm proud smile, lithe athletic build",graceful powerful swing,sunset ballpark,white/charcoal,pending,
 bsb-sd-4,Mick Mantle,Sandlot,Rookie,"blond crew cut, boyish grin, switch-hitter shoulders",switch-side power swing,50s sepia ballpark,cream/forest,pending,
@@ -30,7 +30,7 @@ bsb-sl-4,Bryce the Showman,Slugger,Icon,"styled hair, full beard, showman intens
 bsb-lg-1,Albert the Machine,Legend,Legend,"bald, stoic focused face, thick power build",textbook power stance,sunset ballpark,crimson/white,pending,
 bsb-lg-2,Miguel Triple Crown,Legend,Legend,"round friendly face, big smile, sturdy build",easy opposite-field swing,sunny ballpark,navy/cream,pending,
 bsb-lg-3,Big Papi,Legend,Legend,"big bear build, huge warm smile, beard",walk-off point-to-sky swing,roaring night ballpark,charcoal/gold,pending,
-bsb-lg-4,Chip the Brave,Legend,Legend,"sandy hair, easy southern grin, switch-hitter shoulders",switch-hit swing,evening ballpark,forest/white,pending,
+bsb-lg-4,Chip Hotcorner,Legend,Legend,"sandy hair, easy southern grin, switch-hitter shoulders",switch-hit swing,evening ballpark,forest/white,pending,
 bsb-co-1,The Bambino,Cooperstown,Immortal,"round jolly face, flat cap, big barrel build",called-shot point-and-swing,1920s sepia ballpark,cream/brown,pending,
 bsb-co-2,Hank Hammer,Cooperstown,Immortal,"short hair, quiet dignified strength, powerful wrists",smooth record-breaking swing,sepia ballpark,navy/cream,pending,
 bsb-co-3,Willie Say-Hey,Cooperstown,Immortal,"bright joyful smile, cap-flying energy, basket-catch flair",joyful power swing,vintage ballpark,charcoal/cream,pending,
