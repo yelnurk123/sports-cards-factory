@@ -1,4 +1,4 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v2.0
+# SPORTS LEGENDS — ART PRODUCTION SPEC v2.1
 ### (v2.0 2026-08-08, hub, user-directed): ELEVATED STYLE LOCK. Everything below still applies; v2.0 adds the elevated layer on top.
 **v2.0 elevated bar (§7g):** cinematic color grading (arena rim-light, moody contrast — the Lane B MMA look), one storytelling element per card, signature VFX REQUIRED at Icon+ (not optional), one hero prop per chaser, framing escalates with band (low = eye-level documentary; Icon+ = low-angle hero/off-center). GOAT/Eternal = "moment cards": the iconic frozen moment, not a stance. Naming pass deferred to post-production (names not baked into art).
 ### (v1.8 situation-pose section was lost in a lane file-overwrite 2026-08-08 and is restored in v1.9 — LANES: never commit the spec file; it is hub-owned. Pull before every batch.)
@@ -137,6 +137,10 @@ The current drift: nearly every card is a centered, eye-level, full-body shot at
 - **Hero prop per chaser:** Icon+ cards carry one recognizable object (golden shoes, chains, towel, arrow) that survives in silhouette.
 - **Framing escalates with band:** Rookie–Pro = eye-level documentary; All-Star–Champion = three-quarter and varied angles; Icon+ = low-angle hero shots, off-center drama, chest-up allowed.
 - **GOAT/Eternal = moment cards:** the iconic frozen moment (the bolt pose, the umpire argument), not a stance. If you can caption it with a headline, it's a moment card.
+
+## 7h. Culture moments + band glow (v2.1)
+- **Culture-moment rule:** every pack gets at least 1 culture-moment card — cap ceremony, trophy lift, fan moment, walkout, signature ritual (reference: cricket culture pack — Ricky's baggy-green ceremony, Straussy's urn lift). Moments beat stances; this stacks with the situation-pose rule.
+- **Band rim-light coding:** each band owns a glow color so rarity is readable from the light itself — Rookie cool white, Prospect cyan, Pro emerald, All-Star amber, Champion crimson, Icon violet, Legend royal blue, Immortal silver, Eternal aged gold, GOAT pure gold. Apply as the scene's key/rim light tint, subtle at low bands, unmistakable at high bands.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
