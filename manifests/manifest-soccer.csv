@@ -1,0 +1,17 @@
+id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
+soc-st-1,Ronnie Magic,Street,Rookie,"wild curly hair, huge samba smile",rainbow-flick juggle,street court colorful walls,yellow/green,generated,"yellow+green Brazil-adjacent but generic solid — keep"
+soc-st-2,Zizou,Street,Rookie,"bald, neat dark goatee, elegant calm",instep maestro strike,night stadium floodlights,white/navy,generated,
+soc-st-3,Bendham,Street,Rookie,"stylish swept-back dark hair, confident charm",free-kick curled follow-through,packed stadium evening,red/white,generated,
+soc-st-4,Terry Henry,Street,Rookie,"short cropped dark hair, cool composed smile",striker volley mid-swing,stadium floodlights roaring crowd,solid red/white trim,generated,"REGEN: white sleeves = Arsenal pattern, replaced with trim"
+soc-lg-1,K. M'Bop,League,Prospect,"short tight haircut, explosive grin, lightning-fast build",full-sprint dribble,stadium tunnel lights,blue/white,generated,
+soc-lg-2,Erik the Robot,League,Prospect,"tall blond athletic build, icy stare",power header leap,stadium night,blue/navy,generated,
+soc-lg-3,Kelvin De Bruyne,League,Prospect,"strawberry-blond hair + beard, focused passer eyes",through-ball pass stance,stadium lights,sky blue/white,generated,
+soc-lg-4,Mo Pharaoh,League,Prospect,"curly black hair + beard, electric smile",cut-inside left-foot curl,stadium crowd,red/white,generated,
+soc-ws-1,Luka Magic,World Star,Champion,"short dark hair + beard, deep-focus playmaker eyes",outside-foot trivela pass,night stadium,croatia-free red/white→white/blue,generated,
+soc-ws-2,Ramos the Wall,World Star,Champion,"long dark hair tied back, beard, warrior stare",dominant header rise,stadium lights,white/red,generated,
+soc-ws-3,Manuel Sweeper,World Star,Champion,"tall keeper build, short brown hair, calm authority",goalkeeper full-stretch dive,goalbox night stadium,black/neon,generated,
+soc-ws-4,Ney Flair,World Star,Champion,"styled mohawk-ish hair, tattoo-free arms, showman grin",stepover dribble flair,stadium crowd,blue/yellow-free→teal/white,generated,
+soc-gt-1,Leo the GOAT,GOAT,GOAT,"brown beard, dark swept hair",bicycle kick,night stadium,white/sky-blue,generated,
+soc-gt-2,C. Roni,GOAT,GOAT,"chiseled jaw, short black hair, intense stare",siu-style leap header,stadium floodlights,red/white,generated,
+soc-gt-3,Pello,GOAT,GOAT,"70s short afro, joyous king smile",classic overhead kick,sepia vintage stadium,yellow/green,generated,
+soc-gt-4,Diego D10S,GOAT,GOAT,"curly 80s hair, fiery passionate face",mazy dribble glide,vintage stadium,blue/white,generated,
