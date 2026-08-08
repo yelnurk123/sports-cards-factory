@@ -1,4 +1,5 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.7
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.9
+### (v1.8 situation-pose section was lost in a lane file-overwrite 2026-08-08 and is restored in v1.9 — LANES: never commit the spec file; it is hub-owned. Pull before every batch.)
 ### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.5 (names) and Economy v1.1 (values).
 **v1.7 (2026-08-08, hub):** added §7e expression doctrine — user-flagged smiley-face drift. Sports cards are in-action portraits: default expression is competitive intensity, smiles are a persona feature, not a default.
 **v1.6 (2026-08-08, hub):** pose-menu expansion + pose-family diversity rule (§7); NEW §7d band-scaled backdrop intensity (rarer = more spectacular); §7c gains optional slot 6 "signature props" (persona caricature, e.g., Ney's gold chains); §7b gains WWE gear-coverage rule (no underpants-only figures). All base-art layer — overlays untouched.
@@ -107,6 +108,10 @@ The backdrop column pins the LOCATION; the card's band pins the SPECTACLE. Bands
 | Eternal / GOAT | legendary spectacle: golden-hour monument vibes, arena-of-legends glow, full celebration atmosphere |
 **Guardrails:** spectacle lives BEHIND the subject (upper half/edges); the figure stays lit and readable; the foil frame must remain clearly visible against the backdrop (foil owns the frame — no competition). Vintage/sepia backdrops (Cooperstown, retro packs) scale in grain/atmosphere, not pyro.
 
+## 7d-bis. Situation poses are first-class (v1.8, restored)
+A card does not have to be mid-action. Life moments carry character: training (heavy bag, pad work, batting cage, bullpen, practice range), rest (bench sit, dugout lean, floor-sit, towel over shoulders), ritual (hand-wraps, glove-lacing, meditation, on-deck circle), celebration. **Max 2 core-action poses per pack** (swing / strike / stance / release / pitch families) and **at least 1 situation pose per pack** where the rows allow. Situation rows pair with a matching backdrop (dugout, gym, clubhouse, practice range — set in the manifest rows; if a situation row's backdrop still reads like an arena, fix the backdrop to fit the moment). A pack that renders as four variations of the same action = QC fail on the sheet, same teeth as the smiley rule.
+**Pack pose-gate (v1.9, hard requirement):** before pushing a pack's sheet, write the 4 poses + 4 framings in one line and verify no drift ("4× dribble" or "4× centered full-body" = fail, regen before push, not after).
+
 ## 7e. Expression doctrine — faces in action, not smiles by default
 Image models default to a smiley toy face unless forbidden; that default is now banned. These are sports cards: the face should be DOING something.
 - **Default expression = competitive intensity** — focus, exertion, grimace, dead-eyed competitor stare, roar, clenched jaw. Matches the pose: a card mid-strike should look like it costs something.
@@ -114,6 +119,14 @@ Image models default to a smiley toy face unless forbidden; that default is now 
 - **Neutral descriptors render non-smiling.** Rows reading calm/focused/determined/stoic/cold/serious must NOT come back smiling. A smile on one of those = the model ignored a pinned feature = reject under the anti-default rule.
 - **Pack balance:** at most 1–2 smiling faces per 4-card pack. Four grinning athletes in one pack = QC fail on the sheet, whoever's at fault.
 - **The render must match the row's stated expression literally** — "scowl" means scowl, "playful grin" means playful grin. Expression is a pinned slot like any other.
+
+## 7f. Framing + camera diversity (v1.9)
+The current drift: nearly every card is a centered, eye-level, full-body shot at the same distance — the toy-photo default. Framing is a variety axis like pose and backdrop.
+- **Framing menu:** full-body action / three-quarter / chest-up portrait / low-angle hero shot / over-the-shoulder or off-center dynamic.
+- **Per pack:** at least 1 chest-up or three-quarter framing, and no 4 cards sharing the same framing + angle combo.
+- **Band flavor:** low bands skew eye-level documentary; Icon+ bands earn low-angle hero shots and dramatic off-center frames.
+- **Row silence:** where the row doesn't pin a framing, the lane picks deliberately to balance the pack — same discipline as expressions.
+- **Signature VFX (Icon+ bands):** one persona-tied effect per card is encouraged at Icon band and up — Usain's lightning trail, golden confetti burst, spark/fire/energy trail on the strike. Keep it toy-consistent (no photoreal explosions), one effect per card, never covering the face or pinned features. This is the standout layer that makes high bands feel pulled from a different game.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
