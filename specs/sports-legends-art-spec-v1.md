@@ -1,5 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1
-### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.1 (names) and Economy v1 (values).
+# SPORTS LEGENDS — ART PRODUCTION SPEC v1.1
+### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.2 (names) and Economy v1 (values).
+**v1.1 (2026-08-08, hub):** baseball pose library extended with pitching poses (windup / delivery / follow-through) — the roster carries dedicated pitcher packs (All-Star, Ace, Eternal) and the batting-only library would have forced invention. Signature-features column now lives in the per-sport manifests (closes checklist item).
 
 ## 1. Core principle
 Each progression system answers a different question, so each owns a different visual zone. They never fight.
@@ -55,7 +56,7 @@ Ungraded → standard card. Graded → card returns **in a clear slab case** wit
 - **Ratio:** 2:3 portrait, opaque backdrop, no text/logos baked in.
 - **Signature features (per card, 2–3):** the recognizable non-likeness traits (bald + gap grin = Byson; beard + swept hair = Leo; flat cap + round cheeks = Bambino). Full column to be added to all 460 roster rows.
 - **Generic-uniform rule:** no teams, leagues, logos, jersey numbers, national stripe patterns, single-club color identities, sponsor marks, face tattoos, or photo reference.
-- **Pose library (per sport):** boxing (champion pose / uppercut), soccer (bicycle kick / strike), basketball (dunk / jump shot), baseball (batting stance / swing), NFL (throw / carry), MMA (stance / ground), racing (helmet off / podium), tennis (serve / forehand), WWE (entrance pose / taunt), golf (backswing / putt), cricket (cover drive / bowl), athletics (lightning pose / finish line), esports (chair + headset pose / keyboard flair).
+- **Pose library (per sport):** boxing (champion pose / uppercut), soccer (bicycle kick / strike), basketball (dunk / jump shot), baseball (batting stance / swing / pitching windup / full delivery), NFL (throw / carry), MMA (stance / ground), racing (helmet off / podium), tennis (serve / forehand), WWE (entrance pose / taunt), golf (backswing / putt), cricket (cover drive / bowl), athletics (lightning pose / finish line), esports (chair + headset pose / keyboard flair).
 - **Backdrop library (per sport):** ring, night stadium, arena, sunset ballpark, stadium tunnel, octagon, racetrack grid, Centre Court, entrance ramp, 18th green, cricket ground, track finish, dark LAN arena.
 - **Watermark:** bottom strip cropped/covered by frame in every output.
 
