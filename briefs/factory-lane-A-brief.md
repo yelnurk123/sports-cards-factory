@@ -32,3 +32,8 @@ Row missing features/pose/backdrop · two consecutive QC failures of the same ki
 - **Reports are text-only:** one line per pack ("campus pack: 4 cards pushed, laneC-campus.png sheet pushed, batch complete"). No pasted CSV, no pasted prompts, no prose summaries.
 - **Re-reads:** re-read the manifest + this brief at the start of each BATCH (not each pack). Re-read the full art spec ONLY when its version header changes (check the header line first).
 - **v1.9 framing diversity + pose-gate:** §7f framing menu (chest-up/three-quarter/low-angle/off-center) — min 1 chest-up or three-quarter per pack, no 4 identical framings. HARD pose-gate before every push: one line listing the 4 poses + framings; any 4-of-a-kind = regen before pushing. Icon+ bands may add one persona-tied VFX per card. NEVER commit the spec file — hub-owned; pull before each batch.
+
+## v2.0 + load rebalance (hub, 2026-08-08)
+- **New assignment after current work:** you take WWE (8 packs, manifest-wwe.csv, from Lane B) then RACING (8 packs, manifest-racing.csv, from Lane C). Plus regen queue: glf-ms-1, glf-ms-3, soc-wc-1/2/4.
+- **Elevated style lock (spec v2.0, §7g):** cinematic grading (rim-light, moody contrast — the MMA look), one storytelling element per card, VFX REQUIRED at Icon+, hero prop per chaser, framing escalates with band, GOAT/Eternal = moment cards. Read the spec header — version changed, full re-read required.
+- **Network discipline:** ONE commit per batch (cards + sheet + manifest in a single commit). Never force-push. Never commit files outside your manifests/cards/sheets.

@@ -1,4 +1,6 @@
-# SPORTS LEGENDS — ART PRODUCTION SPEC v1.9
+# SPORTS LEGENDS — ART PRODUCTION SPEC v2.0
+### (v2.0 2026-08-08, hub, user-directed): ELEVATED STYLE LOCK. Everything below still applies; v2.0 adds the elevated layer on top.
+**v2.0 elevated bar (§7g):** cinematic color grading (arena rim-light, moody contrast — the Lane B MMA look), one storytelling element per card, signature VFX REQUIRED at Icon+ (not optional), one hero prop per chaser, framing escalates with band (low = eye-level documentary; Icon+ = low-angle hero/off-center). GOAT/Eternal = "moment cards": the iconic frozen moment, not a stance. Naming pass deferred to post-production (names not baked into art).
 ### (v1.8 situation-pose section was lost in a lane file-overwrite 2026-08-08 and is restored in v1.9 — LANES: never commit the spec file; it is hub-owned. Pull before every batch.)
 ### Card architecture, template rules, and the production manifest. Companion to Grand Roster v3.5 (names) and Economy v1.1 (values).
 **v1.7 (2026-08-08, hub):** added §7e expression doctrine — user-flagged smiley-face drift. Sports cards are in-action portraits: default expression is competitive intensity, smiles are a persona feature, not a default.
@@ -127,6 +129,14 @@ The current drift: nearly every card is a centered, eye-level, full-body shot at
 - **Band flavor:** low bands skew eye-level documentary; Icon+ bands earn low-angle hero shots and dramatic off-center frames.
 - **Row silence:** where the row doesn't pin a framing, the lane picks deliberately to balance the pack — same discipline as expressions.
 - **Signature VFX (Icon+ bands):** one persona-tied effect per card is encouraged at Icon band and up — Usain's lightning trail, golden confetti burst, spark/fire/energy trail on the strike. Keep it toy-consistent (no photoreal explosions), one effect per card, never covering the face or pinned features. This is the standout layer that makes high bands feel pulled from a different game.
+
+## 7g. Elevated style (v2.0) — the bar for ALL cards from now on
+- **Cinematic grading:** arena rim-light, moody contrast, colored key lights per palette (the Lane B MMA look). No more flat daylight "toy photo" renders at any band — even Rookie cards get one dramatic light source.
+- **One storytelling element per card:** a moment, a prop, a gesture, a setting detail — something that makes THIS card different from every other card of the same athlete type.
+- **Signature VFX: REQUIRED at Icon band and up** (lightning trails, energy on the strike, confetti burst — persona-tied, toy-consistent, never covering the face). Below Icon: optional, max one.
+- **Hero prop per chaser:** Icon+ cards carry one recognizable object (golden shoes, chains, towel, arrow) that survives in silhouette.
+- **Framing escalates with band:** Rookie–Pro = eye-level documentary; All-Star–Champion = three-quarter and varied angles; Icon+ = low-angle hero shots, off-center drama, chest-up allowed.
+- **GOAT/Eternal = moment cards:** the iconic frozen moment (the bolt pose, the umpire argument), not a stance. If you can caption it with a headline, it's a moment card.
 
 ## 8. Production pipeline (per card)
 1. Generate base art from roster row (name + signature features + pose + backdrop).
