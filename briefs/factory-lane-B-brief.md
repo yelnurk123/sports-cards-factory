@@ -25,3 +25,9 @@ Ratio 2:3 · 1K · opaque. Output: `/mnt/agents/output/cards/base/{id}.png`
 
 ## Stop conditions
 Row missing features/pose/backdrop · two consecutive QC failures of the same kind · anything resembling a real person or trademark.
+
+## Batch gate + token discipline (user-mandated 2026-08-08)
+- **Batch gate:** produce in batches of 2–3 packs (8–12 cards) → push → STOP → report "batch complete: <pack names>" → wait for hub/user greenlight. No greenlight, no next batch. Batching is how QC stays cheap: a drift caught at card 8 costs 8 cards, not 40.
+- **Images stay OUT of chat:** never display individual card PNGs in the conversation — cards live in git only. The ONLY image you ever render is the assembled contact sheet, once per pack, for your own self-QC. If hub/user wants to review, they pull the sheet from git themselves (or ask hub) — do not re-display images on request, point at the git path instead.
+- **Reports are text-only:** one line per pack ("campus pack: 4 cards pushed, laneC-campus.png sheet pushed, batch complete"). No pasted CSV, no pasted prompts, no prose summaries.
+- **Re-reads:** re-read the manifest + this brief at the start of each BATCH (not each pack). Re-read the full art spec ONLY when its version header changes (check the header line first).
