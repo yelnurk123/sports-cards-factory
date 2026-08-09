@@ -5,6 +5,8 @@
 
 | Date | Question / conflict | Ruling | Citation |
 |---|---|---|---|
+| 2026-08-10 | Which pool card holds the 1.3× chase slot | **Biggest name in each pack carries 1.3×** (build-chat proposal, hub ratified). Applies to all future packs | result 2026-08-10-001 deviation 7; economy §2a |
+| 2026-08-10 | Foil spawn rates missing from canon | **HUB DEBT:** economy has 13-tier foil multipliers but no spawn odds. Foil roll correctly omitted from M1 (no invented odds). Foil spawn-rate spec owed before M2 | economy §2b; result 2026-08-10-001 deviation 4 |
 | 2026-08-10 | Income formula: master spec §2 said ×0.15, economy §2f said ÷5 | **Economy wins: $/s = Σ ÷ 5** (box worth Σ every ~5s, carried to Sell point) | economy §2f; teardown evidence $10 card → $2/s |
 | 2026-08-10 | Cards per pack open: roster packs hold 4 cards, reference machine hatches one | **One card per open**; pack's 4 cards = pull pool, 25% each, values 0.7/0.9/1.1/1.3 × rung center. Dupes feed leveling + evolution sink | economy §2a (ruling written in); reconstruction A5–A6 |
 | 2026-08-10 | Game display name | **Sports Card Farm** (user-published place name). "Sports Legends" survives only in legacy spec filenames | user decision 2026-08-10 |
