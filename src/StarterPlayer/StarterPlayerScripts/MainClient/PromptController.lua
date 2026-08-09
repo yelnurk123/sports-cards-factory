@@ -11,7 +11,7 @@ local SellController = require(script.Parent.SellController)
 local PromptController = {}
 
 function PromptController.OnStart(self: any)
-	ProximityPromptService.Triggered:Connect(function(prompt, _player)
+	ProximityPromptService.PromptTriggered:Connect(function(prompt, _player)
 		local tag = prompt:GetAttribute("Tag")
 		if tag == "PackInfo" then
 			local packId = prompt:GetAttribute("PackId")

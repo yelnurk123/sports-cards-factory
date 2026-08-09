@@ -150,24 +150,23 @@ function HudController.OnStart(self: any)
 	refreshMirror(nil)
 
 	-- top nav teleports (spec §11: Plaza / Base / Sell). Momentary buttons:
-	-- act on "selected", then drop the highlight straight away.
-	local function momentary(name: string, tip: string, action: () -> ())
+	-- act on the selected signal, then drop the highlight straight away.
+	local function momentary(name: string, action: () -> ())
 		local icon = Icon.new()
-			:setName(name)
-			:setLabel(name)
-			:setTip(tip)
-		icon:setEvent("selected", function()
+		icon:setName(name)
+		icon:setLabel(name)
+		icon.selected:Connect(function()
 			action()
 			icon:deselect()
 		end)
 		return icon
 	end
 
-	momentary("Plaza", "Teleport to the Plaza", function()
+	momentary("Plaza", function()
 		teleportTo(PlotLayout.PlazaSpot)
 	end)
 
-	momentary("Base", "Teleport to your plot", function()
+	momentary("Base", function()
 		local idx = player:GetAttribute("PlotIndex")
 		if idx then
 			teleportTo(PlotLayout.center(idx).Position + Vector3.new(0, 4, -14))
@@ -176,26 +175,25 @@ function HudController.OnStart(self: any)
 		end
 	end)
 
-	momentary("Sell", "Teleport to the Sell stall", function()
+	momentary("Sell", function()
 		teleportTo(PlotLayout.SellSpot)
 	end)
 
 	-- left rail (spec §11): Index works; Shop/Upgrade/Items are Coming Soon
 	local indexIcon = Icon.new()
-		:setName("Index")
-		:setLabel("Index")
-		:setTip("Collection catalog")
-	indexIcon:setEvent("selected", function()
+	indexIcon:setName("Index")
+	indexIcon:setLabel("Index")
+	indexIcon.selected:Connect(function()
 		local IndexController = require(script.Parent.IndexController)
 		IndexController:Toggle()
 	end)
-	indexIcon:setEvent("deselected", function()
+	indexIcon.deselected:Connect(function()
 		local IndexController = require(script.Parent.IndexController)
 		IndexController:Hide()
 	end)
 
 	for _, name in { "Shop", "Upgrade", "Items" } do
-		momentary(name, name .. " — coming soon", function()
+		momentary(name, function()
 			HudController:Toast(name .. " is coming in a later milestone!")
 		end)
 	end

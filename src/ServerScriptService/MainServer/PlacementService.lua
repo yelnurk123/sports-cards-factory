@@ -505,9 +505,9 @@ function PlacementService.OnStart(self: any)
 		clearAllModels(player)
 	end)
 
-	-- Open prompts are server-authoritative (ProximityPromptService.Triggered
-	-- replicates to the server with the triggering player).
-	ProximityPromptService.Triggered:Connect(function(player, prompt)
+	-- Open prompts are server-authoritative (ProximityPromptService.PromptTriggered
+	-- fires on the server with the triggering player).
+	ProximityPromptService.PromptTriggered:Connect(function(prompt, player)
 		if prompt:GetAttribute("Tag") ~= "OpenPack" then
 			return
 		end
