@@ -1,5 +1,5 @@
 id,name,pack,band,signature_features,pose,backdrop,palette,status,qc_note
-soc-st-1,Ronnie Magic,Street,Rookie,"wild curly hair, huge samba smile",rainbow-flick juggle,street court colorful walls,yellow/green,approved,yellow+green Brazil-adjacent but generic solid — keep
+soc-st-1,Ronnie Magic,Street,Rookie,"wild curly hair, huge samba smile",rainbow-flick juggle,street court colorful walls,yellow/green,generated,"yellow+green Brazil-adjacent but generic solid — keep | laneA: USER-DIRECTED top-20 cross-lane remake — situation replaces stance/static per moment-doctrine; pins kept; frameless, wm cropped"
 soc-st-2,Zizou,Street,Rookie,"light olive French-Algerian skin tone, bald, neat dark goatee, elegant calm",instep maestro strike,night stadium floodlights,white/navy,generated,"VARIETY REGEN (user-ordered): generic pose - regenerate as instep maestro strike; pins added | laneA variety regen PASS: bald + goatee rendered, instep maestro strike (not generic run)"
 soc-st-3,Bendham,Street,Rookie,"stylish swept-back dark hair, confident charm",free-kick curled follow-through,packed stadium evening,red/white,generated,
 soc-st-4,Terry Henry,Street,Rookie,"short cropped dark hair, cool composed smile",striker volley mid-swing,stadium floodlights roaring crowd,solid red/white trim,generated,"REGEN: white sleeves = Arsenal pattern, replaced with trim | laneA: FAMILY ELEVATION regen — seed-era card rebuilt as signature moment (volley at exact connection moment) per moment-doctrine; frameless, wm cropped"
@@ -60,6 +60,6 @@ soc-et-2,Platini Elegant,Eternal,Eternal,"fair French-Italian skin tone, recedin
 soc-et-3,Gianluca the Bald Eagle,Eternal,Eternal,"fair Italian skin tone, bald, intense striker face, charismatic grin",acrobatic volley,stadium night,navy/white,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
 soc-et-4,Kalle,Eternal,Eternal,"fair German skin tone, 80s blond hair, powerful forward build, executive smile",power-and-polish strike,sepia stadium,crimson/cream,generated,"laneA: generated — all pins rendered, frameless, wm cropped"
 soc-gt-1,Leo the GOAT,GOAT,GOAT,"brown beard, dark swept hair",bicycle kick,night stadium,white/sky-blue,approved,
-soc-gt-2,C. Roni,GOAT,GOAT,"chiseled jaw, short black hair, intense stare",siu-style leap header,stadium floodlights,red/white,approved,
+soc-gt-2,C. Roni,GOAT,GOAT,"chiseled jaw, short black hair, intense stare",siu-style leap header,stadium floodlights,red/white,generated,"laneA: USER-DIRECTED top-20 cross-lane remake — situation replaces stance/static per moment-doctrine; pins kept; frameless, wm cropped"
 soc-gt-3,Pello,GOAT,GOAT,"70s short afro, joyous king smile",classic overhead kick,sepia vintage stadium,yellow/green,approved,
 soc-gt-4,Diego D10S,GOAT,GOAT,"curly 80s hair, fiery passionate face",mazy dribble glide,vintage stadium,blue/white,generated,
