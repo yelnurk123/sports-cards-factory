@@ -25,6 +25,7 @@ Suffix ladder: $ → K → M → B → T → Qa → Qi → Sx → Sp → Oc → 
 
 ### 2a. Base ($/Card by rarity band)
 Card base = **pack rung price ÷ 10**. The 4 cards inside a pack spread 0.7× / 0.9× / 1.1× / 1.3× around that center.
+**Hub ruling 2026-08-10 (cards per pack):** one pack open yields **ONE card** (teardown machine, reveal ceremony is singular). The pack's 4 roster cards are the pull pool, equal 25% weight each, at the spread values above. Pull duplicates are expected — they feed leveling investment and later the evolution dupes sink.
 
 ### 2b. Foil ladder (13 tiers) — anchored to measured Golden ×1.5, Diamond ×2, Venomous ×3
 | # | Foil | × | # | Foil | × |

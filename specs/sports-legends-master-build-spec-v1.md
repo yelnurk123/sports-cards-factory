@@ -28,7 +28,7 @@ One card instance = `cardID × foil × level × grade × trait`. Two "same" card
 | Trait (roll) | Secondary % boost (see §7) | mirrors teardown trait machine |
 
 **Value formula:** `value = base × foilMult × 1.18^(level−1) × gradeMult × traitMult`
-**Income:** displayed cards drip `$/s ≈ displayedValueSum × 0.15`.
+**Income:** displayed cards drip `$/s = displayedValueSum ÷ 5` — a box worth Σ spawns on the conveyor every ~5s and is carried to the Sell point (economy §2f, frame-verified: $10 card → $2/s). Hub ruling 2026-08-10: economy file wins on numbers; this line previously said ×0.15 — corrected.
 **Sell:** ~50% of value, paid at the Sell stall ("Scout NPC" buys your box).
 
 ## 3. Packs, conveyor & the rung ladder
