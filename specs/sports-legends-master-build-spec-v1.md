@@ -1,6 +1,7 @@
 # SPORTS LEGENDS CARD FARM — MASTER BUILD SPEC v1
 ### The game loop and systems blueprint for Kimi Code. Hub canon, 2026-08-10.
-**How to use this file:** this is the single blueprint for building the game. It adapts the proven Anime Card Farm machine (frame-verified teardown) to Sports Legends canon. When this spec conflicts with anything, this spec wins for the build; the repo canon (roster, economy, art spec) wins for content and numbers. Canon files in the repo:
+**How to use this file:** this is the single blueprint for building the game. It adapts the proven Anime Card Farm machine (frame-verified teardown) to Sports Legends canon. When this spec conflicts with anything, this spec wins for the build; the repo canon (roster, economy, art spec) wins for content and numbers.
+**Reference anchor (canon rule, 2026-08-10):** `specs/anime-card-farm-flow-reconstruction.md` (and `reference/anime-card-farm-teardown.html`) is THE reference for how this game plays and feels. When the spec is silent on a flow or UX detail, follow it and cite it. When it suggests something different from the spec, flag it in `notes/hub-questions.md` as a proposal with the citation — never change course silently, never invent flow details, never drift without a dated decision. Canon files in the repo:
 - `specs/sports-legends-grand-roster-v3.md` — every card, pack, band (492 cards incl. rugby; +24 bonus cards pending adoption)
 - `specs/sports-legends-economy-v1.md` — 45-rung price table, foil ladder, evolution values
 - `specs/sports-legends-art-spec-v1.md` — card architecture: band owns ribbon, foil owns frame, grade owns slab
