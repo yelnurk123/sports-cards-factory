@@ -12,10 +12,13 @@ Central storage + reference for the Sports Legends Card Farm project, AND the ga
 - `art-tests/` — review sheets + style test history
 - `src/` — game code (Argon project, `default.project.json`):
   - `src/ReplicatedStorage/Shared` — modules both sides use (config, formulas, data)
-  - `src/ServerScriptService/Server` — server logic (services, economy, saves)
-  - `src/StarterPlayer/StarterPlayerScripts/Client` — client logic (controllers, UI, input)
-  - `src/StarterGui/UI` — interface assets
-  - `src/Workspace` — static map pieces (M1 builds its blockout map in code)
+  - `src/ReplicatedStorage/Packages` — shared libs (Loader, Signal, Icon/TopbarPlus)
+  - `src/ServerScriptService/MainServer` — boot Script (`init.server.lua`) + service children
+  - `src/ServerScriptService/Packages` — server libs (ProfileStore, Cmdr)
+  - `src/ServerScriptService/CmdrCommands` — admin commands (givecash/givepack/unlockall)
+  - `src/StarterPlayer/StarterPlayerScripts/MainClient` — client boot (`init.client.lua`) + controller children
+  - `src/StarterGui` — interface assets (M1 builds its HUD in code)
+  - The blockout map is built in code by WorldService. **No Workspace mapping** — an empty mapped dir would wipe the live place's Workspace on first Argon sync.
 
 ## Rules of the road
 1. **Pull before you act.** `git pull --rebase` before every pack/batch. Never work stale.
@@ -25,4 +28,4 @@ Central storage + reference for the Sports Legends Card Farm project, AND the ga
 5. **Specs/briefs change → hub bumps the version note in the file header and says so in the commit.** Lanes re-read on the next pull.
 6. **Only `approved` cards are final.** Factories mark `generated`; the hub marks `approved` after sheet review.
 7. **No tokens, keys, or secrets in this repo, ever.**
-8. **Code changes commit early and often, plain-language messages.** `.lua` extension convention (Argon `lua_extension true`): `.server.lua` = Script, `.client.lua` = LocalScript, plain `.lua` = ModuleScript.
+8. **Code changes commit early and often, plain-language messages.** `.lua` extension convention (Argon `lua_extension true`): `.server.lua` = Script, `.client.lua` = LocalScript, plain `.lua` = ModuleScript. **Scripts with children use the `init` convention** (`MainServer/init.server.lua` + siblings become the Script's children) — Argon does NOT merge an adjacent `Foo.lua` + `Foo/` pair, it produces a duplicate Folder.

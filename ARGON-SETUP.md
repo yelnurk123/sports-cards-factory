@@ -34,3 +34,5 @@ cd ~/factory/sports-cards-factory
 - Repo is truth. If Studio state drifts, re-sync from files, don't pull Studio → files.
 - Commit early and often; plain-language messages.
 - No secrets in the repo.
+- **`init` convention for scripts with children:** `MainServer/init.server.lua` makes the directory itself the Script and its siblings the children. Argon does NOT merge an adjacent `Foo.lua` + `Foo/` pair (you get a Script AND a same-named Folder, and requires break).
+- **Workspace is deliberately not mapped** in `default.project.json`: an empty `src/Workspace` synced with Server priority would delete the place's real Workspace contents. The M1 map is built in code (`WorldService`). Add the mapping back only when real static instances live in `src/Workspace`.
