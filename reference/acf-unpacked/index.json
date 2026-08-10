@@ -1,0 +1,536 @@
+{
+  "source": "/Users/yelnur/factory/sports-cards-factory/reference/anime-card-farm-teardown.html",
+  "image_count": 53,
+  "images": [
+    {
+      "file": "images/001-craft-anime-card-farm-teardown.jpg",
+      "caption": "[CRAFT🔨] Anime Card Farm — teardown",
+      "section": "",
+      "width": 256,
+      "height": 256,
+      "bytes": 24187,
+      "source_sha1": "ded05e6d134d7cac73ec3c4c8dd283bdb17f6bc9",
+      "source": "embedded"
+    },
+    {
+      "file": "images/002-server-boards-left-is-the-tower-highest-floor-th.jpg",
+      "caption": "Server boards: left is the Tower \"Highest Floor\" (the top 8 are all stuck at floor 963 — a soft cap); right is \"People\", a leaderboard ranked by Cash net worth (leader at $3.48O — octillion). The game publicly measures players in money.",
+      "section": "02 Passport & market",
+      "width": 1200,
+      "height": 631,
+      "bytes": 167777,
+      "source_sha1": "5568904998113d6c4d3c7f86ae066477bfeefa2f",
+      "source": "embedded"
+    },
+    {
+      "file": "images/003-the-first-screen-after-joining-is-daily-rewards.jpg",
+      "caption": "The first screen after joining is Daily Rewards (7 days, 24h cooldown): D1 $100 → D2 Eclipse Pack (Secret) → … → D7 Shadow Monarch (Rainbow). The return hook lands before the tutorial even starts.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 120246,
+      "source_sha1": "758bb969fb40bafc80e3eafab427054bbc872cbe",
+      "source": "embedded"
+    },
+    {
+      "file": "images/004-tutorial-spawn-buy-your-first-pack-top-nav-plaza.jpg",
+      "caption": "Tutorial: \"SPAWN & BUY YOUR FIRST PACK\". Top nav Plaza / Base / Sell; left rail Shop · Index · Upgrade · Items; a spawn-pack pedestal, Conveyor Settings, and the first Robux pads (Starter ⬡9, 2x Cash ⬡119).",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 198834,
+      "source_sha1": "71ad929ec0673b6dd907f63b05f29789f7e20a4f",
+      "source": "embedded"
+    },
+    {
+      "file": "images/005-buying-a-pack-at-the-podium-ice-pack-common-100.jpg",
+      "caption": "Buying a pack at the podium: Ice Pack — Common — $100 ( E Buy). Billboards read \"JOIN THE GROUP FOR 1.25x CASH!\" and a like goal 61.3K/100K; a limited chase-card ticker scrolls up top.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 205789,
+      "source_sha1": "193ac627649e0f88a40d2689fe4d807ec8f9c9cc",
+      "source": "embedded"
+    },
+    {
+      "file": "images/006-the-pack-is-placed-on-your-plot-and-opens-on-a-t.jpg",
+      "caption": "The pack is placed on your plot and opens on a timer: \"OPENING IN\", ~5 min base, E Skip 5min. The timer grows with pack rarity — the game's core \"time wall\".",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 204920,
+      "source_sha1": "800f090d435e14088a955028a7d9af8c4f986efd",
+      "source": "embedded"
+    },
+    {
+      "file": "images/007-first-card-frosty-fighter-common-normal-10card-a.jpg",
+      "caption": "First card: Frosty Fighter — Common — Normal — $10/Card. A card = name × rarity × finish × level; here everything is at base.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 144475,
+      "source_sha1": "aca52b59d06c88e5c20e99edba88d35636f8fc50",
+      "source": "embedded"
+    },
+    {
+      "file": "images/008-you-carry-the-card-on-the-plot-it-drips-income-a.jpg",
+      "caption": "You carry the card; on the plot it drips income — a \"You make: $2/s\" sign and a \"BEST CARD $10/Card\" tracker. The box gains value as cards accumulate.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 195864,
+      "source_sha1": "c8984b4d72adb3b50bfa7ef6b9e8d7eaec94e9d4",
+      "source": "embedded"
+    },
+    {
+      "file": "images/009-selling-the-central-sell-stall-npc-card-hunter-a.jpg",
+      "caption": "Selling: the central SELL stall, NPC \"Card Hunter\". A 5-option dialog — sell inventory / this / cards only / packs only / nevermind. Payout is ~50% of value.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 180642,
+      "source_sha1": "cbd42e8aaa97e444c8c91c8ceef8a013cc2d2058",
+      "source": "embedded"
+    },
+    {
+      "file": "images/010-tutorial-complete-cards-level-up-lvl-12-costs-2.jpg",
+      "caption": "Tutorial complete. Cards level up: Lvl 1→2 costs $2 (→ $11/Card), Lvl 2→3 costs $3. Both the level price and the $/Card gain scale with the card's rarity.",
+      "section": "03 Core loop: from the first second",
+      "width": 1200,
+      "height": 631,
+      "bytes": 194677,
+      "source_sha1": "a5e3b410a54f2cbe35d5e423333c88e8be67ce12",
+      "source": "embedded"
+    },
+    {
+      "file": "images/011-conveyor-settings-the-canonical-rarity-ladder-th.jpg",
+      "caption": "Conveyor Settings — the canonical rarity ladder. The Warn/Auto-Buy grid shows 9 base packs = 9 tiers: Ice(Common) · Sand(Uncommon) · Inferno(Rare) · Lightning(Epic) · Hightech(Legendary) · Dark(Mythic) · Eclipse(Secret) · Isekai(Divine) · Slayer(Transcendent).",
+      "section": "04 Packs, conveyor & the rarity ladder",
+      "width": 1200,
+      "height": 631,
+      "bytes": 143312,
+      "source_sha1": "b5b72995d12902786fdcac35f0e79fa9c9c50faa",
+      "source": "embedded"
+    },
+    {
+      "file": "images/012-scrolling-the-same-panel-the-ladder-does-not-sto.jpg",
+      "caption": "Scrolling the same panel: the ladder does not stop at Transcendent. Premium tiers continue — Shadow(Monarch) · Emperor(Pirate King) · Demon · Manga · Celestial(Galaxy) · Heavenly(Heaven) · Corrupted(Void) · Striker(Soccer) · … · Chainsaw · Grail · Blaze · Devour. The full ladder is 41 rarity tiers, each its own pack and card pool.",
+      "section": "04 Packs, conveyor & the rarity ladder",
+      "width": 1200,
+      "height": 631,
+      "bytes": 145331,
+      "source_sha1": "e29740ebdda4e9943a76e28e89114a0456598c4a",
+      "source": "embedded"
+    },
+    {
+      "file": "images/013-exclusive-shop-premium-robux-packs-with-an-odds.jpg",
+      "caption": "Exclusive Shop — premium Robux packs with an odds table. Royal Pack (⬡99/299/799): $1.2K 48.5% · $25K 32% · $500K 14% · $40M 5% · LIMITED $500M 0.5%. The odds skeleton is ≈ 48.5 / 32 / 14 / 5 / 0.5%; a higher pack shifts the whole value curve up.",
+      "section": "04 Packs, conveyor & the rarity ladder",
+      "width": 1200,
+      "height": 631,
+      "bytes": 166174,
+      "source_sha1": "70e49e22fa540b599bbf2f49b44d5ec61307b2d8",
+      "source": "embedded"
+    },
+    {
+      "file": "images/014-index-a-catalog-of-2132-cards-organized-by-finis.jpg",
+      "caption": "Index — a catalog of 2,132 cards, organized by finish tabs (Normal · Golden · Diamond · Venomous · Rainbow · Sakura · Candy · …). A card's identity = Finish × Rarity × Name; unowned entries are hidden as \"???\".",
+      "section": "05 A card = 5 value multipliers",
+      "width": 1200,
+      "height": 631,
+      "bytes": 148155,
+      "source_sha1": "26b6193bd6694f80c3176cbe2f5e4e1b7f65531a",
+      "source": "embedded"
+    },
+    {
+      "file": "images/015-the-same-cybernetic-heroine-legendary-in-normal.jpg",
+      "caption": "The same Cybernetic Heroine (Legendary) in Normal finish — $2.0K/Card.",
+      "section": "05 A card = 5 value multipliers",
+      "width": 1000,
+      "height": 526,
+      "bytes": 101251,
+      "source_sha1": "a7dfb72d942d3c7541d1677d3222d8e0f6188f5c",
+      "source": "embedded"
+    },
+    {
+      "file": "images/016-the-same-card-in-golden-30kcard-15-venomous-is-6.jpg",
+      "caption": "The same card in Golden — $3.0K/Card (×1.5). Venomous is $6.0K (×3.0).",
+      "section": "05 A card = 5 value multipliers",
+      "width": 1000,
+      "height": 526,
+      "bytes": 104778,
+      "source_sha1": "1beff322ecf215013473301a9c1692de97e7860a",
+      "source": "embedded"
+    },
+    {
+      "file": "images/017-plaza-from-above-three-stalls-shop-sell-upgrade.jpg",
+      "caption": "Plaza from above: three stalls SHOP / SELL / UPGRADE plus six activity stations — CARD CRAFT, CARD RANKING (rank), BOSS RAID, TRAITS ROLL, INFINITY TOWER, FREE REWARDS (ads).",
+      "section": "06 Plaza — the activity hub",
+      "width": 1200,
+      "height": 631,
+      "bytes": 208143,
+      "source_sha1": "e21d1c59d708bcc9fcb74d191d09bc6a9e9f1e79",
+      "source": "embedded"
+    },
+    {
+      "file": "images/018-the-upgrade-stall-5-upgrades-with-dual-pricing-c.jpg",
+      "caption": "The UPGRADE stall — 5 upgrades with dual pricing (Cash or Robux ⬡): Base Expansion (slots) · Luck Boost (+% rarer packs) · Cash Boost (+% on selling) · Time Boost (−% timer) · Speed Boost. The Cash price escalates steeply per level.",
+      "section": "06 Plaza — the activity hub",
+      "width": 1200,
+      "height": 631,
+      "bytes": 140656,
+      "source_sha1": "f31c9e8028b2f4b8e4aff0611c0a7bbcd634a2c3",
+      "source": "embedded"
+    },
+    {
+      "file": "images/019-the-items-stall-5-materials-rank-gems-roll-rank.jpg",
+      "caption": "The Items stall — 5 materials: Rank Gems (roll rank) · Trait Gems (roll trait) · Raid Shards (universal, from any boss) · White Titan Shards · Moon Demon Shards (boss-specific, feed boss-card crafts).",
+      "section": "06 Plaza — the activity hub",
+      "width": 1200,
+      "height": 631,
+      "bytes": 98206,
+      "source_sha1": "dba77c036c97aba08e429795e1c3899a52d52a90",
+      "source": "embedded"
+    },
+    {
+      "file": "images/020-potions-timed-boosts-cash-i-2-minutes-10-cash-bo.jpg",
+      "caption": "Potions — timed boosts. Cash I: \"[2 Minutes] +10% Cash Boost\", Use / Use(5x), stack cap 250. Three lines (Cash/Luck/Mutation) × three tiers (I–III).",
+      "section": "06 Plaza — the activity hub",
+      "width": 1200,
+      "height": 631,
+      "bytes": 133176,
+      "source_sha1": "a503f3d55d2514e7a5bffb49c4f48d995a6862ba",
+      "source": "embedded"
+    },
+    {
+      "file": "images/021-rank-machine-card-ranking-roll-rank-with-rank-ge.jpg",
+      "caption": "Rank Machine (Card Ranking). Roll rank with Rank Gems (⬡1) or Cash. Rank is the card's Cash multiplier. Ladder: F 1x 32% · E 1.1x 26% · D 1.2x 18% · C 1.35x 12% · B 1.6x 7% · A 2x 3.82% · S 3x 1% · SS 6.5x 0.1% · SR 8x 0.05% · UR 10x 0.02% (+ LR).",
+      "section": "07 The rolls: Rank & Trait",
+      "width": 1200,
+      "height": 631,
+      "bytes": 156336,
+      "source_sha1": "379eeafdeba841d3d6f896eb50a38aef29ba9558",
+      "source": "embedded"
+    },
+    {
+      "file": "images/022-traits-machine-traits-roll-a-mirror-of-the-rank.jpg",
+      "caption": "Traits Machine (Traits Roll) — a mirror of the Rank Machine but with Trait Gems, pity 1500/4000. A trait is a card's second power multiplier: single-stat tiers (Fortune/Vigor/Strength) plus rare combo traits that buff Cash + Damage + HP at once.",
+      "section": "07 The rolls: Rank & Trait",
+      "width": 1200,
+      "height": 631,
+      "bytes": 167626,
+      "source_sha1": "52a913a0b16f2da3ca5e9eef9ef04bbdfa771d50",
+      "source": "embedded"
+    },
+    {
+      "file": "images/023-card-craft-a-grid-of-13-evolution-recipes-flame.jpg",
+      "caption": "Card Craft — a grid of 13 evolution recipes: Flame Pillar $2.4M · Emperor King $70M · Silent Esper $6.5B · Genius Striker $890B · … · Black Reaper $2.0O/Card (top recipe).",
+      "section": "08 Card Craft evolution",
+      "width": 1000,
+      "height": 526,
+      "bytes": 98123,
+      "source_sha1": "95325ca0bc2b984352f64aacb63f45d5feb055f8",
+      "source": "embedded"
+    },
+    {
+      "file": "images/024-recipe-detail-needs-wind-slayer-serpent-slayer-f.jpg",
+      "caption": "Recipe detail: needs Wind Slayer + Serpent Slayer + Fog Slayer (all Transcendent, 1 each) + $1.8M and a Mutations slot → CRAFT.",
+      "section": "08 Card Craft evolution",
+      "width": 1000,
+      "height": 526,
+      "bytes": 95534,
+      "source_sha1": "3d7b2cf84bd79d9caa41c910796262d5d5595872",
+      "source": "embedded"
+    },
+    {
+      "file": "images/025-boss-raid-enter-through-the-red-portal-at-plaza.jpg",
+      "caption": "Boss Raid: enter through the red portal at Plaza center → an arena. The boss (White Titan) opens on a ~30-min cycle, with a Raid Shop right in the arena. E Boss Fight when it is open.",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 131148,
+      "source_sha1": "66a692c2c2944a243e9568060865303f1f2c8a24",
+      "source": "embedded"
+    },
+    {
+      "file": "images/026-raid-setup-a-team-of-4-cards-equip-best-difficul.jpg",
+      "caption": "Raid setup: a team of 4 cards + Equip Best, difficulty EASY / MEDIUM / HARD / NIGHTMARE. A card in combat = HP + DMG + Rank (Vision Striker: ❤1.7Qd / ⚔842.1T).",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 123929,
+      "source_sha1": "66b86f18822bb82042a9c5a56de229339b41393e",
+      "source": "embedded"
+    },
+    {
+      "file": "images/027-the-fight-is-4-phases-segmented-hp-bar-5-min-tim.jpg",
+      "caption": "The fight is 4 phases (segmented HP bar), ~5-min timer. Phase 3/4 = \"TITAN RAGE\": the boss enrages, damage jumps 261 → 1.3M. Recommended DMG/card by difficulty: Easy 1.3B · Medium 24.4Qn · Hard 4.7O (octillion); Nightmare higher still.",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 134193,
+      "source_sha1": "e1a00b3465a12ea23c8f513b11e4497c41ffd94e",
+      "source": "embedded"
+    },
+    {
+      "file": "images/028-raid-rewards-x22-raid-shards-x4-white-titan-shar.jpg",
+      "caption": "Raid Rewards: x22 Raid Shards + x4 White Titan Shards + a \"Cursed Cash\" card (Lvl 1). Cooldown is 1 fight per hour. Raid Shop: White Titan card for 150 shards (=50% of your best card), Moon Demon for 175 (=60%).",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 54863,
+      "source_sha1": "b8e5d1a89cb46e680c946520f4a4891b663337bc",
+      "source": "embedded"
+    },
+    {
+      "file": "images/029-infinity-tower-a-team-of-4-cards-battle-rewards.jpg",
+      "caption": "Infinity Tower: a team of 4 cards → BATTLE. Rewards \"every two floors\" by milestone: Cash 25% Floor 1+ · potions · Rank Gems 10% Floor 100+ · Trait Gems 16% Floor 200+. The server leader sits at floor 963.",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 135096,
+      "source_sha1": "030b0de7101598986ca0e1e93afecd5b8fa71822",
+      "source": "embedded"
+    },
+    {
+      "file": "images/030-tower-gameplay-is-a-1v1-auto-battle-your-dmg-vs.jpg",
+      "caption": "Tower gameplay is a 1v1 auto-battle: your DMG vs the enemy's HP (Fog Slayer 1.1B one-shots early floors). Enemy HP scales per floor; Auto Replay + Show/Hide Battle let you climb hands-free while walking your base. A 2x Tower Speed pass speeds the animation.",
+      "section": "09 Combat: Boss Raid & Tower",
+      "width": 1200,
+      "height": 631,
+      "bytes": 150247,
+      "source_sha1": "c32fbaf06e00eb16ae53e1194f3db5365123cbaa",
+      "source": "embedded"
+    },
+    {
+      "file": "images/031-tower-rewards-for-one-climb-floor-68-the-main-fr.jpg",
+      "caption": "Tower rewards for one climb (Floor 68) — the main free faucet of gems and potions: $4.13B + a pile of potions (Cash/Luck/Mutation I–III). This is where a player gets the consumables to roll with.",
+      "section": "10 Economy & prices",
+      "width": 1200,
+      "height": 631,
+      "bytes": 71389,
+      "source_sha1": "fb7f84526ca89288beef0baaa653a7e38d7d1150",
+      "source": "embedded"
+    },
+    {
+      "file": "images/032-the-native-roblox-store-tabs-home-top-picks-pass.jpg",
+      "caption": "The native Roblox store: tabs Home · Top picks · Passes · Currency · Consumables. Passes: 2x Roll ⬡299 · 2x Tower ⬡199 · V.I.P ⬡199 · 2x Offline ⬡79 · Auto Conveyor ⬡899 · 2x CASH ⬡119. The ⬡ prices match the API 1:1.",
+      "section": "11 Monetization",
+      "width": 1200,
+      "height": 631,
+      "bytes": 155848,
+      "source_sha1": "7f19cf6c47733c3389e9b974dc15ca36d8b54d82",
+      "source": "embedded"
+    },
+    {
+      "file": "images/033-podiums-of-robux-chase-cards-on-limited-stock-ve.jpg",
+      "caption": "Podiums of Robux chase cards on limited stock: Venomous Almighty King $45.6B/Card ⬡449 (669/1000) · Glitch Vision Striker $5.75T/Card ⬡999 · Admin Ember Elf $33.6Sp/Card ⬡4799 (0/125 — sold out). Buy the dream directly.",
+      "section": "11 Monetization",
+      "width": 1200,
+      "height": 631,
+      "bytes": 191095,
+      "source_sha1": "310be77b82c0788bb374ccab67ab6c03f724746a",
+      "source": "embedded"
+    },
+    {
+      "file": "images/034-the-cards-panel-storage-2150-an-equip-best-butto.jpg",
+      "caption": "The cards panel: Storage 2/150, an Equip Best button (\"Equipped 3 best cards!\") that auto-fills the base slots with your highest-value cards; a 10-slot hotbar (keys 1–0) for quick placement.",
+      "section": "12 HUD & menus",
+      "width": 1200,
+      "height": 631,
+      "bytes": 156982,
+      "source_sha1": "8c9bdb8acdd6e60c483c2e58277ad3e06d02da44",
+      "source": "embedded"
+    },
+    {
+      "file": "images/035-the-upgrades-panel-with-its-caps-cash-boost-200.jpg",
+      "caption": "The Upgrades panel with its caps: Cash Boost +200% MAX (→ Cash 3.00x), Time Boost −24% MAX; right side is the persistent HUD Luck 14.60x / Cash 3.00x — the sum of upgrades + passes + gems + potions.",
+      "section": "12 HUD & menus",
+      "width": 1200,
+      "height": 631,
+      "bytes": 131585,
+      "source_sha1": "68ccd3385677e05aa70d6df074a2a9464cfc9de5",
+      "source": "embedded"
+    },
+    {
+      "file": "images/036-playtime-rewards-a-session-ladder-of-12-rewards.jpg",
+      "caption": "PlayTime Rewards — a session ladder of 12 rewards (cash/packs/cards) that resets when you leave (\"Leaving Resets Progress!\"). Claim All for ⬡449 monetizes impatience.",
+      "section": "13 Retention",
+      "width": 1200,
+      "height": 631,
+      "bytes": 125367,
+      "source_sha1": "bcec4b4755a99ebf3d61f50396eea992e155995d",
+      "source": "embedded"
+    },
+    {
+      "file": "images/037-free-rewards-a-rewarded-ad-4-videosday-a-random.jpg",
+      "caption": "Free Rewards — a rewarded ad: 4 videos/day, a random drop from Rank Gems / Trait Gems / Time III / Luck III / Cash III potions. An F2P trickle of gems and consumables.",
+      "section": "13 Retention",
+      "width": 1200,
+      "height": 631,
+      "bytes": 143871,
+      "source_sha1": "43df9f12e073ddded0c1241f311552d94695881f",
+      "source": "embedded"
+    },
+    {
+      "file": "images/038-player-gifting-another-player-sends-an-player-gi.jpg",
+      "caption": "Player gifting: another player sends an \"@player Gift You!\" popup with Accept/Decline. This is the trade channel; Settings has a \"Block Gift request\" toggle (default NO).",
+      "section": "13 Retention",
+      "width": 1200,
+      "height": 631,
+      "bytes": 180382,
+      "source_sha1": "b86ac96f01ef5c14d8659489bea6d3acf4116146",
+      "source": "embedded"
+    },
+    {
+      "file": "images/039-in-place-of-achievement-badges-are-collective-go.jpg",
+      "caption": "In place of achievement badges are collective goals: a \"LIKE THE GAME FOR BIG UPDATE\" board with a like counter 61.3K/100K and \"JOIN THE GROUP FOR 1.25x CASH\". Social actions convert into an in-game bonus and update pressure.",
+      "section": "14 Badges & the social funnel",
+      "width": 1200,
+      "height": 631,
+      "bytes": 200439,
+      "source_sha1": "c9712a36f6421b6c33be7655948d9b45a03936f9",
+      "source": "embedded"
+    },
+    {
+      "file": "images/040-the-full-screen-pack-open-the-card-art-fills-the.jpg",
+      "caption": "The full-screen pack open: the card art fills the screen with $/Card + Rarity + Finish (Titan Shadow — Shadow — Diamond).",
+      "section": "15 SFX, VFX & ceremonies",
+      "width": 1000,
+      "height": 526,
+      "bytes": 92338,
+      "source_sha1": "7dfb45c5fb1f06a16ab011d1d5c7bbdd7681635d",
+      "source": "embedded"
+    },
+    {
+      "file": "images/041-each-finish-gets-its-own-color-and-glow-wind-sla.jpg",
+      "caption": "Each finish gets its own color and glow (Wind Slayer — Transcendent — Diamond). Rarity reads instantly from the frame and shine.",
+      "section": "15 SFX, VFX & ceremonies",
+      "width": 1000,
+      "height": 526,
+      "bytes": 94560,
+      "source_sha1": "b3b02b98b516a9dce6998f663e50b86850507f47",
+      "source": "embedded"
+    },
+    {
+      "file": "images/042-436410-viewsanime-card-farming-roblox-gamerblox.jpg",
+      "caption": "436,410 viewsANIME CARD FARMING ROBLOX 😱 GamerBlox",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 72172,
+      "source_sha1": "151c8eef9f821a0f0ce1ce0d7e5bd32ffecd199b",
+      "source": "embedded"
+    },
+    {
+      "file": "images/043-52993-viewsstarting-as-noob-with-op-card-in-anim.jpg",
+      "caption": "52,993 viewsStarting as Noob with OP CARD in Anime Card Farm Roblox! NagRoblox",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 65223,
+      "source_sha1": "ff7d0ebb2f5da817c3fa15f4610adaf0ca2112cd",
+      "source": "embedded"
+    },
+    {
+      "file": "images/044-35683-viewsupdate-codes-all-working-codes-for-an.jpg",
+      "caption": "35,683 views*UPDATE CODES* ALL WORKING CODES FOR ANIME CARD FARM IN JUNE 2026 ROBLOX ANIME CARD FARM CODES Codes Zone Gaming",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 43387,
+      "source_sha1": "a2db4478bebe46279acf7eec9bc43a684b7fea65",
+      "source": "embedded"
+    },
+    {
+      "file": "images/045-11768-viewsnew-all-working-codes-in-anime-card-f.jpg",
+      "caption": "11,768 views*NEW* all WORKING CODES in Anime Card Farm IN 2026! Beastly.Roblox",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 45026,
+      "source_sha1": "533cbb420bceda0c502e98643c534fa77e7feaa8",
+      "source": "embedded"
+    },
+    {
+      "file": "images/046-11144-viewsthe-new-fastest-way-to-become-op-in-a.jpg",
+      "caption": "11,144 viewsThe NEW fastest way to become OP in Anime Card Farm StarkiIIer",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 49565,
+      "source_sha1": "8a67984272ba387aa68ab2e18359e64a3be68b26",
+      "source": "embedded"
+    },
+    {
+      "file": "images/047-7836-viewshow-to-become-op-fast-in-anime-card-fa.jpg",
+      "caption": "7,836 viewsHOW TO BECOME OP FAST IN ANIME CARD FARM StarkiIIer",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 60803,
+      "source_sha1": "5ca7217865cbea9c00ce469ac75f71d01b608675",
+      "source": "embedded"
+    },
+    {
+      "file": "images/048-6265-viewsnew-update-anime-card-farm-roblox-nave.jpg",
+      "caption": "6,265 viewsNew Update Anime Card Farm 🤯 Roblox NaveenCombat",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 35166,
+      "source_sha1": "d68f7ad880cea034e0097e10fc725990d2e29b13",
+      "source": "embedded"
+    },
+    {
+      "file": "images/049-5917-views-i-found-the-rarest-card-in-the-big-up.jpg",
+      "caption": "5,917 views🔥 I Found the RAREST Card in the BIG UPDATE! 😱 | Anime Card Farm Roblox bagaskara",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 26294,
+      "source_sha1": "3ff583f6b44f2ccce7908ff9486e15f59b43827e",
+      "source": "embedded"
+    },
+    {
+      "file": "images/050-5682-views-how-to-get-craft-powerful-cards-in-an.jpg",
+      "caption": "5,682 views🔥 How to Get Craft Powerful Cards in Anime Card Farm Roblox! Complete Crafting Guide (2026) bagaskara",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 61970,
+      "source_sha1": "f9af9f14434361c20e60a6bd025cdeb23706bb6d",
+      "source": "embedded"
+    },
+    {
+      "file": "images/051-5394-viewscraft-update-all-working-codes-for-ani.jpg",
+      "caption": "5,394 views*🔨CRAFT UPDATE* ALL WORKING CODES FOR ANIME CARD FARM IN JULY 2026! ROBLOX ANIME CARD FARM EdgedSwordHD",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 86050,
+      "source_sha1": "0d79640958637fddccfdceeb193c550936abb38a",
+      "source": "embedded"
+    },
+    {
+      "file": "images/052-5012-viewsstrongest-anime-card-in-anime-card-far.jpg",
+      "caption": "5,012 viewsSTRONGEST Anime Card in anime card Farm in Roblox! ⚔️💰 RJ Blox",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 76207,
+      "source_sha1": "695ba6d6bd0c71f05074226dd2c6eaf2724504d0",
+      "source": "embedded"
+    },
+    {
+      "file": "images/053-4581-views-anime-card-farm-roblox-raid-gameplay.jpg",
+      "caption": "4,581 views🔥 Anime Card Farm Roblox RAID Gameplay | Quick Way to Farm Mythic, Secret & Rare Cards (Full Guide) bagaskara",
+      "section": "16 Clippable moments",
+      "width": 640,
+      "height": 360,
+      "bytes": 61827,
+      "source_sha1": "ac545246ae29ca5cc1a6e740078c4a1fb77af591",
+      "source": "embedded"
+    }
+  ]
+}
