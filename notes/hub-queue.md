@@ -13,8 +13,8 @@
 | Gift guardrails detail | owed | M8 | reference pattern: Gift! button → Accept/Decline popup [VIDEO-02, FRAME-38] |
 | Moderation canary upload test | owed | | |
 | Step-gated tutorial decision | deferred | M2 candidate | reference 6-step banner rail frame-verified, recorded as flow spec F0; M1.1 in-world sign fine for now |
-| M1.1 review (flow fidelity: carry loop, kill vendor pedestals) | pending | build chat ships | tasked 2026-08-10-002 (high). **Hub addendum 2026-08-10 landed in the task file: crate topology, sell zone walk-in, foil pre-roll at spawn, bulk-sell guardrail** |
-| M2 task (leveling + full 45-rung ladder) | owed | M1.1 + user playtest + foil spec | |
+| M1.1 review (flow fidelity: carry loop, kill vendor pedestals) | **landed + hub-reviewed PASS** 2026-08-10 | — | shipped 6203a28 against flow v1.1 + addendum; spot checks + playtest numbers exact; all 8 deviations ratified (hub-questions 2026-08-10) |
+| M2 task (leveling + full 45-rung ladder) | owed | user playtest of M1.1 + foil spec | build side is ready; gate is now the user's Studio playtest + hub debts |
 | Spec state labels (shelf/cart/built/cut on milestones + roster packs) | owed | readability | per alignment pack §6 |
 | Flow spec v1.1 (frame+transcript verified) | **landed** 2026-08-10 | — | 53 frames extracted, 17 key viewed, 6/6 transcripts read; reconciliation note + dated rulings committed |
 | Reference frames unpacked to `reference/images/` | **landed** 2026-08-10 (hub) | — | 53 JPEGs + images/index.json, pushed by hub directly after verification prompt; mailbox task 2026-08-10-003 closed via result note. Reusable-tool version remains as mailbox task 2026-08-09-001 |
