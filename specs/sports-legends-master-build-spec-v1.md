@@ -5,6 +5,7 @@
 - `specs/sports-legends-grand-roster-v3.md` — every card, pack, band (492 cards incl. rugby; +24 bonus cards pending adoption)
 - `specs/sports-legends-economy-v1.md` — 45-rung price table, foil ladder, evolution values
 - `specs/sports-legends-art-spec-v1.md` — card architecture: band owns ribbon, foil owns frame, grade owns slab
+- `specs/sports-card-farm-player-flow-v1.md` — the micro-beats between skeleton steps: spawn kiosk, carry-to-plot, press-to-open, token drip, box carry to Sell (2026-08-10; wins for flow)
 
 **User-locked product decisions (2026-08-10):** first build = core loop + upgrading · cards earn while offline · player trading comes in a later update · monetization = both packs and passes, mapped with free-player progression intact.
 
