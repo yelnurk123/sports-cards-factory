@@ -1,4 +1,6 @@
 # Hub canon queue — always current
+> **⏸️ HOLD (user decision, 2026-08-10): infrastructure-first mode. All canon updates (roster v3.6, art spec v2.1, bonus adoption) are paused until the user declares setup done. Do not treat items as awaiting-go; treat them as parked.**
+
 > First file every new hub chat reads after the alignment pack. States: owed / authored / blocked / landed. Born 2026-08-10 from the design-hub self-report; the hub owns this file.
 
 | item | state | blocker | notes |
