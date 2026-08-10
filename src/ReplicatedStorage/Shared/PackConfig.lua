@@ -53,6 +53,14 @@ function PackConfig.exists(id: string): boolean
 	return (PackConfig.Packs :: any)[id] ~= nil
 end
 
+-- The pack's tier label for the belt stack (flow spec v1.1 F1: label shows
+-- finish · tier · name · price). Tier = the band of the pack's pool (M1 pools
+-- are single-band; rungs 1–3 => Rookie).
+function PackConfig.band(id: string): string
+	local pack = PackConfig.get(id)
+	return CardConfig.get(pack.pool[1]).band
+end
+
 export type OddsRow = { cardId: string, name: string, base: number, chance: number }
 
 -- The pack's odds table for pre-purchase display (spec §16). Equal 25% per

@@ -4,7 +4,7 @@
 -- need a default here + a schemaVersion bump.
 
 return {
-	schemaVersion = 1,
+	schemaVersion = 2,
 	cash = 100, -- economy §8: $100 start = exactly one rung-1 pack
 	luckMult = 1,
 	cashMult = 1,
@@ -12,14 +12,19 @@ return {
 	conveyorTier = 1, -- reserved (economy §5 conveyor upgrade)
 
 	-- Cards owned. uid -> { cardID, foil, level, grade, trait, valueCache }
-	-- grade/trait stay nil until M3; foil stays "Base" until foil rolls ship.
+	-- grade/trait stay nil until M3; foil comes from the pack's spawn-time roll.
 	storage = {},
 	-- Display plot occupancy: slotKey ("1".."10") -> uid into storage.
 	displayed = {},
-	-- Packs placed on the plot, waiting to open: placementId -> { packID, foil, openAt }
+	-- Packs placed on the plot, waiting to open: placementId -> { packID, foil, openAt, pedestal }
+	-- foil is rolled at pack SPAWN (PurchaseService, flow spec v1.1 F1); the card inherits it.
 	packQueue = {},
 	nextUid = 1,
 	nextPlacementId = 1,
+
+	-- What the player is physically carrying (flow spec v1.1: packs and boxes
+	-- are carried in hand). packID/packFoil absent = no pack in hand.
+	carried = { boxValue = 0 },
 
 	packsOpened = 0,
 	index = {}, -- "cardID:foil" -> true once ever pulled (spec §4 collection catalog)

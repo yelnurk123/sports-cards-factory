@@ -1,9 +1,10 @@
 --!strict
--- HudController — M1 blockout HUD (spec §11 layout, plain Luau + Icon topbar).
--- Bottom readout: cash + "You make: $X/s" + displayed count (the numbers-go-up
--- strip). Top nav teleports (Plaza / Base / Sell); left rail icons: Index
--- (works), Shop / Upgrade / Items (Coming Soon placeholders). Also owns the
--- toast line every service can notify through.
+-- HudController — M1.1 blockout HUD (spec §11 layout, plain Luau + Icon topbar).
+-- Bottom readout: cash + "BEST CARD $X/Card" + displayed count. Flow spec
+-- v1.1 F3.19: "You make: $X/s" moved off the strip to the sign by the crate;
+-- both are rate readouts, not balances. Top nav teleports (Plaza / Base /
+-- Sell); left rail icons: Index (works), Shop / Upgrade / Items (Coming Soon
+-- placeholders). Also owns the toast line every service can notify through.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -17,7 +18,7 @@ local HudController = {}
 
 local player = Players.LocalPlayer
 local cashLabel: TextLabel = nil :: any
-local rateLabel: TextLabel = nil :: any
+local bestLabel: TextLabel = nil :: any
 local displayedLabel: TextLabel = nil :: any
 local toastLabel: TextLabel = nil :: any
 local toastToken = 0
@@ -63,8 +64,8 @@ local function refreshMirror(attr: string)
 	if attr == "Cash" or attr == nil then
 		cashLabel.Text = EconomyConfig.formatMoney(player:GetAttribute("Cash") or 0)
 	end
-	if attr == "IncomeRate" or attr == nil then
-		rateLabel.Text = "You make: " .. EconomyConfig.formatRate(player:GetAttribute("IncomeRate") or 0)
+	if attr == "BestCardValue" or attr == nil then
+		bestLabel.Text = "BEST CARD " .. EconomyConfig.formatMoney(player:GetAttribute("BestCardValue") or 0) .. "/Card"
 	end
 	if attr == "DisplayedCount" or attr == nil then
 		displayedLabel.Text = "Displayed: " .. tostring(player:GetAttribute("DisplayedCount") or 0) .. "/" .. tostring(EconomyConfig.DISPLAY_SLOTS_START)
@@ -99,13 +100,13 @@ function HudController.OnStart(self: any)
 	cashLabel = makeLabel(cashBox, "Cash", "$0")
 	cashLabel.TextColor3 = Color3.fromRGB(140, 255, 140)
 
-	local rateBox = Instance.new("Frame")
-	rateBox.Position = UDim2.new(0.3, 0, 0, 0)
-	rateBox.Size = UDim2.new(0.4, 0, 1, 0)
-	rateBox.BackgroundTransparency = 1
-	rateBox.Parent = strip
-	rateLabel = makeLabel(rateBox, "Rate", "You make: $0/s")
-	rateLabel.TextColor3 = Color3.fromRGB(180, 230, 255)
+	local bestBox = Instance.new("Frame")
+	bestBox.Position = UDim2.new(0.3, 0, 0, 0)
+	bestBox.Size = UDim2.new(0.4, 0, 1, 0)
+	bestBox.BackgroundTransparency = 1
+	bestBox.Parent = strip
+	bestLabel = makeLabel(bestBox, "BestCard", "BEST CARD $0/Card")
+	bestLabel.TextColor3 = Color3.fromRGB(255, 230, 150)
 
 	local displayedBox = Instance.new("Frame")
 	displayedBox.Position = UDim2.new(0.7, 0, 0, 0)
@@ -137,12 +138,12 @@ function HudController.OnStart(self: any)
 		end
 	end)
 
-	-- attribute mirrors from DataService.SyncMirror / IncomeService
+	-- attribute mirrors from DataService.SyncMirror / PlacementService
 	player:GetAttributeChangedSignal("Cash"):Connect(function()
 		refreshMirror("Cash")
 	end)
-	player:GetAttributeChangedSignal("IncomeRate"):Connect(function()
-		refreshMirror("IncomeRate")
+	player:GetAttributeChangedSignal("BestCardValue"):Connect(function()
+		refreshMirror("BestCardValue")
 	end)
 	player:GetAttributeChangedSignal("DisplayedCount"):Connect(function()
 		refreshMirror("DisplayedCount")

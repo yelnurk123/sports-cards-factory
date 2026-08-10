@@ -55,8 +55,9 @@ export type CardRec = {
 
 export type PackRec = {
 	packID: string,   -- PackConfig pack id
-	foil: string,     -- FoilConfig id; rolled at pack spawn (M1: always "Base")
+	foil: string,     -- FoilConfig id; rolled at pack SPAWN (PurchaseService)
 	openAt: number,   -- unix ts when the pack becomes openable
+	pedestal: number?, -- which pack pedestal it stands on (M1.1: player picks)
 }
 
 export type PlayerData = {
@@ -69,6 +70,7 @@ export type PlayerData = {
 	storage: { [string]: CardRec },
 	displayed: { [string]: string }, -- slotKey -> uid
 	packQueue: { [string]: PackRec }, -- placementId -> PackRec
+	carried: { packID: string?, packFoil: string?, boxValue: number }, -- items in hand (flow spec v1.1)
 	nextUid: number,
 	nextPlacementId: number,
 	packsOpened: number,

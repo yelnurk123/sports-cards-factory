@@ -22,7 +22,14 @@ export type PlotRec = {
 	origin: CFrame,
 	displaySlots: { [string]: CFrame }, -- slotKey "1".."10" -> pedestal-top CFrame
 	packPedestals: { [number]: CFrame }, -- pedestal index -> pedestal-top CFrame
-	boxSpawnPos: Vector3,
+	placePrompts: { [number]: ProximityPrompt }, -- pedestal index -> "Place Pack" prompt
+	laneStart: Vector3, -- token drip: tokens spawn here and ride to the crate
+	laneEnd: Vector3, -- ... landing here (crate top)
+	cratePart: Part,
+	crateFill: Part, -- scales up as the crate accumulates
+	crateValueLabel: TextLabel, -- "$X" on the crate
+	crateSignLabel: TextLabel, -- "You make: $X/s" sign by the crate
+	cratePrompt: ProximityPrompt,
 	owner: Player?,
 }
 
@@ -31,6 +38,7 @@ local plots: { PlotRec } = {}
 local plotByPlayer: { [Player]: PlotRec } = {}
 
 local conveyorInfo: { startPos: Vector3, endPos: Vector3, y: number } = nil :: any
+local sellZone: Part = nil :: any
 
 --[[ helpers ]]--
 
@@ -94,7 +102,8 @@ local function buildPlaza()
 	-- main plaza pad
 	part(worldFolder, "Plaza", Vector3.new(200, 1, 90), CFrame.new(0, 0, -10), Color3.fromRGB(163, 162, 165))
 
-	-- conveyor podium: the belt the packs ride (ConveyorService animates the packs)
+	-- pack belt: the conveyor is a SPAWN MACHINE (flow spec v1.1 F1), not a
+	-- vendor shelf — the kiosk spawns ONE pack at the belt's center
 	local beltY = 1.25
 	part(worldFolder, "ConveyorBelt", Vector3.new(90, 0.5, 6), CFrame.new(0, beltY, -18), Color3.fromRGB(60, 60, 65))
 	-- belt end caps
@@ -106,26 +115,56 @@ local function buildPlaza()
 		y = beltY + 2.25,
 	}
 	local podium = part(worldFolder, "ConveyorPodium", Vector3.new(16, 1, 4), CFrame.new(0, 1, -11), Color3.fromRGB(90, 90, 100))
-	billboard(podium, "Sign", "THE CONVEYOR — walk up to a pack to see odds & buy", Vector2.new(420, 40), 3)
+	billboard(podium, "Sign", "THE PACK BELT — spawn a pack at the kiosk, buy it off the belt", Vector2.new(420, 40), 3)
 
-	-- Sell stall (canon §2: the Scout buys your cards at 50%)
+	-- Spawn Pack kiosk at the belt head (flow spec F1: face-down "?" pedestal)
+	local kiosk = part(worldFolder, "SpawnKiosk", Vector3.new(4, 1, 4), CFrame.new(-54, 1, -18), Color3.fromRGB(90, 90, 100))
+	billboard(kiosk, "Sign", "SPAWN PACK\n cheapest pack you can afford", Vector2.new(320, 56), 4.6, Color3.fromRGB(255, 230, 150))
+	local faceDown = part(worldFolder, "KioskPack", Vector3.new(2.4, 0.6, 2.4), CFrame.new(-54, 1.9, -18), Color3.fromRGB(35, 35, 45))
+	local q = billboard(faceDown, "Q", "?", Vector2.new(120, 120), 2.2)
+	local qText = q:FindFirstChild("Text")
+	if qText and qText:IsA("TextLabel") then
+		qText.TextColor3 = Color3.fromRGB(255, 205, 40)
+	end
+	local spawnPrompt = Instance.new("ProximityPrompt")
+	spawnPrompt.Name = "SpawnPackPrompt"
+	spawnPrompt.ActionText = "Spawn Pack"
+	spawnPrompt.ObjectText = "Spawn Pack kiosk"
+	spawnPrompt.HoldDuration = 0
+	spawnPrompt.MaxActivationDistance = 12
+	spawnPrompt.RequiresLineOfSight = false
+	spawnPrompt:SetAttribute("Tag", "SpawnPack")
+	spawnPrompt.Parent = faceDown
+
+	-- Recover Pack affordance (flow spec F1.6): signage only in M1.1 — the R$
+	-- product lands with the monetization milestone
+	local recover = part(worldFolder, "RecoverPackPad", Vector3.new(4, 0.4, 4), CFrame.new(-60, 1.2, -18), Color3.fromRGB(60, 90, 140))
+	billboard(recover, "Sign", "No Pack? Recover Pack ⬡24\n(coming with the shop)", Vector2.new(260, 50), 3, Color3.fromRGB(180, 210, 255))
+
+	-- Sell stall (flow spec v1.1 F4): boxes cash out by WALKING INTO the green
+	-- Sell zone (instant 1:1); the Card Hunter dialog sells INVENTORY (cards 50%)
 	local stall = Instance.new("Model")
 	stall.Name = "SellStall"
 	local counter = part(stall, "Counter", Vector3.new(10, 3, 3), CFrame.new(60, 2.5, -24), Color3.fromRGB(139, 105, 70))
 	part(stall, "PostL", Vector3.new(1, 7, 1), CFrame.new(55.5, 4.5, -26), Color3.fromRGB(110, 84, 60))
 	part(stall, "PostR", Vector3.new(1, 7, 1), CFrame.new(64.5, 4.5, -26), Color3.fromRGB(110, 84, 60))
 	part(stall, "Roof", Vector3.new(12, 0.8, 6), CFrame.new(60, 8.4, -25), Color3.fromRGB(178, 60, 60))
-	billboard(counter, "Sign", "SELL STALL — the Scout pays 50% of card value", Vector2.new(380, 36), 3.2, Color3.fromRGB(255, 230, 150))
+	billboard(counter, "Sign", "CARD HUNTER — sells your inventory (cards at 50%)", Vector2.new(380, 36), 3.2, Color3.fromRGB(255, 230, 150))
 	local prompt = Instance.new("ProximityPrompt")
 	prompt.Name = "SellStallPrompt"
-	prompt.ActionText = "Sell cards"
-	prompt.ObjectText = "Sell Stall (50%)"
+	prompt.ActionText = "Talk"
+	prompt.ObjectText = "Card Hunter (sell inventory)"
 	prompt.HoldDuration = 0
 	prompt.MaxActivationDistance = 12
 	prompt.RequiresLineOfSight = false
 	prompt:SetAttribute("Tag", "SellStall")
 	prompt.Parent = counter
 	stall.Parent = worldFolder
+
+	-- the green Sell zone: carry a card box in, it cashes out instantly at 1:1
+	sellZone = part(worldFolder, "SellZone", Vector3.new(12, 0.4, 8), CFrame.new(60, 1.2, -17), Color3.fromRGB(60, 200, 90))
+	sellZone.Transparency = 0.15
+	billboard(sellZone, "Sign", "Sell Card Boxes! Walk in while carrying (1:1)", Vector2.new(400, 36), 2.6, Color3.fromRGB(200, 255, 200))
 
 	-- station placeholders (spec §11: they exist as "Coming Soon" from M1)
 	local stations = { "GRADING", "TRAINING", "CRAFT", "BOSS MATCH", "LEGENDS LADDER", "FREE REWARDS" }
@@ -140,7 +179,7 @@ local function buildPlaza()
 	billboard(
 		sign,
 		"Sign",
-		"1. Buy a pack off the conveyor  →  2. It lands on YOUR PLOT  →  3. Opens on a timer  →  4. Cards drip cash boxes  →  5. Sell cards at the Sell stall (50%)",
+		"1. Spawn a pack at the kiosk  →  2. Buy it off the belt  →  3. Carry it to YOUR PLOT and place it  →  4. When READY, press it to open  →  5. Cards drip tokens into your CRATE  →  6. Carry the box into the green SELL ZONE",
 		Vector2.new(700, 80),
 		4.6,
 		Color3.fromRGB(180, 230, 255)
@@ -173,17 +212,56 @@ local function buildPlot(index: number): PlotRec
 		end
 	end
 
-	-- pack pedestals near the front (bought packs land here and hatch)
+	-- pack pedestals near the front (carried packs are placed here and hatch);
+	-- each gets a "Place Pack" prompt (PlacementService validates the carrier)
 	local packPedestals: { [number]: CFrame } = {}
+	local placePrompts: { [number]: ProximityPrompt } = {}
 	for i = 1, 2 do
 		local px = cx - 5 + (i - 1) * 10
 		local pz = cz - 2
-		part(model, "PackPedestal" .. i, Vector3.new(3.5, 1, 3.5), CFrame.new(px, 1.5, pz), Color3.fromRGB(70, 90, 140))
+		local pedestal = part(model, "PackPedestal" .. i, Vector3.new(3.5, 1, 3.5), CFrame.new(px, 1.5, pz), Color3.fromRGB(70, 90, 140))
 		packPedestals[i] = CFrame.new(px, 3.9, pz)
+		local placePrompt = Instance.new("ProximityPrompt")
+		placePrompt.Name = "PlacePackPrompt"
+		placePrompt.ActionText = "Place Pack"
+		placePrompt.ObjectText = "Pack pedestal"
+		placePrompt.HoldDuration = 0
+		placePrompt.MaxActivationDistance = 10
+		placePrompt.RequiresLineOfSight = false
+		placePrompt:SetAttribute("Tag", "PlacePack")
+		placePrompt:SetAttribute("Pedestal", i)
+		placePrompt.Parent = pedestal
+		placePrompts[i] = placePrompt
 	end
 
-	-- box pad: income boxes pop out at the front edge of the plot
-	part(model, "BoxPad", Vector3.new(4, 0.5, 8), CFrame.new(cx, 1.25, cz - 12), Color3.fromRGB(60, 60, 65))
+	-- token lane (flow spec v1.1 F3: ONE shared lane per base, separate from the
+	-- pack belt) running down the plot's right edge into ONE wooden crate
+	local laneX = cx + 19
+	part(model, "TokenLane", Vector3.new(3, 0.3, 30), CFrame.new(laneX, 1.15, cz + 2), Color3.fromRGB(170, 50, 50))
+	local laneStart = Vector3.new(laneX, 2.4, cz + 16)
+	local laneEnd = Vector3.new(laneX, 3.2, cz - 13)
+
+	-- the wooden crate at the lane's end: accumulates Σ tokens since last
+	-- collect; the green fill block scales up as it grows
+	local cratePart = part(model, "TokenCrate", Vector3.new(3.4, 3, 3.4), CFrame.new(laneX, 2.5, cz - 15), Color3.fromRGB(139, 105, 70))
+	cratePart.Material = Enum.Material.Wood
+	local crateFill = part(model, "CrateFill", Vector3.new(2.4, 0.2, 2.4), CFrame.new(laneX, 1.2, cz - 15), Color3.fromRGB(255, 205, 40))
+	local valueBb = billboard(cratePart, "Value", "$0", Vector2.new(160, 40), 2.6, Color3.fromRGB(180, 255, 140))
+	local crateValueLabel = valueBb:FindFirstChild("Text") :: TextLabel
+	local cratePrompt = Instance.new("ProximityPrompt")
+	cratePrompt.Name = "CollectCratePrompt"
+	cratePrompt.ActionText = "Collect"
+	cratePrompt.ObjectText = "Card box crate"
+	cratePrompt.HoldDuration = 0
+	cratePrompt.MaxActivationDistance = 10
+	cratePrompt.RequiresLineOfSight = false
+	cratePrompt:SetAttribute("Tag", "CollectCrate")
+	cratePrompt.Parent = cratePart
+
+	-- "You make: $X/s" sign sits by the crate (flow spec F3.19: rate readout)
+	local signPost = part(model, "RateSign", Vector3.new(0.5, 5, 0.5), CFrame.new(laneX - 3.5, 3.5, cz - 15), Color3.fromRGB(90, 90, 100))
+	local rateBb = billboard(signPost, "Rate", "You make: $0/s", Vector2.new(240, 40), 3.2, Color3.fromRGB(180, 230, 255))
+	local crateSignLabel = rateBb:FindFirstChild("Text") :: TextLabel
 
 	-- owner post
 	local post = part(model, "OwnerPost", Vector3.new(0.5, 6, 0.5), CFrame.new(cx - 19, 4, cz - 19), Color3.fromRGB(90, 90, 100))
@@ -198,7 +276,14 @@ local function buildPlot(index: number): PlotRec
 		origin = origin,
 		displaySlots = displaySlots,
 		packPedestals = packPedestals,
-		boxSpawnPos = Vector3.new(cx, 2.6, cz - 12),
+		placePrompts = placePrompts,
+		laneStart = laneStart,
+		laneEnd = laneEnd,
+		cratePart = cratePart,
+		crateFill = crateFill,
+		crateValueLabel = crateValueLabel,
+		crateSignLabel = crateSignLabel,
+		cratePrompt = cratePrompt,
 		owner = nil,
 	}
 end
@@ -207,6 +292,10 @@ end
 
 function WorldService.GetConveyor(self: any): { startPos: Vector3, endPos: Vector3, y: number }
 	return conveyorInfo
+end
+
+function WorldService.GetSellZone(self: any): Part
+	return sellZone
 end
 
 function WorldService.ClaimPlot(self: any, player: Player): PlotRec?
@@ -219,6 +308,17 @@ function WorldService.ClaimPlot(self: any, player: Player): PlotRec?
 			plot.owner = player
 			plotByPlayer[player] = plot
 			player:SetAttribute("PlotIndex", plot.index) -- client HUD teleport target
+			-- prompts only answer the plot owner (server re-validates anyway)
+			for _, placePrompt in plot.placePrompts do
+				placePrompt:SetAttribute("OwnerUserId", player.UserId)
+			end
+			plot.cratePrompt:SetAttribute("OwnerUserId", player.UserId)
+			-- fresh crate for the new owner (IncomeService owns the value)
+			plot.crateValueLabel.Text = "$0"
+			plot.crateSignLabel.Text = "You make: $0/s"
+			plot.crateFill.Size = Vector3.new(2.4, 0.2, 2.4)
+			local crateCF = plot.cratePart.CFrame
+			plot.crateFill.CFrame = CFrame.new(crateCF.X, crateCF.Y - 1.5 + 0.2, crateCF.Z)
 			local label = plot.model:FindFirstChild("OwnerPost")
 			local bb = label and label:FindFirstChild("OwnerLabel")
 			local text = bb and bb:FindFirstChild("Text")
@@ -240,6 +340,10 @@ function WorldService.ReleasePlot(self: any, player: Player)
 	plotByPlayer[player] = nil
 	plot.owner = nil
 	player:SetAttribute("PlotIndex", nil)
+	for _, placePrompt in plot.placePrompts do
+		placePrompt:SetAttribute("OwnerUserId", nil)
+	end
+	plot.cratePrompt:SetAttribute("OwnerUserId", nil)
 	local label = plot.model:FindFirstChild("OwnerPost")
 	local bb = label and label:FindFirstChild("OwnerLabel")
 	local text = bb and bb:FindFirstChild("Text")

@@ -16,11 +16,13 @@ function PromptController.OnStart(self: any)
 		if tag == "PackInfo" then
 			local packId = prompt:GetAttribute("PackId")
 			if type(packId) == "string" then
-				PackInfoController:Open(packId)
+				local foil = prompt:GetAttribute("Foil")
+				PackInfoController:Open(packId, if type(foil) == "string" then foil else nil)
 			end
 		elseif tag == "SellStall" then
 			SellController:Open()
 		end
+		-- SpawnPack / PlacePack / OpenPack / CollectCrate are handled server-side
 	end)
 
 	print("[PromptController] Ready")

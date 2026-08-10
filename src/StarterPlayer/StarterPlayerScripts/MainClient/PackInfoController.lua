@@ -1,8 +1,9 @@
 --!strict
 -- PackInfoController — the pre-purchase pack panel (spec §16: every pack shows
--- its real odds table before purchase). Odds come from the shared PackConfig —
--- the same table the server rolls from, so display and roll can never drift.
--- BUY fires the BuyPack remote; the server re-validates everything.
+-- its real odds table before purchase; flow spec v1.1 F1: the pack's foil was
+-- rolled at spawn and shows here too — displayed = rolled). Odds come from the
+-- shared PackConfig — the same table the server rolls from, so display and
+-- roll can never drift. BUY fires BuyPack; the server owns the belt state.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -97,7 +98,8 @@ local function build()
 	buyCorner.Parent = buyButton
 	buyButton.MouseButton1Click:Connect(function()
 		if currentPackId then
-			ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("BuyPack"):FireServer(currentPackId)
+			-- the server resolves WHICH belt pack this player owns (displayed = rolled)
+			ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("BuyPack"):FireServer()
 		end
 		panel.Visible = false
 	end)
@@ -121,14 +123,14 @@ local function build()
 	end)
 end
 
-function PackInfoController.Open(self: any, packId: string)
+function PackInfoController.Open(self: any, packId: string, foil: string?)
 	if not PackConfig.exists(packId) then
 		return
 	end
 	currentPackId = packId
 	local pack = PackConfig.get(packId)
 	titleLabel.Text = pack.displayName
-	subLabel.Text = pack.sport .. " · Rung " .. pack.rung .. " · " .. EconomyConfig.formatMoney(pack.price)
+	subLabel.Text = (foil or "Base") .. " · " .. pack.sport .. " · Rung " .. pack.rung .. " · " .. EconomyConfig.formatMoney(pack.price)
 		.. " · opens in " .. pack.hatch .. "s"
 	buyButton.Text = "BUY " .. EconomyConfig.formatMoney(pack.price)
 

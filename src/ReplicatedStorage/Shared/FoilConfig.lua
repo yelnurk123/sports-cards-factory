@@ -2,8 +2,11 @@
 -- FoilConfig — the 13-tier foil ladder (economy §2b). Multipliers are canon
 -- (anchors Golden ×1.5 / Diamond ×2 / Venomous ×3 measured; full ladder v1 tunable).
 -- Frame treatments per art spec §4 (foil owns the frame).
--- M1: every pack spawns Base foil (no foil roll yet — canon has no spawn-rate
--- numbers and we never ship placeholder odds). The ladder lands with M2+.
+-- M1.1 (flow spec v1.1 F1): foil rolls AT PACK SPAWN and shows on the pack label
+-- before buy; the placed pack keeps it and the pulled card inherits it. Spawn
+-- weights below are PLACEHOLDER (hub ruling 2026-08-10 allows placeholder
+-- weights — displayed = rolled; the real foil spawn-rate spec is hub debt due
+-- before M2 and replaces SpawnWeights when it lands).
 
 local FoilConfig = {}
 
@@ -53,6 +56,34 @@ end
 
 function FoilConfig.mult(id: string): number
 	return FoilConfig.get(id).mult
+end
+
+-- PLACEHOLDER spawn weights (hub debt: the foil spawn-rate spec lands before M2
+-- and replaces these). Deliberately Base-heavy and capped at Holo so a lucky
+-- roll can't break the M1 economy. Displayed foil = rolled foil, always.
+FoilConfig.SpawnWeights = table.freeze({
+	Base = 85,
+	Silver = 8,
+	Gold = 4,
+	Platinum = 2,
+	Holo = 1,
+} :: { [string]: number })
+
+-- Server-authoritative foil roll at pack spawn (PurchaseService). Returns a
+-- foil id from SpawnWeights.
+function FoilConfig.roll(rng: Random): string
+	local total = 0
+	for _, weight in FoilConfig.SpawnWeights do
+		total += weight
+	end
+	local pick = rng:NextNumber(0, total)
+	for id, weight in FoilConfig.SpawnWeights do
+		pick -= weight
+		if pick <= 0 then
+			return id
+		end
+	end
+	return "Base"
 end
 
 return FoilConfig

@@ -19,6 +19,7 @@ local EconomyConfig = require(Shared.EconomyConfig)
 
 local DataService = require(script.Parent.DataService)
 local WorldService = require(script.Parent.WorldService)
+local CarryService = require(script.Parent.CarryService)
 
 local PlacementService = {}
 
@@ -216,7 +217,11 @@ local function renderPack(player: Player, placementId: string, rec: any)
 	if not plot then
 		return
 	end
-	local pedestalIdx = freePackPedestal(player)
+	-- the pedestal the player placed it on (legacy saves predate rec.pedestal)
+	local pedestalIdx = rec.pedestal
+	if not pedestalIdx or not plot.packPedestals[pedestalIdx] then
+		pedestalIdx = freePackPedestal(player)
+	end
 	if not pedestalIdx then
 		return
 	end
@@ -224,6 +229,7 @@ local function renderPack(player: Player, placementId: string, rec: any)
 	packPedestalOf[player][placementId] = pedestalIdx
 
 	local pack = PackConfig.get(rec.packID)
+	local foilName = FoilConfig.get(rec.foil or "Base").displayName
 	local model = Instance.new("Part")
 	model.Name = "Pack_" .. placementId
 	model.Size = Vector3.new(2.2, 2.2, 2.2)
@@ -243,7 +249,8 @@ local function renderPack(player: Player, placementId: string, rec: any)
 	title.Name = "Title"
 	title.Size = UDim2.new(1, 0, 0.5, 0)
 	title.BackgroundTransparency = 1
-	title.Text = pack.displayName
+	-- placed packs keep the spawn-rolled foil on the label (flow spec F2.9)
+	title.Text = (if foilName ~= "Base" then foilName .. " " else "") .. pack.displayName
 	title.Font = Enum.Font.GothamBold
 	title.TextScaled = true
 	title.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -345,6 +352,8 @@ function PlacementService.SyncCards(self: any, player: Player)
 	table.sort(storageList, function(a, b)
 		return a.value > b.value
 	end)
+	-- HUD "BEST CARD $X/Card" (flow spec F3.19): rate readout, not a balance
+	player:SetAttribute("BestCardValue", if storageList[1] then storageList[1].value else 0)
 	local indexList = {}
 	for key in data.index do
 		table.insert(indexList, key)
@@ -405,39 +414,51 @@ function PlacementService.GrantCard(self: any, player: Player, cardID: string, f
 	return uid
 end
 
--- Places a freshly-bought pack on the player's plot (canon §3: pack lands on
--- the plot, opens on a timer). Returns placementId or nil + reason.
-function PlacementService.PlacePack(self: any, player: Player, packID: string): (string?, string?)
+-- Places the pack the player is CARRYING onto the chosen pedestal (flow spec
+-- v1.1 F2: carry it over, place it, the hatch timer starts on placement).
+-- Returns true or false + reason.
+function PlacementService.PlaceCarriedPack(self: any, player: Player, pedestalIdx: number): (boolean, string?)
 	local data = DataService:GetData(player)
 	if not data then
-		return nil, "Data not loaded"
-	end
-	if not PackConfig.exists(packID) then
-		return nil, "Unknown pack"
+		return false, "Data not loaded"
 	end
 	local plot = WorldService:GetPlot(player)
 	if not plot then
-		return nil, "No plot claimed"
+		return false, "No plot claimed"
+	end
+	if not plot.packPedestals[pedestalIdx] then
+		return false, "No such pedestal"
+	end
+	for _, idx in (packPedestalOf[player] or {}) do
+		if idx == pedestalIdx then
+			return false, "That pedestal is taken"
+		end
 	end
 	local queued = 0
 	for _ in data.packQueue do
 		queued += 1
 	end
 	if queued >= EconomyConfig.PACK_PEDESTALS then
-		return nil, "Pack pedestals full — open a pack first"
+		return false, "Pack pedestals full — open a pack first"
+	end
+	local packID, foil = CarryService:PeekPack(player)
+	if not packID then
+		return false, "You're not carrying a pack — buy one off the belt first"
 	end
 
+	CarryService:TakePack(player)
 	local pack = PackConfig.get(packID)
 	local placementId = tostring(data.nextPlacementId)
 	data.nextPlacementId += 1
 	data.packQueue[placementId] = {
 		packID = packID,
-		foil = "Base", -- foil rolls at pack spawn from M2; no canon spawn rates yet
+		foil = foil or "Base", -- rolled at pack spawn; the card inherits it
 		openAt = os.time() + pack.hatch,
+		pedestal = pedestalIdx,
 	}
 	renderPack(player, placementId, data.packQueue[placementId])
 	DataService:SyncMirror(player)
-	return placementId, nil
+	return true, nil
 end
 
 -- Opens a placed pack whose timer has finished: roll one card from the pool
@@ -508,7 +529,24 @@ function PlacementService.OnStart(self: any)
 	-- Open prompts are server-authoritative (ProximityPromptService.PromptTriggered
 	-- fires on the server with the triggering player).
 	ProximityPromptService.PromptTriggered:Connect(function(prompt, player)
-		if prompt:GetAttribute("Tag") ~= "OpenPack" then
+		local tag = prompt:GetAttribute("Tag")
+		if tag == "PlacePack" then
+			if prompt:GetAttribute("OwnerUserId") ~= player.UserId then
+				PlacementService:Notify(player, "That's not your plot!")
+				return
+			end
+			local pedestalIdx = prompt:GetAttribute("Pedestal")
+			if type(pedestalIdx) == "number" then
+				local ok, err = PlacementService:PlaceCarriedPack(player, pedestalIdx)
+				if not ok then
+					PlacementService:Notify(player, err or "Can't place that pack here")
+				else
+					PlacementService:Notify(player, "Pack placed — it's hatching!")
+				end
+			end
+			return
+		end
+		if tag ~= "OpenPack" then
 			return
 		end
 		if prompt:GetAttribute("OwnerUserId") ~= player.UserId then
