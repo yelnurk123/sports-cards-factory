@@ -28,6 +28,7 @@ How to rebuild this setup cold. Written by the M1 build session; everything belo
   - Directories without a same-named lua file sync as Folders.
 - **Workspace is intentionally NOT mapped** in `default.project.json`: an empty mapped `src/Workspace` synced with Server priority deletes the place's live Workspace contents. The map is code-built (`WorldService`). Re-add the mapping only when real static instances exist in `src/Workspace`.
 - Sanity-check the tree without Studio: `argon build -o /tmp/scf-check.rbxl` — fast structural validation of the whole project.
+- **TWO-WAY SYNC HAZARD (happened 2026-08-10):** while `argon serve` was up, a Studio window with the WRONG place open (an unrelated car game) connected and Argon wrote Studio state back to files: all 132 `src/` files were deleted and ~50 foreign game files appeared in the working tree. Git history saves you: `git checkout -- .` restores everything; the foreign files are untracked (quarantined to `/tmp/quarantine-scf-foreign-sync/`). Defenses: connect the widget ONLY with "Sports Card Farm" open in the foreground window; use Initial Sync Priority = Server; and stop `argon serve` when you're not actively syncing. (The same signature — all synced code deleted, uncommitted — had previously hit `fish-a-brainrot`.)
 
 ## 2. Playtesting in Studio via the robloxstudio-mcp
 
