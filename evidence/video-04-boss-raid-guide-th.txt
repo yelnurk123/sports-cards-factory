@@ -1,0 +1,133 @@
+1. TRANSCRIPT (Translated from Thai)
+[00:02] Ah, hello. Okay, come meet me, Gai here, with the Roblox game named Anime Card Farming. Here, there's nothing much, just waiting for the 5-minute timer to go do a Boss Raid for you to see. I will show you how much damage or which characters you need to pass each boss difficulty. It will tell you the minimum damage required. Now, in case anyone doesn't know how to check card damage... if it's a normal card, it only tells you how much money it makes, or clicking on it won't show you the damage. The way to check is to go to the Plaza, go to the Tower, and either put your team in or click to attack, and it will show you. For example, this card I'm using shows 4.2 Sp damage, with around 8.4 Sp health.
+[01:10] And when you want to upgrade traits, you use the purple shop. When you want to upgrade card rank (like S or UR), you use the blue shop. Now, for upgrading, in case someone doesn't know, people usually upgrade when the card is level 1. Like this Sakura rarity card I have is level 1, so I upgrade it now because putting a level 1 card into the trait or rank system costs less to upgrade. Especially for those who don't have many purple or blue gems, or those who have little money, it costs less. That's why people prefer to upgrade cards when they are mostly level 1. If you accidentally upgrade at high levels, it costs a lot.
+[02:21] Let's see how much time until the Boss Raid... Ah, 1 minute. Let's prepare to pull out the trash cards. Now, let me preface this: if you want to fight the Nightmare Boss to hope for an Artifact drop—like Gojo's Mask, or Mahoraga's Back (which I haven't dropped yet, it's a Legendary and harder to find than Gojo's Epic)—what should you use? If you can't think of anything, use your best cards that do the most damage. But if you want to find specific ones, I recommend Candy rarity cards. Like the Hunter Hunter and Pack Soul, these two packs. It can be higher packs, but the rarity must be Candy or Sakura and up. If you push the card rank to UR and put the Almighty trait on it, then upgrade it to level 50, that's luxurious enough to fight it.
+[04:22] Ah, it has already started. Let's go home, and as usual, if you're in the tower, finish the tower first. Okay, let's go show you. Let's go. So, put this in... in my party, I have Byakuya as the only one who breaks, with 274 Sp health and 137 Sp damage. Let's look. This difficulty is Easy. The damage you must do (the sword icon) is a minimum of 133.9M. Medium requires 42.2T and above. Hard requires 382.8Qn. And Nightmare requires 10.3Sp.
+[05:33] These cards don't reach 10.3Sp, see? But we have Byakuya, so we'll use him to carry. The boss will count down 10 seconds. Every 10 seconds, it hits us once. We just have to deplete its health bar within 5 minutes. Then you hope for the drops. See, the boss doesn't really scratch my Byakuya because Byakuya is Radioactive rarity.
+[06:03] After beating it, you get items. Some people get Gojo's Mask, others get Mahoraga's Back (which I didn't get). This other item is for crafting things that aren't here yet, probably will appear in the shop. And these Raid Shards (purple crystals) are used to upgrade Artifact levels. Once you fight, you can't fight again for 1 hour. You have 15 minutes to enter the raid.
+[06:44] Let's go home and place Byakuya back. Artifacts, if you get them, you put them here and upgrade their level. As you can see, I have a lot of Gojo masks, but no Mahoraga Back yet. I haven't got it like other people. Oh, I placed a level 6 here. This is level 4, this is level 7. As you can see, I don't know if placing them next to each other stacks them, but I think they probably don't. If they stacked, it would be too overpowered.
+[07:53] Look, my neighbor has Mahoraga's Back. What does Mahoraga's Back buff? It increases Luck, and it increases Mutation rate. It makes the chance of rolling the card pack and rarity you want higher. If you use potions, you have a chance to get Starfallen, Glitch, Radioactive.
+[09:09] Okay, my cards are full. Let's go upgrade. I need money right now. These two aren't done yet. Oh, an Ichigo Venomous... not bad, I'll keep it. Let's see if there are any other cards. No, only low-level ones. Okay, I'll use Ichigo to make Venomous.
+[10:14] Let's use some potions... 10 minutes, 1 minute left. The rest are hatching. Let's see what it is. With 40 items... go, Ichigo. I wanted other stats, but Venomous is lower than Rainbow, so Ichigo, you're going for money. If you can't think of anything, just click for money. If a diamond shape comes out, that's great. If not, whatever.
+[10:55] Okay, it's done. How many minutes? Ah, 10, almost 11. I will end the clip here. See you in the next clip! Bye-bye, hello, yay!
+
+2. BEAT-BY-BEAT FLOW LOG (0:00 - 3:00)
+[00:00] SEES: Player avatar ("Suzume2190") standing in the Plaza. Top HUD shows Boss Raid Timer: End in 04:36. Cash: $2.62N (Nonillion). Right HUD: 2x Offline Cash 1:17:34, 2x Cash 89m, Luck 3.95x, Cash 3.17x.
+[00:29] DOES: Player runs around the base area showing equipped cards.
+[00:30] SEES: Spawners are active. Base has high-tier cards. A card reads Radioactive Petal Reaper | Soul | Level 50 | $137.29Sp/Card.
+[00:46] DOES: Runs to the Infinity Tower in the Plaza. Interacts with the NPC.
+[00:48] SEES: Dialogue prompt: 1. "Open Infinity Tower".
+[00:49] DOES: Clicks 1. "Open Infinity Tower".
+[00:51] SEES: Tower UI. Currently on Floor 131. Shows the player's card (Nordic Commander) fighting a tower enemy (Fire Admiral).
+[00:52] SEES: A crucial UI detail: The Nordic Commander card displays 4.2Sp next to a sword icon (Damage) and 8.4Sp next to a heart icon (Health). The player explains this is the only place to check a card's actual combat Damage and Health stats.
+[01:11] DOES: Exits the Infinity Tower.
+[01:12] DOES: Runs over to the Card Ranking (Blue stall) and Traits Roll (Purple stall) NPCs in the Plaza.
+[01:31] DOES: Opens the Traits Roll NPC dialog: 1. "Open Traits Roll".
+[01:32] SEES: Player selects a Level 1 Green Reaper (Sakura) card. The player explains that upgrading Ranks or rolling Traits costs significantly less when the card is at Level 1, saving Gems and Cash.
+[01:54] DOES: Opens Items inventory to show Gems.
+[01:55] SEES: Rank Gems (Blue) and Trait Gems (Purple).
+[02:04] DOES: Runs back to the Base.
+[02:08] SEES: Removes a high-level card to demonstrate.
+[02:24] DOES: Runs to the Boss Raid portal in the Plaza.
+[02:25] SEES: Timer says End in 01:21 (1 minute left).
+[02:30] DOES: Runs back to the Base, removes a Level 50 Petal Reaper (Radioactive) card from the pedestal to use in the Boss Raid.
+[02:40] DOES: Runs to a fenced area in the base where "Artifacts" are placed on small stone altars.
+[02:44] SEES: Three Infinity Blindfold Artifacts (Gojo's mask) placed on altars. Hover text shows they provide +4% Raid Drop Luck, +6% Raid Drop Luck, and +7% Raid Drop Luck.
+[02:51] SEES: Runs to neighbor's base. The neighbor has an artifact called Divine Wheel (Mahoraga's Back). Hover text shows it provides +7.8% Luck and +1.5% Mutation Luck.
+
+3. EXTRACTION SHEETS (MERGED & UPDATED)
+NUMBERS
+Currency Scale Identified: $ -> K -> M -> B -> T -> Qa -> Qi -> Sx -> Sp -> Oc -> N -> Dc -> Ud -> Dd. (Note: N = Nonillion).
+
+Player's Cash: $3.04N (Nonillion).
+
+Infinity Tower Floors: Player is on Floor 131.
+
+Boss Raid Requirements (Exact Damage Minimums per Card):
+
+Easy: 133.9M DMG
+
+Medium: 42.2T DMG
+
+Hard: 382.8Qn DMG (Note: Qn = Quintrillion/Quintillion)
+
+Nightmare: 10.3Sp DMG
+
+Card Combat Stats (Level 50):
+
+Nordic Commander (Sakura / Level 50 / UR Rank): 4.2Sp DMG | 8.4Sp HP
+
+Petal Reaper (Radioactive / Level 50 / UR Rank): 137.3Sp DMG | 274.6Sp HP
+
+Boss Raid Mechanics:
+
+Boss resets every 1 Hour.
+
+Player has 15 minutes to enter the raid once it opens.
+
+Time limit to kill the boss is 5 Minutes.
+
+Boss attacks the player's cards once every 10 seconds.
+
+Raid Rewards (Nightmare - White Titan Boss):
+
+122x Raid Shards
+
+25x White Titan Shards
+
+1x Infinity Blindfold (Artifact - Level 1)
+
+Trait Machine Odds & Costs (10:41):
+
+Cost to Roll: 1 Trait Gem (per roll)
+
+Traits & Odds:
+
+Tank: +75% Health (1%)
+
+Rich: 2x Cash (0.4%)
+
+Emperor: 0.3x Damage, 1.5x Health (0.3%)
+
+Phoenix: 0.14x Damage, 1.7x Health (0.14%)
+
+Almighty: (Odds < 0.14%, scrolled off screen).
+
+Artifact Leveling / Boosts:
+
+Infinity Blindfold (Epic): Level 1 = +4% Cash, +4% Raid Drop Luck.
+
+Divine Wheel (Legendary): Level 1 = +5% Luck, +0.6% Mutation Luck. Level max seen = +7.8% Luck, +1.5% Mutation Luck.
+
+SCREENS
+[NEW] Infinity Tower UI: Accessed via the tower in the Plaza. Shows floor progression. Crucially, this is the only screen in the entire game that displays a card's hidden Health (HP) and Damage (DMG) combat stats.
+
+[UPDATED] Boss Raid UI: The Nightmare difficulty boss is named "White Titan" (2.6Sp Health). The UI displays a 5-minute timer and a boss attack countdown bar (10 seconds).
+
+[NEW] Artifacts Placement Area: A designated fenced-in zone at the player's base containing stone altars. Artifacts won from Boss Raids are physically placed here to provide permanent passive account buffs.
+
+[NEW] Traits Machine UI: Accessed via the purple stall in the Plaza. Allows the player to select a specific card from their inventory and spend "Trait Gems" to roll for a permanent passive buff (Trait) that applies exclusively to that card.
+
+[UPDATED] Items Inventory: Displays Time II potion (Skips 5 minutes from placed packs).
+
+SYSTEMS
+[NEW] Combat Stats (HP & DMG): Cards do not display their combat stats on the normal base UI (which only shows Cash/sec). Combat stats must be checked by inserting the card into the Infinity Tower.
+
+[NEW] The "Level 1 Upgrade" Meta: A critical gameplay mechanic: The cost of using the Rank Machine (Blue gems/Cash) and the Trait Machine (Purple gems) scales dynamically based on the card's current Level. Players optimally roll for Ranks and Traits while a card is Level 1 to save massive amounts of currency, and only level the card up to 50 with Cash after the desired Rank/Trait is secured.
+
+[NEW] Artifact System: Boss Raids drop physical Artifact items (e.g., Infinity Blindfold, Divine Wheel). Players place these in their base to gain permanent global buffs to Cash, Raid Drop Luck, General Luck, and Mutation Luck. Artifacts can be leveled up (using Raid Shards) to increase their buff percentages. Players cannot stack the exact same level artifact for infinite buffs; there are diminishing or non-stacking returns.
+
+[NEW] Traits System: The Trait Machine uses Purple Gems to assign a permanent modifier to a specific card. Traits drastically alter the card's utility (e.g., "Rich" doubles its Cash generation on the conveyor belt, "Tank" gives it +75% HP for Boss Raids/Tower, "Almighty" likely massively buffs all stats).
+
+OPEN QUESTIONS (Resolved & Refined)
+[RESOLVED] Traits vs Ranks vs Mutations:
+
+Mutations (Radioactive, Candy) are pre-rolled when a pack spawns.
+
+Ranks (UR, LR) are applied at the Blue Machine and multiply the card's base stats.
+
+Traits (Rich, Almighty) are applied at the Purple Machine using Gems and give specific utility buffs (Combat vs Economy).
+
+[RESOLVED] Shards Utility: Raid Shards are used to upgrade the level of Artifacts placed in the base.
+
+[REFINED] Boss-Specific Shards: The Boss Raid also dropped "White Titan Shards". While we know Raid Shards upgrade Artifacts, what are the Boss-Specific Shards used for? Are they used in the Card Crafter to create boss cards?

@@ -1,0 +1,139 @@
+This video ("Roblox | Anime Card Farm มาไขข้อสงสัยการสร้างการ์ดกันเถอะ", which translates to "Let's clear up doubts about Card Crafting") is a perfect capstone. It provides spoken explanation (in Thai) that explicitly confirms the mechanics we've been piecing together—especially the "Level 1 Upgrade Meta" and the VIP Pass details.
+
+Here is the final, comprehensive reconstruction data, merging all findings into a complete picture.
+
+1. TRANSCRIPT (Translated from Thai)
+[00:04] Ah, hello, test, hello. Okay, meet me again, Gai here. Ah, I forgot to maximize the screen.
+[00:10] Okay, back to normal screen. So, as you can see, I just upgraded to VIP permanently. The result is that this Cash multiplier here, which was usually 3.something, has jumped to 5.10x. This is great, I will have a lot of money. It has nothing to do with potions; this 5.10x Cash comes straight from the VIP. It says "1.5x Cash Boost"—it might not seem like a lot, but it is, because the multiplier jumped from 3 to 5. Plus, you get a 20% discount on Packs. So I bought it. It's cheap, good for light spenders, buying just this is enough.
+[00:55] Next, I just opened this card: Sakura rarity My Hero pack, Shoto (Todoroki). But since it's Sakura, it's a bit weak—weaker than Midoriya by about 4 Sp. But that's okay, it still works. And this card, someone gave it to me because they rolled a Bakugo and gave it to me as a gift. I'll upgrade him later.
+[01:34] In this clip, we are going to do Card Crafting. I just got a Rainbow All Might, and I already had a Rainbow Deku, so I will show you how to do it.
+[01:46] Ah, the Tower just finished. Let me hit "Equip Best". Ah, when I hit Equip Best, it unequips the card I want to craft with. Let me go withdraw it. Let me get Deku.
+[02:12] Okay, my current cards look like this. I withdrew Rainbow Deku. I'll put Shoto in his place since Shoto's rarity is higher.
+[02:48] We are going to fuse Deku and All Might into a Green Shop (Academy) Rainbow rarity card. Right now I am making 1.3 N (Nonillion) cash per second. My strongest card is still Deku, unless I rank Shoto to LR and put the Almighty trait on him. But since Shoto's base is lower than Midoriya, he probably won't reach 1 N. Deku could reach it.
+[03:49] Okay, enough off-topic talk. Let's get to the main point of this clip: Card Crafting. Come to the Plaza, find the Card Crafter, and select option 2.
+[04:09] Since we want to craft Deku, we select him. For those who want to craft cards—the most popular ones people craft are these top 3. Top 3 sells well, or sometimes Top 4 (Frieren). However, how much money these cards make depends on what rarity they craft into. If you get an Admin rarity, and then upgrade the Rank and Traits, it becomes even more expensive.
+[04:42] Now, I was wondering: when we craft, is it required to use cards that haven't been leveled up? I'm making this clip to clarify this. I have a Deku that is already leveled up, and an All Might that is NOT leveled up. Let's see if we can craft them.
+[04:57] Here: Rainbow Deku, Rainbow All Might. 100% Rainbow chance. As you can see, this one (Deku) is leveled up and maxed out. This one (All Might) hasn't been leveled up at all. And yet, you CAN craft with them.
+[05:14] This means if you want to craft cards and not waste resources, you should use cards that haven't been leveled up. Like this All Might, which hasn't been leveled up at all, is the best to use. The Deku I used is fine because I have a Bakugo to replace him.
+[05:33] As you can see, if you insert cards of the same or similar rarity, the percentage will show what rarity the crafted card will mutate into. If you put in all Admin cards, it will be 100% Admin. If you mix Admin and Glitch, the proportion will be divided. I have Rainbows, so it's 100% Rainbow.
+[06:04] It takes 50 minutes. Can I skip it? Oh, it costs Robux. No, I'll let it be and wait. This is how card crafting works. You wait for an hour.
+[06:22] While waiting, I haven't done the Tower yet. So we'll do the Tower like usual. Put in some weak cards for now, the basic strategy. Then go back home and place cards.
+[06:54] Next, we'll upgrade Shoto. We take Shoto, put Bakugo in his place to make money for now. Since Shoto is lower than Midoriya, I just hope to get him to UR Rank.
+[07:17] It wastes resources because right now my Blue Gems (Rank Gems) have decreased. And my Purple Gems (Trait Gems) are fluctuating. The potions are about to run out too.
+[07:33] Before ending the clip, I'll just upgrade Shoto a little bit, not too much. Will there be a live stream tonight? Probably, yes. Card game live stream. I need to farm money to over 100 Dc. Then I'll look for Frieren and Academy packs again. See you tonight. I won't be streaming buffs, just farming items, cards, and money.
+[08:07] This clip ends here. See you next clip, bye-bye.
+
+2. BEAT-BY-BEAT FLOW LOG (0:00 - 3:00)
+[00:04] SEES: Player avatar ("Suzume2190") at their base. Top right shows 2x Offline Cash, 2x Cash, and a new icon: VIP Owned. Below that: Luck: 4.35x, Cash: 5.10x. The player's cash is $33.66Dc.
+[00:23] DOES: Opens the Shop via the left HUD.
+[00:34] SEES: Shop UI scrolls down to Gamepasses. Highlights the V.I.P pass.
+
+Text: BEST SELLER! -20% Pack Timer, x1.5 Cash Boost, Name Tag. Marked as Owned.
+[00:36] DOES: Also highlights the Auto Conveyor pass below it.
+
+Text: NEW! Auto Spawn, Auto Buy, Mutations Warn. Cost: 649 Robux.
+[00:57] DOES: Closes the Shop. Walks over to their active pedestals.
+[01:00] DOES: Selects a card on the pedestal. Frost Flame (Academy) | Sakura | Level 1. Clicks Remove.
+[01:06] DOES: Opens Index via left HUD.
+[01:07] SEES: Index shows 20% Completed (362/1824 Collected).
+[01:13] DOES: Scrolls down in the Sakura tab to show Frost Flame ($15.0Sp/Card base) and Volt Successor ($19.4Sp/Card base).
+[01:21] DOES: Closes Index. Returns to base.
+[01:23] DOES: Clicks Remove on Nitro Fury (Academy) | Glitch | Level 1.
+[01:34] SEES: Player stands in front of the empty pedestals. They are preparing to craft.
+[01:39] DOES: Player walks down the line of pedestals.
+[01:40] SEES: A placed card: Peace Titan (Academy) | Rainbow | Level 1 | $11.8Sp/Card.
+[01:45] SEES: Another placed card: Volt Successor (Academy) | Rainbow | Level 50 | $645.6Oc/Card (Octillion).
+[01:48] SEES: Defeated! Floor 832 flashes at the top of the screen (from their Infinity Tower run).
+[01:49] SEES: Tower Rewards pop-up. Rewards include Cash, Time II potions, Mutation potions, Luck potions, Rank Gems, Trait Gems.
+[01:50] DOES: Closes Tower Rewards.
+[01:55] DOES: Opens Equip Best UI.
+[01:58] DOES: Clicks the Equip Best button inside the UI.
+[01:59] HAPPENS: Text flashes: Equipped 30 best cards!. The Volt Successor (Rainbow) card disappears from the pedestal because it was automatically equipped to the Tower/Raid team.
+[02:02] DOES: The player is confused. They run to the Infinity Tower in the Plaza to retrieve the card.
+[02:21] DOES: Returns to base. Places the Volt Successor (Rainbow / Level 50) back on the pedestal.
+[02:25] DOES: Places the Nitro Fury (Glitch / Level 1) card on a pedestal.
+[02:30] DOES: Places the Frost Flame (Sakura / Level 1) card on a pedestal.
+[02:42] DOES: Removes the Chainsaw Reaper (Sakura / Level 50) to make room.
+[02:58] SEES: Text floating next to the player's avatar: $146B On Carry. You make: $1.3N/s.
+[03:04] DOES: Checks the right HUD. The BEST CARD is the Volt Successor at $1.29N/Card.
+
+3. EXTRACTION SHEETS (FINAL MERGED DATA)
+NUMBERS
+Currency Scale Confirmed: $ -> K -> M -> B -> T -> Qa -> Qi -> Sx -> Sp -> Oc -> N -> Dc -> Ud -> Dd.
+
+(Thousands, Millions, Billions, Trillions, Quadrillions, Quintillions, Sextillions, Septillions, Octillions, Nonillions, Decillions, Undecillions, Duodecillions).
+
+Player's Cash: $47.2Dc (Decillion).
+
+Player's Cash Generation: $1.3N/sec (Nonillion).
+
+Max Index Size (Current Update): 1824 Cards (Down from 2132 in previous videos, implying a game update changed the card pool or consolidated variants).
+
+Card Values & Scaling:
+
+Frost Flame (Sakura / Level 1 / Unranked): $15.0Sp/Card (Septillion)
+
+Volt Successor (Sakura / Level 1 / Unranked): $19.4Sp/Card
+
+Peace Titan (Rainbow / Level 1 / Unranked): $11.8Sp/Card
+
+Volt Successor (Rainbow / Level 50 / Unranked): $645.6Oc/Card (Octillion)
+
+VIP Pass (Robux):
+
+-20% Pack Timer (Packs open faster)
+
+x1.5 Cash Boost (Acts as a flat multiplier to your global cash generation, pushing this player from ~3.1x to 5.1x).
+
+Name Tag
+
+Auto Conveyor Pass (649 Robux):
+
+Auto Spawn, Auto Buy, Mutations Warn. (This answers an open question from Video 2: Full automation is locked behind a 649 Robux paywall, it is not a free cash upgrade).
+
+SCREENS
+[UPDATED] Shop / Gamepasses: We finally see the exact Gamepass details. VIP and Auto Conveyor are clearly defined.
+
+[UPDATED] Card Crafting UI:
+
+The crafting interface confirms that Card Level does NOT matter for crafting. A Level 1 card and a Level 50 card of the same rarity are treated identically by the crafter.
+
+The "Volt Successor" (Deku) + "Peace Titan" (All Might) evolves into the "Emerald Successor".
+
+Timer: Evolving a Rainbow rarity card takes exactly 55 minutes.
+
+Robux Skip: A pop-up confirms skipping a 55-minute evolution timer costs 109 Robux. (This resolves the question of how skips work—if you don't have Time Potions, it costs Robux).
+
+[NEW] Tower Rewards UI: Upon failing/completing a floor in the Infinity Tower, a massive loot screen appears. It drops huge stacks of Cash, Time Potions, Mutation Potions, Luck Potions, Rank Gems, and Trait Gems.
+
+SYSTEMS
+[RESOLVED] The "Level 1 Upgrade Meta" Explained:
+
+The player explicitly confirms via voiceover exactly how and why this works.
+
+If you apply a Trait (Purple Gems) or a Rank (Blue Gems/Cash) to a card at Level 50, the game charges you an astronomical fee scaled to that card's Level 50 base value.
+
+If you apply the Trait/Rank at Level 1, the cost is calculated based on its Level 1 base value, which is thousands of times cheaper.
+
+The Meta Loop: Pull a top-tier card -> KEEP IT AT LEVEL 1 -> Use the Trait Machine until you roll "Almighty" or "Rich" -> Use the Rank Machine until you hit "UR" -> Then use Cash to level the card up to 50.
+
+[RESOLVED] Card Crafting Rules:
+
+When crafting Evolutions, the game completely destroys the component cards.
+
+The game does not care if the component cards are Level 1 or Level 50. It does not transfer the levels to the new card. The resulting Evolved card will always pop out at Level 1.
+
+Therefore, players are explicitly warned: Never level up a card you intend to use as crafting fodder. It is a complete waste of cash.
+
+[RESOLVED] Automation Paywall:
+
+The "Conveyor Settings" UI that allows you to auto-filter and auto-buy packs based on mutations is explicitly tied to the Auto Conveyor Gamepass (649 Robux). Free-to-play players must manually click to buy packs and cannot automatically filter out bad mutations.
+
+[UPDATED] Infinity Tower "Equip Best" Trap:
+
+When a player clicks "Equip Best" to optimize their Tower/Raid team, the game physically pulls those cards off the pedestals in the base and locks them into the combat team.
+
+If a player wants to craft with a card that was auto-equipped to the Tower, they must manually enter the Tower UI, remove the card from the combat slots, and bring it back to their inventory before the Crafter NPC will recognize it.
+
+OPEN QUESTIONS (All major gameplay loops are now resolved)
+Are there secret Boss Evolutions using Boss Shards? This is the only lingering thread. We know Raid Shards upgrade Artifacts. It is highly probable that the specific boss shards (White Titan Shards, Moon Demon Shards) are used for specific unlisted crafts or to purchase Artifacts directly from a yet-unseen shop menu. Everything else regarding the economy, automation, combat, and upgrade scaling has been fully decoded.

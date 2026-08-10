@@ -1,0 +1,152 @@
+1. TRANSCRIPT
+[Player's muttered English commentary & text tracking]
+**** Hello guys, thanks for watching my video. This is the first time for me to make a voiceover in a video. I hope you enjoy it and watch my video until the end.
+**** We are still waiting for the Admin Abuse to start. Honestly, I worry if my money is not enough for this event, but let's try guys. I have 4.4 Sp, dD, and free cards box.
+**** Okay, the Admin Abuse has begun. First, let's upgrade the conveyor.
+**** And then let's set up the auto config. I choose Grail, Conquest, Blaze, and Devour. And I choose mutation from Candy to Unknown.
+**** Here comes Admin Abuse. And don't forget to use your item guys, because it gives boost... your chance to get high mutation and high card. Okay.
+**** Let's see what the first card will I get, guys.
+**** Oh, it is Conquest.
+**** It's Candy mutation.
+**** Guys, guys, I still buy this because I think it's still use in my base. And if not, I can give it to my friend.
+**** Guys, we have buy some card now, and my inventory is available, so let's check the Card Craft.
+**** Wait, wait guys, why nothing the Conquest? It's available for Blaze in the Forge, but not in Conquest.
+**** I imagine if there are Conquest card craft, maybe it will be featuring card... um... Trio, Shin, Han, and Mountain.
+**** Finally it been abuse, and now let's see what the card will I get from farming this event.
+[00:09:00 - 00:18:03: Silent grinding. Player rapidly buys packs as they spawn, uses time skips to open them, and manages storage space by bulk-selling at the Plaza]
+**** Okay, hey guys, thanks for watching this video. I hope you enjoy it, and see you next time.
+
+2. BEAT-BY-BEAT FLOW LOG (0:00 - 3:00)
+**** SEES: Player avatar ("Mang_AABD") stands in a highly expanded base. Right HUD: BEST CARD: $1.03Dc/Card. Cash: 321.0Dc. Top Right: 2x Offline Cash 1:40:48. Base pedestals are filled with late-game packs.
+**** SEES: Player runs past a global tracker board: THE GAME FOR BIG UPDATE! / 52.9K/100K.
+**** SEES: Left Spawner pad reads No Pack / Recover Pack.
+**** DOES: Clicks the floating Skip All button on the right edge of the screen.
+**** HAPPENS: Nothing (all placed packs are already opened or opening).
+**** SEES: Two green configuration pads on the floor: Upgrade Conveyor / MAX and Conveyor Settings.
+**** SEES: "Daily Rewards" pop-up automatically triggers. Day 1 is claimed. Day 2: CLAIM! Eclipse Pack. Day 3: +100.0K Cash. Day 7: Shadow Monarch (Rainbow).
+**** DOES: Closes Daily Rewards without claiming.
+**** DOES: Steps on Upgrade Conveyor pad.
+**** SEES: Prompt: ARE YOU SURE YOU WANT TO UPGRADE: $321.0Dc.
+**** DOES: Clicks YES. (Cash flashes but doesn't seem to deduct; upgrade might have failed or maxed out).
+**** DOES: Steps on Conveyor Settings pad.
+**** SEES: A massive Conveyor Settings UI panel.
+
+Top toggles: Auto Spawn [On], Auto Buy [On].
+
+Left list (Packs): A checklist of every pack in the game.
+
+Center list (Mutations): A checklist of every rarity modifier.
+**** DOES: In the Packs list, player scrolls down and checks: Grail Pack, Conquest Pack, Blaze Pack, and Devour Pack.
+**** DOES: In the Mutations list, player scrolls past Normal/Golden/Diamond and checks the bottom half: Candy, Blessed, Radioactive, Glitch, Starfallen, Admin, Unknown.
+**** DOES: Closes Conveyor Settings.
+**** SEES: Massive yellow banner flashes across top screen: SERVER EVENT: Server Luck 6x activated by RoroSama1331 for 60s!.
+**** SEES: Banner updates: 2x packs activated by RoroSama1331 for 5m 00s!. Then 10x money activated.... The "Admin Abuse" event has begun.
+**** DOES: Clicks Backpack/Items icon on left HUD.
+**** SEES: Grid of consumable potions. Cash I-III, Luck I-III, Mutation I-III, Production I-III.
+**** DOES: Clicks Luck III. UI shows: [5 Minutes] +150% Luck Boost. Clicks Use.
+**** DOES: Clicks Mutation III. UI shows: [5 Minutes] +14% Mutation Luck. Clicks Use.
+**** DOES: Clicks Production III. Clicks Use.
+**** DOES: Closes Items menu. Looks at Spawners.
+**** HAPPENS: Because of the server event, the Spawners are rapidly cycling through end-game packs every fraction of a second, ignoring normal spawn timers.
+**** DOES: Clicks "Buy" on the spawner the moment it shows Conquest Pack | $10.3Dd.
+**** HAPPENS: The Conquest Pack goes into his hidden storage queue.
+**** DOES: Clicks "Index". Normal tab shows 23% Completed (482/2132 Collected). Closes it.
+**** DOES: Walks to an empty pedestal. Clicks "Place".
+**** SEES: Placement UI. Storage reads 70/150.
+**** DOES: Selects the Conquest Pack.
+**** HAPPENS: A tornado block appears on the pedestal. Text above it reveals its pre-rolled mutation: Candy Conquest Pack.
+**** DOES: Clicks "Buy" on spawner showing Titan Pack | $7.8Dd.
+**** HAPPENS: Pop-up appears: You just spawned Blaze Pack. Okay. (The auto-buy caught a Blaze pack while he was clicking). He clicks Okay.
+**** DOES: Opens Conveyor Settings again. Adjusts filters (unchecks Chainsaw/Dynasty, ensures Devour is checked). Closes.
+**** DOES: Places the newly auto-bought Blaze Pack on an empty pedestal.
+**** DOES: Places a Swordsman Pack (Rainbow) from storage on another pedestal.
+**** DOES: Runs over to the "Sell Card Boxes!" bin out of habit, though his cash is going up automatically now.
+**** DOES: Runs back to spawners. Clicks "Buy" on Soul Pack (Diamond) | $81.9Dd.
+**** HAPPENS: Pop-up: You just spawned Grail Pack. Okay.
+
+3. EXTRACTION SHEETS (MERGED & UPDATED)
+NUMBERS
+Currency Scale Identified: $ -> K -> M -> B -> T -> Qa -> Qi -> Sx -> Sp -> Oc -> No -> Dc -> Ud -> Dd.
+
+Player's Best Card Value (Late Game): $1.03Dc/Card (Decillion)
+
+Player's Cash: $321.0Dc
+
+Max Storage Capacity: 150 items.
+
+Index Size: 2132 Total Cards. (Player has 482).
+
+Late-Game Pack Costs (NEW):
+
+Academy Pack: $149.0Dc
+
+Titan Pack: $7.8Dd (Duodecillion)
+
+Conquest Pack: $10.3Dd
+
+Beast Pack: $11.8Dd
+
+Grimoire Pack: $16.5Dd
+
+Soul Pack: $81.9Dd
+
+Devour Pack: $131.2Dd
+
+Card Generation Values (NEW):
+
+Crimson Sovereign (Radioactive / Conquest Pack): $972.0Sp/Card
+
+Rising Commander (Blessed / Conquest Pack): $1.47D/Card
+
+Plasma Knight (Blessed / Blaze Pack): $2.28D/Card
+
+Flame Cat (Radioactive / Blaze Pack): $3.93D/Card
+
+Iron General (Starfallen / Conquest Pack): $6.9D/Card
+
+Devil Ignition (Admin / Blaze Pack): $14.4D/Card
+
+White Reaper (Glitch / Devour Pack): $40.0D/Card
+
+Potions / Boosts (NEW):
+
+Luck III Potion: +150% Luck Boost (Duration: 5m)
+
+Mutation III Potion: +14% Mutation Luck (Duration: 5m)
+
+SCREENS
+[NEW] Conveyor Settings Panel: Accessed via a green pad in the base. It enables full automation.
+
+Toggles: Auto Spawn [On/Off], Auto Buy [On/Off].
+
+Pack Checklist: Instructs Auto Buy on exactly which pack tiers to purchase.
+
+Mutation Checklist: Instructs Auto Buy to only purchase packs if they roll specific mutations (e.g., ignoring Normal/Golden and only buying Candy through Unknown).
+
+[NEW] Daily Rewards: 7-day login track. Yields cash, specific packs (Eclipse Pack), and specific cards (Shadow Monarch).
+
+[NEW] Plaza - Card Crafter: NPC stall in the Plaza showing recipes. Combines lower-tier cards into "Evolutions" (e.g., Purple Huntress + Stitched Reaper + White Reaper = Devour Evolution).
+
+[NEW] Plaza - Trait Roller: NPC stall next to the Crafter. Allows rolling "Traits" on cards.
+
+[NEW] Items Inventory: A grid showing consumable potions (Cash, Luck, Mutation, Production, Time) in tiers I, II, and III.
+
+SYSTEMS
+[UPDATED] Core Economy & Automation: The early-game loop of manually carrying boxes is eliminated in the late game. By purchasing "Conveyor Upgrades" with in-game cash (or the Auto-Conveyor pass), boxes automatically sell at the end of the belt. The player transitions from manual labor to pure management via the Conveyor Settings pad.
+
+[NEW] Pack Mutations (Pre-Roll): A massive discovery: Packs roll their "Mutation" (Variant) before they are opened. When a pack appears on the Spawner or is placed on a pedestal, it displays its mutation (e.g., Candy Conquest Pack). This allows the Auto-Buy system to filter out "Normal" packs and only spend money on packs guaranteed to contain high-tier variants.
+
+[NEW] Mutation / Variant Hierarchy: The Conveyor Settings menu reveals the exact hierarchy of variants from worst to best:
+
+Normal -> 2. Golden -> 3. Diamond -> 4. Venomous -> 5. Rainbow -> 6. Sakura -> 7. Candy -> 8. Blessed -> 9. Radioactive -> 10. Glitch -> 11. Starfallen -> 12. Admin -> 13. Unknown.
+
+[NEW] Live Ops / Admin Abuse Events: Server administrators (or VIPs with privileges) can trigger global events. We see "RoroSama1331" trigger 6x Server Luck, 10x Money, and 2x Packs. This causes the Spawners to ignore their normal cooldowns and cycle through end-game packs instantly, creating a frenzy where players scramble to buy as many as their cash allows.
+
+[NEW] Gifting: Players can click any placed card and hit a Gift! button to transfer ownership directly to another player in the server.
+
+OPEN QUESTIONS (Refined for next capture)
+Time Skip Economy: The player places 4-hour packs (Conquest/Devour) and opens them instantly without a Robux prompt appearing. Is there an auto-consume setting for "Time Potions", or does the Admin Abuse event remove opening timers entirely?
+
+Card Crafter Specifics: Do the component cards (e.g., Purple Huntress, Stitched Reaper) get permanently destroyed during an Evolution? What multiplier/base value does a "Devour Evolution" yield compared to the base cards?
+
+Traits System: We see the stall, but what do "Traits" actually do? Are they a separate multiplier from Mutations? How are the Gems required for rolling Traits obtained?

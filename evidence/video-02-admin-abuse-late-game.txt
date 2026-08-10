@@ -1,0 +1,147 @@
+This is exactly the raw gameplay footage needed. I will log the flow, extract the numbers, and outline the systems as instructed.
+
+### 1. TRANSCRIPT
+
+**[[00:00](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=0)]** Hello guys, thanks for watching my video. This is the first time for me to make a voiceover in a video. I hope you enjoy it and watch my video until the end.
+**[[00:24](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=24)]** We are still waiting for the Admin Abuse to start. Honestly, I worry if my money is not enough for this event, but let's try guys. I have 4.4 Sp dD and free cards box.
+**[[00:59](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=59)]** Okay, the Admin Abuse has begun. First, let's upgrade the conveyor.
+**[[01:20](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=80)]** And then let's set up the auto config. I choose Grail, Conquest, Base, and Devour. And I choose Mutation from Candy to Unknown.
+**[[01:49](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=109)]** Here comes Admin Abuse. And don't forget to use your item guys, because it gives boost... your chance to get high mutation and high card. Okay.
+**[[02:05](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=125)]** Let's see what the first card will I get, guys.
+**[[02:14](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=134)]** Oh, it is Conquest.
+**[[02:28](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=148)]** It's Candy Mutation.
+**[[02:58](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=178)]** Guys, guys, I still buy this because I think it's still use in my base. And if not, I can give it to my friend.
+**[[04:46](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=286)]** Guys, we have buy some card now, and my inventory is available, so let's check the Card Craft.
+**[[05:21](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=321)]** Wait, wait guys, why nothing the Conquest? It's available for Blaze in the Forge, but not in Conquest.
+**[[05:35](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=335)]** I imagine if there are Conquest card craft, maybe it will be featuring card... um... Trio, Shin, Han, and Mountain.
+**[[08:51](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=531)]** Finally it been abuse, and now let's see what the card will I get from farming this event.
+*[The rest of the video is silent gameplay, with the player repeatedly placing, opening, and removing packs.]*
+**[[18:04](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=1084)]** Okay, hey guys, thanks for watching this video. I hope you enjoy it, and see you next time.
+
+### 2. BEAT-BY-BEAT FLOW LOG (0:00 - 3:00)
+
+**[[00:00](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=0)]** **SEES:** Player avatar ("Mang_AABD") at their base. Top right corner: Timer `2x Offline Cash 1:40:48`. Right HUD shows `BEST CARD: $1.03Dc/Card`. Cash is `321.0Dc`.
+**[[00:19](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=19)]** **SEES:** Player walks down conveyor.
+**[[00:26](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=26)]** **SEES:** Player jumps around base. Text above a billboard: `THE GAME FOR BIG UPDATE! / 52.9K/100K`.
+**[[00:30](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=30)]** **DOES:** Walks back to the front of the base.
+**[[00:34](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=34)]** **SEES:** `No Pack / Recover Pack` on the left spawner.
+**[[00:38](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=38)]** **DOES:** Clicks "Skip All" button on the right side of the screen.
+**[[00:40](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=40)]** **HAPPENS:** Nothing happens (all slots are currently empty).
+**[[00:42](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=42)]** **SEES:** Player has 4 pedestals in a row. A pad in front of them says `More Luck! / Upgrade Conveyor / MAX`. Another pad says `Conveyor Settings`.
+**[[00:58](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=58)]** **SEES:** "Daily Rewards" pop-up. Day 1 is claimed, Day 2 is "CLAIM! Eclipse Pack", Day 3 is "+100.0K Cash", Day 7 is "Shadow Monarch (Rainbow)".
+**[[00:59](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=59)]** **DOES:** Closes Daily Rewards.
+**[[01:03](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=63)]** **DOES:** Steps on `Upgrade Conveyor` pad.
+**[[01:06](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=66)]** **SEES:** Confirmation prompt: `ARE YOU SURE YOU WANT TO UPGRADE: $321.0Dc`.
+**[[01:06](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=66)]** **DOES:** Clicks `YES`.
+**[[01:13](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=73)]** **HAPPENS:** Prompt disappears. Wait, prompt pops up again (or was clicked again). Clicks `YES` again. (Cash was 321.0Dc, but he doesn't seem to have enough or it bugged. It flashes and goes back to normal).
+**[[01:19](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=79)]** **DOES:** Steps on `Conveyor Settings` pad.
+**[[01:21](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=81)]** **SEES:** UI Window: `Conveyor Settings`.
+- Right side: `Conveyor Lvl`. Lvl 1 to Lvl 5 are visible.
+- Top Center: `Auto Spawn [On] [Off]`, `Auto Buy [On] [Off]`.
+- Center List: `Normal [On] [Off]`, `Golden [On] [Off]`, `Diamond [On] [Off]`, `Venomous [On] [Off]`.
+- Left side: A grid of specific packs to toggle Auto Buy. Visible: Chainsaw Pack, Eternity Pack, Academy Pack, Dynasty Pack, Grail Pack, Conquest Pack, Blaze Pack, Devour Pack.
+**[[01:25](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=85)]** **DOES:** In the left grid, checks the boxes for `Grail Pack`, `Conquest Pack`, `Base Pack` (which turns out to be `Blaze Pack`), and `Devour Pack`.
+**[[01:31](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=91)]** **DOES:** Scrolls down the right-side Mutation list. Checks `Candy`, `Blessed`, `Radioactive`, `Glitch`, `Starfallen`, `Admin`, `Unknown`.
+**[[01:42](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=102)]** **DOES:** Closes the Conveyor Settings window.
+**[[01:43](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=103)]** **SEES:** A massive yellow "SERVER EVENT" banner flashes on screen. `Server Luck 6x activated by RoroSama1331 for 60s!`. Repeated multiple times.
+**[[01:48](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=108)]** **SEES:** Another banner: `2x packs activated by RoroSama1331 for 5m 00s!`. `10x money activated...`
+**[[01:54](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=114)]** **DOES:** Clicks the Backpack/Items icon on the left HUD.
+**[[01:55](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=115)]** **SEES:** Items Inventory. Filled with potions: Cash I, Cash II, Cash III, Luck I, Luck II, Luck III, Mutation I, Mutation II, Mutation III.
+**[[01:56](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=116)]** **DOES:** Clicks `Luck III`. UI shows: `[5 Minutes] +150% Luck Boost`. Clicks `Use`.
+**[[01:57](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=117)]** **HAPPENS:** `+150% Luck Boost activated for [25 Minutes]` appears at the top. (He must have stacked it or clicked Use 5x).
+**[[01:58](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=118)]** **DOES:** Clicks `Mutation III`. UI shows: `[5 Minutes] +14% Mutation Luck`. Clicks `Use`.
+**[[02:00](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=120)]** **DOES:** Clicks `Production III` (looks like an hourglass).
+**[[02:01](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=121)]** **DOES:** Closes Items menu.
+**[[02:02](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=122)]** **SEES:** The Spawners at the front of the base are now active and cycling through high-tier packs very rapidly because of the Admin Abuse event. Packs seen: Master Pack, Evolved Pack, Royal Pack, Void Pack, Dynasty Pack, Soul Pack, Conquest Pack.
+**[[02:14](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=134)]** **DOES:** Clicks "Buy" on a spawner showing `Conquest Pack | $10.3Dd`.
+**[[02:16](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=136)]** **HAPPENS:** The Conquest Pack appears in his hand/storage.
+**[[02:18](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=138)]** **DOES:** Clicks "Index" on left HUD.
+**[[02:19](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=139)]** **SEES:** Index. Normal is 23% Completed.
+**[[02:21](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=141)]** **DOES:** Closes Index.
+**[[02:25](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=145)]** **DOES:** Walks to an empty pedestal.
+**[[02:27](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=147)]** **SEES:** Pedestal UI: `Equip Best` button. Storage: 70/150. A grid of owned packs.
+**[[02:28](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=148)]** **DOES:** Selects the `Conquest Pack`.
+**[[02:30](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=150)]** **HAPPENS:** Pack is placed on pedestal. It has a swirling tornado effect. It says `Candy Conquest Pack`.
+**[[02:32](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=152)]** **DOES:** Clicks "Buy" on another spawner showing `Titan Pack | $7.8Dd`.
+**[[02:37](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=157)]** **HAPPENS:** Warning pop-up: `You just spawned Blaze Pack. Okay`. Clicks Okay.
+**[[02:42](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=162)]** **DOES:** Opens `Conveyor Settings` again.
+**[[02:44](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=164)]** **DOES:** Unchecks some packs (Dynasty, Chainsaw). Checks `Devour Pack`. Closes window.
+**[[02:45](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=165)]** **DOES:** Walks to empty pedestal. Clicks to place.
+**[[02:47](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=167)]** **DOES:** Selects `Blaze Pack`. Places it.
+**[[02:48](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=168)]** **DOES:** Walks to next empty pedestal. Places a `Swordsman Pack (Rainbow)`.
+**[[02:51](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=171)]** **DOES:** Runs over to the "Sell Card Boxes!" bin.
+**[[02:54](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=174)]** **DOES:** Runs back to the spawners. Clicks "Buy" on a `Soul Pack (Diamond) | $81.9Dd`.
+**[[02:57](https://www.youtube.com/watch?v=6X5zwHUrrO0&t=177)]** **HAPPENS:** Pop-up: `You just spawned Grail Pack. Okay`. Clicks Okay.
+
+### 3. EXTRACTION SHEETS
+
+#### NUMBERS
+
+* **Player's Best Card Value:** $1.03Dc/Card (Dc = Decillion)
+* **Player's Current Cash (Start):** $321.0Dc
+* **Conveyor Upgrade Cost (Max?):** $321.0Dc
+* **Storage Capacity:** 150 items.
+* **Index Completion:** 23% Completed (482/2132 Collected)
+* **Items & Boosts:**
+* *Luck III:* +150% Luck Boost for 5 minutes.
+* *Mutation III:* +14% Mutation Luck for 5 minutes.
+* *Server Event Multipliers (Activated by RoroSama1331):* Server Luck 6x, 2x Packs, 10x Money. All for limited durations (60s to 5m).
+
+
+* **Pack Prices Seen (during Admin Abuse event):**
+* Conquest Pack: $10.3Dd (Dd = Duodecillion)
+* Titan Pack: $7.8Dd
+* Soul Pack: $81.9Dd
+* Grimoire Pack: $16.5Dd
+* Beast Pack: $11.8Dd
+* Devour Pack: $131.2Dd
+* Academy Pack: $149.0Dc
+
+
+* **Card Values (Seen when opened):**
+* *White Reaper (Glitch / Devour Pack):* $40.0D/Card
+* *Purple Huntress (Candy / Devour Pack):* $3.67D/Card
+* *Plasma Knight (Blessed / Blaze Pack):* $2.28D/Card
+* *Flame Cat (Radioactive / Blaze Pack):* $3.93D/Card
+* *Devil Ignition (Admin / Blaze Pack):* $14.4D/Card
+* *Rising Commander (Blessed / Conquest Pack):* $1.47D/Card
+* *Crimson Sovereign (Radioactive / Conquest Pack):* $972.0Sp/Card (Sp = Septillion)
+* *Iron General (Starfallen / Conquest Pack):* $6.9D/Card
+
+
+
+#### SCREENS
+
+* **NEW: Conveyor Settings:** A UI panel accessed via a green pad in the base. It allows the player to automate the game.
+* *Conveyor Lvl:* Allows selecting which level of the conveyor to configure.
+* *Auto Spawn / Auto Buy:* Master toggles to turn automation On/Off.
+* *Mutations Checklist:* Allows the player to tell the Auto Buy to *only* buy packs if they have specific mutations (e.g., Normal, Golden, Diamond, Sakura, Candy, Blessed, Radioactive, Glitch, Starfallen, Admin, Unknown).
+* *Pack Checklist:* Allows the player to select exactly which types of packs the Auto Buy should purchase (e.g., Chainsaw, Eternity, Academy, Dynasty, Grail, Conquest, Blaze, Devour).
+
+
+* **NEW: Plaza - Card Crafter:** An NPC stall in the Plaza. Interacting brings up the "Card Craft" menu. It shows recipes to combine cards.
+* *Purple Huntress + Stitched Reaper + White Reaper = Devour Evolution.*
+* *Plasma Knight + Flame Cat + Devil Ignition = Blaze Evolution.*
+
+
+* **NEW: Plaza - Trait Roller:** An NPC stall next to the Crafter. Allows rolling "Traits" on cards (likely using Gems, though not explicitly shown in use).
+* **NEW: Plaza - Card Ranking:** A leaderboard portal/NPC in the Plaza.
+* **NEW: Items Inventory:** Grid showing consumable potions. Potion types include Cash, Luck, Mutation, Production, and Time. Tiers range from I to III.
+
+#### SYSTEMS
+
+* **NEW: Admin Abuse / Server Events:** A global server event triggered (likely by a developer or VIP admin, here "RoroSama1331"). It massively boosts server luck, money drops, pack spawn speeds, and forces extremely high-tier, late-game packs (like Devour, Conquest, Blaze) to spawn rapidly on the player's base pads, allowing them to buy end-game packs instantly if they have the cash.
+* **NEW: Time Skips / Potions:**
+* Because high-tier packs (like Conquest or Devour) take hours to open (e.g., 240 minutes / 4 hours), players must use "Time Skip" buttons.
+* Clicking a placed pack offers a Robux skip, OR the player can use "Time" potions from their inventory. "Time III" skips 10 Minutes from placed packs.
+
+
+* **NEW: Pack Mutations:** Before a pack is even opened, it spawns with a "Mutation" (the same as the Card Variants from the first video: Candy, Blessed, Glitch, etc.). The mutation is visible on the pack itself (e.g., "Conquest Pack [Blessed]"). This guarantees the card inside will have that mutation.
+* **NEW: Gifting System:** Players can click a placed card and hit a "Gift!" button to send it directly to another player in the server (he gifts multiple cards to "Greninja_Ash400").
+* **NEW: Storage Limit Management:** The player's storage is capped at 150. Throughout the video, he constantly hits the cap, requiring him to run to the "Sell" NPC in the Plaza to bulk-sell unneeded cards, freeing up space to open more packs.
+
+#### OPEN QUESTIONS
+
+* **Conveyor Settings Limit:** Does the "Auto Buy" and "Auto Spawn" feature cost Robux to unlock permanently, or is it a late-game feature earned with Cash? (In the previous video, Auto Conveyor was 359 Robux. Is Auto Buy a separate pass?).
+* **Time Skip Costs:** When he clicks "Skip 240min" on the Devour/Conquest packs, it skips instantly. Is he spending Robux, or does he have a massive stockpile of Time skip tickets/potions that are being auto-consumed? (At 11:48, a Robux prompt appears for "Skip <10MIN!" for 6 Robux, which implies he *is* out of free skips, but earlier he skipped 240 mins seamlessly).
+* **Evolution Mechanics:** In the Card Crafter, the recipe requires specific cards (e.g., Purple Huntress 0/2, Stitched Reaper 0/1, White Reaper 0/1). Does crafting consume the cards entirely to produce one new "Devour Evolution" card? And what are the stats of an Evolved card compared to its base components?

@@ -1,0 +1,152 @@
+This video (🔥 How to Get Craft Powerful Cards in Anime Card Farm Roblox!) contains no spoken commentary, only a few random sound effects (which the automatic transcription poorly attempts to interpret as "heat" and "hello").
+
+However, it provides invaluable visual evidence of the entire "Card Craft" (Evolution) process, how to interact with the Traits Machine, and what max-level gameplay looks like.
+
+Here is the complete, merged reconstruction data.
+
+1. TRANSCRIPT
+[The video has no spoken words. The player uses sound effects and edits for comedic effect. The transcript is merely the auto-caption's attempt to interpret in-game sounds.]
+
+[00:01] a few moments later
+[00:08] wow
+[00:13] hello hello
+[00:39] okay
+[00:50] heat
+[00:54] heat
+[01:13] heat
+[01:18] heat heat
+[01:39] heat
+[01:58] heat
+[02:25] heat heat
+[02:37] okay
+[02:50] yeah
+[03:04] hello hello hello
+[03:51] wow a run
+[04:06] yahoo yahoo yahoo
+
+2. BEAT-BY-BEAT FLOW LOG (0:00 - 3:00)
+[00:00] SEES: Player avatar stands in front of the Card Crafter stall in the Plaza. The UI is open. A card Fox Ascendant is in the "Crafting..." window.
+
+The UI shows Ready in 00:53:10 with a Skip button below it.
+
+Text: Fox Ascendant / Mutation: ??? / Evolution.
+[00:01] SEES: Spongebob "A few moments later" title card.
+[00:03] SEES: The timer is now complete. The bar is green and says Ready!. The button says CLAIM.
+[00:04] DOES: Clicks CLAIM.
+[00:04] HAPPENS: A banner pops up at the top of the screen: Claimed Starfallen Fox Ascendant!.
+[00:05] SEES: The main Card Craft menu. It lists various evolutions: Emerald Successor, Fox Ascendant, Dark Saber, etc.
+[00:05] DOES: Closes the Card Craft menu.
+[00:06] DOES: Teleports to Base.
+[00:07] SEES: Player places the new Fox Ascendant card on a pedestal. It is Level 50, LR Rank. Base stats: $314.52N/Card (Nonillion).
+[00:13] DOES: A new segment begins. Player walks up to the Card Crafter NPC in the Plaza. Text overlays: HOW TO GET CRAFT POWERFUL CARDS? CHECK THIS OUT.
+[00:18] DOES: Clicks the NPC.
+[00:19] SEES: Dialog option: Want to evolve your cards through crafting?.
+[00:21] DOES: Selects 2.) ["Open Card Crafting"].
+[00:25] SEES: The Card Craft menu. Player clicks Dark Saber.
+[00:30] SEES: The recipe for Dark Saber requires three specific cards: Royal Saber (0/2 Grail), Shadow Rider (0/2 Grail), and Golden King (0/1 Grail). At the bottom: Require: $40.0Sp.
+[00:34] DOES: The player edits the video to show their Index. They circle the three required cards in the Index to show they own them.
+[00:39] DOES: Video cuts to the player's base. The player has multiple Shadow Rider, Royal Saber, and Golden King cards placed on pedestals.
+[00:43] DOES: Player clicks Remove on all of these cards, returning them to their inventory.
+[00:54] DOES: Player runs back to the Card Crafter in the Plaza.
+[00:59] DOES: Opens the Crafting menu and selects Dark Saber again.
+[01:04] DOES: Clicks the Royal Saber slot.
+[01:05] SEES: A Select window appears showing two Royal Saber cards from the player's inventory: one is Starfallen mutation, one is Diamond mutation.
+[01:06] DOES: Selects both cards.
+[01:08] SEES: The Royal Saber slot now shows a green checkmark (2/2 Grail). The Mutations box on the right updates to show: Diamond 50%, Starfallen 50%.
+[01:14] DOES: Clicks the Shadow Rider slot.
+[01:15] SEES: Selects two Shadow Rider cards (both are Starfallen mutation).
+[01:17] SEES: The Mutations box updates: Diamond 25%, Starfallen 75%.
+[01:23] DOES: Clicks the Golden King slot. Selects one Golden King (Starfallen mutation).
+[01:25] SEES: The Mutations box finalizes the odds for the crafted card: Diamond 16.7%, Starfallen 83.3%.
+[01:28] DOES: Clicks CRAFT.
+[01:29] SEES: Crafting... window appears. Ready in 01:10:00.
+[01:32] DOES: Player uses an edit to skip the 1 hour and 10 minutes wait.
+[01:33] SEES: [Video briefly flashes to Conveyor Settings to show Auto-buy settings, then flashes to the player typing in chat "I don't find grail pack (blessed)". This suggests they are trying to farm specific packs/mutations to craft with.]
+[01:54] DOES: Player returns to the Card Crafter after the timer is done.
+[01:59] DOES: Clicks CLAIM.
+[02:01] HAPPENS: Banner appears: Claimed Starfallen Dark Saber!. (The 83.3% chance succeeded).
+[02:06] DOES: Player teleports to Base and removes a card to make room.
+[02:08] DOES: Places the newly crafted Starfallen Dark Saber card on the pedestal.
+[02:11] SEES: The new card is Level 1 and earns $6.91O/Card (Octillion).
+[02:18] DOES: Player opens Equip Best to show storage, then proceeds to rapidly click on the Dark Saber card to upgrade its level from 1 to 50.
+[02:37] HAPPENS: At Level 50, the card now earns $22.99N/Card (Nonillion).
+[02:50] DOES: Player runs around placing more high-tier packs on pedestals.
+
+3. EXTRACTION SHEETS (MERGED & UPDATED)
+NUMBERS
+Currency Scale Identified: $ -> K -> M -> B -> T -> Qa -> Qi -> Sx -> Sp -> O -> N -> Dc -> Ud -> Dd. (Note: O = Octillion, N = Nonillion).
+
+Card Values (Combat vs Economy):
+
+Starfallen Fox Ascendant (Evolution / Level 50 / LR Rank): $314.52N/Card
+
+Starfallen Dark Saber (Evolution / Level 1 / LR Rank): $6.91O/Card
+
+Starfallen Dark Saber (Evolution / Level 50 / LR Rank): $22.99N/Card (Octillion to Nonillion is a ~3,300x increase in economy from level 1 to 50).
+
+Card Crafting (Evolutions & Costs):
+
+Dark Saber Evolution: Requires 2 Royal Saber (Grail), 2 Shadow Rider (Grail), 1 Golden King (Grail). Crafting Cost: $40.0Sp (Septillion). Base timer: 1 Hour 10 Minutes.
+
+Flame Pillar Evolution: $2.4MD/Card base.
+
+Emperor King Evolution: $70.0M/Card base.
+
+Silent Esper Evolution: $6.5B/Card base.
+
+Genesis Striker Evolution: $890.0B/Card base.
+
+Traits Machine Costs (03:45):
+
+Auto Roll: $800.0O (Octillion) for this specific card, indicating the cash cost scales with the card's base value/tier.
+
+Gems Cost: 1 Trait Gem per roll (Player has 10.19K Trait Gems).
+
+Traits Machine Odds (03:45):
+
+Fortune I (1.1x Cash): 16.7%
+
+Vigor I (1.1x Health): 16.7%
+
+Strength I (1.1x Damage): 16.7%
+
+Fortune II (1.5x Cash): 10%
+
+Vigor II (1.5x Health): 10%
+
+Strength II (1.5x Damage): 10%
+
+SCREENS
+[UPDATED] Card Crafter UI: The UI has three steps:
+
+Select the desired Evolution (e.g., Dark Saber).
+
+Click the empty component slots to open the Select window, which shows eligible cards from the player's inventory.
+
+Confirm selection. The UI calculates the weighted percentage of the components' mutations and displays the final odds in a Mutations box on the right before the player pays the cash cost to begin crafting.
+
+[UPDATED] Traits Machine UI: Accessed via the purple stall. Shows the selected card, its current Rank/Stats, and the list of possible traits with their exact percentage drop rates. Players can pay Cash or Trait Gems to roll.
+
+SYSTEMS
+[RESOLVED] Mutation Inheritance (Crafting): The exact math for Evolution Mutations is revealed. The crafted card inherits a mutation based on the weighted average of the component cards used.
+
+In the video, 5 cards are used to craft the Dark Saber.
+
+The player uses 4 Starfallen cards and 1 Diamond card.
+
+1/5 = 20% (Adjusted slightly in-game to 16.7% for Diamond, likely due to a base failure/normal chance or specific card weighting).
+
+4/5 = 80% (Adjusted to 83.3% for Starfallen).
+
+The player receives the Starfallen mutation based on this roll.
+
+[UPDATED] The "Level 1 Upgrade" Meta: The video explicitly demonstrates why players must roll Traits/Ranks at Level 1. The Cash cost to auto-roll the Trait machine for an LR card at Level 50 is an astronomical $800.0O (Octillion) per roll. If the card were Level 1, this cost would be drastically lower, saving the player massive amounts of economy.
+
+[NEW] Server Hopping / Trading for Components: The video shows the player typing in global chat: I don't find grail pack (blessed). Because players need specific packs (like the Grail Pack) with specific mutations (like Blessed) to guarantee top-tier Evolutions, they must rely on the Auto-Buy system to catch them during events, or trade/ask other players in the server for them.
+
+OPEN QUESTIONS (Refined)
+[RESOLVED] Card Crafter Specifics: The component cards are permanently destroyed/consumed when the "CRAFT" button is pressed. The resulting Evolved card has vastly superior base stats compared to its components.
+
+Boss-Specific Shards: We still do not see "White Titan Shards" or "Moon Demon Shards" being spent. Are they used for specific, secret Boss Evolutions at the Card Crafter?
+
+Plaza Leaderboards: There are giant leaderboards in the Plaza (seen at 03:00) that track "Most Cash" and "Highest Floor". Are there specific seasonal rewards tied to these, or are they purely cosmetic flexes?
