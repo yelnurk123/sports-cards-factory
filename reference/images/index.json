@@ -1,0 +1,272 @@
+{
+ "source": "reference/anime-card-farm-teardown.html (embedded base64 frames, hub-extracted 2026-08-10)",
+ "count": 53,
+ "routing": "which-frame-proves-what lives in notes/transcript-frame-reconciliation-2026-08-10.md \u00a74",
+ "frames": [
+  {
+   "image": "frame-01.jpg",
+   "section": "",
+   "caption": ""
+  },
+  {
+   "image": "frame-02.jpg",
+   "section": "02 Passport & market",
+   "caption": "Server boards: left is the Tower \"Highest Floor\" (the top 8 are all stuck at floor 963 \u2014 a soft cap); right is \"People\", a leaderboard ranked by Cash net worth (leader at $3.48O \u2014 octillion). The game publicly measures players in money."
+  },
+  {
+   "image": "frame-03.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "The first screen after joining is Daily Rewards (7 days, 24h cooldown): D1 $100 \u2192 D2 Eclipse Pack (Secret) \u2192 \u2026 \u2192 D7 Shadow Monarch (Rainbow). The return hook lands before the tutorial even starts."
+  },
+  {
+   "image": "frame-04.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "Tutorial: \"SPAWN & BUY YOUR FIRST PACK\" . Top nav Plaza / Base / Sell ; left rail Shop \u00b7 Index \u00b7 Upgrade \u00b7 Items ; a spawn-pack pedestal, Conveyor Settings, and the first Robux pads (Starter \u2b219, 2x Cash \u2b21119)."
+  },
+  {
+   "image": "frame-05.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "Buying a pack at the podium: Ice Pack \u2014 Common \u2014 $100 ( E Buy). Billboards read \"JOIN THE GROUP FOR 1.25x CASH!\" and a like goal 61.3K/100K ; a limited chase-card ticker scrolls up top."
+  },
+  {
+   "image": "frame-06.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "The pack is placed on your plot and opens on a timer : \"OPENING IN\", ~5 min base, E Skip 5min. The timer grows with pack rarity \u2014 the game's core \"time wall\"."
+  },
+  {
+   "image": "frame-07.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "First card: Frosty Fighter \u2014 Common \u2014 Normal \u2014 $10/Card . A card = name \u00d7 rarity \u00d7 finish \u00d7 level; here everything is at base."
+  },
+  {
+   "image": "frame-08.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "You carry the card; on the plot it drips income \u2014 a \"You make: $2/s\" sign and a \"BEST CARD $10/Card\" tracker. The box gains value as cards accumulate."
+  },
+  {
+   "image": "frame-09.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "Selling: the central SELL stall, NPC \"Card Hunter\". A 5-option dialog \u2014 sell inventory / this / cards only / packs only / nevermind. Payout is ~ 50% of value."
+  },
+  {
+   "image": "frame-10.jpg",
+   "section": "03 Core loop: from the first second",
+   "caption": "Tutorial complete. Cards level up : Lvl 1\u21922 costs $2 (\u2192 $11/Card), Lvl 2\u21923 costs $3. Both the level price and the $/Card gain scale with the card's rarity."
+  },
+  {
+   "image": "frame-11.jpg",
+   "section": "04 Packs, conveyor & the rarity ladder",
+   "caption": "Conveyor Settings \u2014 the canonical rarity ladder. The Warn/Auto-Buy grid shows 9 base packs = 9 tiers: Ice(Common) \u00b7 Sand(Uncommon) \u00b7 Inferno(Rare) \u00b7 Lightning(Epic) \u00b7 Hightech(Legendary) \u00b7 Dark(Mythic) \u00b7 Eclipse(Secret) \u00b7 Isekai(Divine) \u00b7 Slayer(Transcendent)."
+  },
+  {
+   "image": "frame-12.jpg",
+   "section": "04 Packs, conveyor & the rarity ladder",
+   "caption": "Scrolling the same panel: the ladder does not stop at Transcendent . Premium tiers continue \u2014 Shadow(Monarch) \u00b7 Emperor(Pirate King) \u00b7 Demon \u00b7 Manga \u00b7 Celestial(Galaxy) \u00b7 Heavenly(Heaven) \u00b7 Corrupted(Void) \u00b7 Striker(Soccer) \u00b7 \u2026 \u00b7 Chainsaw \u00b7 Grail \u00b7 Blaze \u00b7 Devour. The full ladder is 41 rarity tiers , each its own pack and card pool."
+  },
+  {
+   "image": "frame-13.jpg",
+   "section": "04 Packs, conveyor & the rarity ladder",
+   "caption": "Exclusive Shop \u2014 premium Robux packs with an odds table. Royal Pack (\u2b2199/299/799): $1.2K 48.5% \u00b7 $25K 32% \u00b7 $500K 14% \u00b7 $40M 5% \u00b7 LIMITED $500M 0.5%. The odds skeleton is \u2248 48.5 / 32 / 14 / 5 / 0.5% ; a higher pack shifts the whole value curve up."
+  },
+  {
+   "image": "frame-14.jpg",
+   "section": "05 A card = 5 value multipliers",
+   "caption": "Index \u2014 a catalog of 2,132 cards , organized by finish tabs (Normal \u00b7 Golden \u00b7 Diamond \u00b7 Venomous \u00b7 Rainbow \u00b7 Sakura \u00b7 Candy \u00b7 \u2026). A card's identity = Finish \u00d7 Rarity \u00d7 Name; unowned entries are hidden as \"???\"."
+  },
+  {
+   "image": "frame-15.jpg",
+   "section": "05 A card = 5 value multipliers",
+   "caption": "The same Cybernetic Heroine (Legendary) in Normal finish \u2014 $2.0K/Card ."
+  },
+  {
+   "image": "frame-16.jpg",
+   "section": "05 A card = 5 value multipliers",
+   "caption": "The same card in Golden \u2014 $3.0K/Card (\u00d71.5). Venomous is $6.0K (\u00d73.0)."
+  },
+  {
+   "image": "frame-17.jpg",
+   "section": "06 Plaza \u2014 the activity hub",
+   "caption": "Plaza from above : three stalls SHOP / SELL / UPGRADE plus six activity stations \u2014 CARD CRAFT , CARD RANKING (rank), BOSS RAID , TRAITS ROLL , INFINITY TOWER , FREE REWARDS (ads)."
+  },
+  {
+   "image": "frame-18.jpg",
+   "section": "06 Plaza \u2014 the activity hub",
+   "caption": "The UPGRADE stall \u2014 5 upgrades with dual pricing (Cash or Robux \u2b21): Base Expansion (slots) \u00b7 Luck Boost (+% rarer packs) \u00b7 Cash Boost (+% on selling) \u00b7 Time Boost (\u2212% timer) \u00b7 Speed Boost. The Cash price escalates steeply per level."
+  },
+  {
+   "image": "frame-19.jpg",
+   "section": "06 Plaza \u2014 the activity hub",
+   "caption": "The Items stall \u2014 5 materials: Rank Gems (roll rank) \u00b7 Trait Gems (roll trait) \u00b7 Raid Shards (universal, from any boss) \u00b7 White Titan Shards \u00b7 Moon Demon Shards (boss-specific, feed boss-card crafts)."
+  },
+  {
+   "image": "frame-20.jpg",
+   "section": "06 Plaza \u2014 the activity hub",
+   "caption": "Potions \u2014 timed boosts. Cash I: \"[2 Minutes] +10% Cash Boost\" , Use / Use(5x), stack cap 250. Three lines (Cash/Luck/Mutation) \u00d7 three tiers (I\u2013III)."
+  },
+  {
+   "image": "frame-21.jpg",
+   "section": "07 The rolls: Rank & Trait",
+   "caption": "Rank Machine (Card Ranking). Roll rank with Rank Gems (\u2b211) or Cash. Rank is the card's Cash multiplier. Ladder: F 1x 32% \u00b7 E 1.1x 26% \u00b7 D 1.2x 18% \u00b7 C 1.35x 12% \u00b7 B 1.6x 7% \u00b7 A 2x 3.82% \u00b7 S 3x 1% \u00b7 SS 6.5x 0.1% \u00b7 SR 8x 0.05% \u00b7 UR 10x 0.02% (+ LR)."
+  },
+  {
+   "image": "frame-22.jpg",
+   "section": "07 The rolls: Rank & Trait",
+   "caption": "Traits Machine (Traits Roll) \u2014 a mirror of the Rank Machine but with Trait Gems, pity 1500/4000. A trait is a card's second power multiplier: single-stat tiers (Fortune/Vigor/Strength) plus rare combo traits that buff Cash + Damage + HP at once."
+  },
+  {
+   "image": "frame-23.jpg",
+   "section": "08 Card Craft evolution",
+   "caption": "Card Craft \u2014 a grid of 13 evolution recipes : Flame Pillar $2.4M \u00b7 Emperor King $70M \u00b7 Silent Esper $6.5B \u00b7 Genius Striker $890B \u00b7 \u2026 \u00b7 Black Reaper $2.0O/Card (top recipe)."
+  },
+  {
+   "image": "frame-24.jpg",
+   "section": "08 Card Craft evolution",
+   "caption": "Recipe detail: needs Wind Slayer + Serpent Slayer + Fog Slayer (all Transcendent, 1 each) + $1.8M and a Mutations slot \u2192 CRAFT."
+  },
+  {
+   "image": "frame-25.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "Boss Raid : enter through the red portal at Plaza center \u2192 an arena. The boss (White Titan) opens on a ~30-min cycle , with a Raid Shop right in the arena. E Boss Fight when it is open."
+  },
+  {
+   "image": "frame-26.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "Raid setup: a team of 4 cards + Equip Best, difficulty EASY / MEDIUM / HARD / NIGHTMARE . A card in combat = HP + DMG + Rank (Vision Striker: \u27641.7Qd / \u2694842.1T)."
+  },
+  {
+   "image": "frame-27.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "The fight is 4 phases (segmented HP bar), ~5-min timer. Phase 3/4 = \"TITAN RAGE\" : the boss enrages, damage jumps 261 \u2192 1.3M. Recommended DMG/card by difficulty: Easy 1.3B \u00b7 Medium 24.4Qn \u00b7 Hard 4.7O (octillion); Nightmare higher still."
+  },
+  {
+   "image": "frame-28.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "Raid Rewards : x22 Raid Shards + x4 White Titan Shards + a \"Cursed Cash\" card (Lvl 1). Cooldown is 1 fight per hour . Raid Shop: White Titan card for 150 shards (=50% of your best card), Moon Demon for 175 (=60%)."
+  },
+  {
+   "image": "frame-29.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "Infinity Tower : a team of 4 cards \u2192 BATTLE. Rewards \"every two floors\" by milestone: Cash 25% Floor 1+ \u00b7 potions \u00b7 Rank Gems 10% Floor 100+ \u00b7 Trait Gems 16% Floor 200+. The server leader sits at floor 963 ."
+  },
+  {
+   "image": "frame-30.jpg",
+   "section": "09 Combat: Boss Raid & Tower",
+   "caption": "Tower gameplay is a 1v1 auto-battle : your DMG vs the enemy's HP (Fog Slayer 1.1B one-shots early floors). Enemy HP scales per floor; Auto Replay + Show/Hide Battle let you climb hands-free while walking your base. A 2x Tower Speed pass speeds the animation."
+  },
+  {
+   "image": "frame-31.jpg",
+   "section": "10 Economy & prices",
+   "caption": "Tower rewards for one climb (Floor 68) \u2014 the main free faucet of gems and potions: $4.13B + a pile of potions (Cash/Luck/Mutation I\u2013III). This is where a player gets the consumables to roll with."
+  },
+  {
+   "image": "frame-32.jpg",
+   "section": "11 Monetization",
+   "caption": "The native Roblox store: tabs Home \u00b7 Top picks \u00b7 Passes \u00b7 Currency \u00b7 Consumables. Passes: 2x Roll \u2b21299 \u00b7 2x Tower \u2b21199 \u00b7 V.I.P \u2b21199 \u00b7 2x Offline \u2b2179 \u00b7 Auto Conveyor \u2b21899 \u00b7 2x CASH \u2b21119. The \u2b21 prices match the API 1:1."
+  },
+  {
+   "image": "frame-33.jpg",
+   "section": "11 Monetization",
+   "caption": "Podiums of Robux chase cards on limited stock: Venomous Almighty King $45.6B/Card \u2b21449 (669/1000) \u00b7 Glitch Vision Striker $5.75T/Card \u2b21999 \u00b7 Admin Ember Elf $33.6Sp/Card \u2b214799 (0/125 \u2014 sold out). Buy the dream directly."
+  },
+  {
+   "image": "frame-34.jpg",
+   "section": "12 HUD & menus",
+   "caption": "The cards panel: Storage 2/150 , an Equip Best button (\"Equipped 3 best cards!\") that auto-fills the base slots with your highest-value cards; a 10-slot hotbar (keys 1\u20130) for quick placement."
+  },
+  {
+   "image": "frame-35.jpg",
+   "section": "12 HUD & menus",
+   "caption": "The Upgrades panel with its caps: Cash Boost +200% MAX (\u2192 Cash 3.00x), Time Boost \u221224% MAX ; right side is the persistent HUD Luck 14.60x / Cash 3.00x \u2014 the sum of upgrades + passes + gems + potions."
+  },
+  {
+   "image": "frame-36.jpg",
+   "section": "13 Retention",
+   "caption": "PlayTime Rewards \u2014 a session ladder of 12 rewards (cash/packs/cards) that resets when you leave (\"Leaving Resets Progress!\"). Claim All for \u2b21449 monetizes impatience."
+  },
+  {
+   "image": "frame-37.jpg",
+   "section": "13 Retention",
+   "caption": "Free Rewards \u2014 a rewarded ad: 4 videos/day , a random drop from Rank Gems / Trait Gems / Time III / Luck III / Cash III potions. An F2P trickle of gems and consumables."
+  },
+  {
+   "image": "frame-38.jpg",
+   "section": "13 Retention",
+   "caption": "Player gifting : another player sends an \"@player Gift You!\" popup with Accept/Decline. This is the trade channel; Settings has a \"Block Gift request\" toggle (default NO)."
+  },
+  {
+   "image": "frame-39.jpg",
+   "section": "14 Badges & the social funnel",
+   "caption": "In place of achievement badges are collective goals : a \"LIKE THE GAME FOR BIG UPDATE\" board with a like counter 61.3K/100K and \"JOIN THE GROUP FOR 1.25x CASH\". Social actions convert into an in-game bonus and update pressure."
+  },
+  {
+   "image": "frame-40.jpg",
+   "section": "15 SFX, VFX & ceremonies",
+   "caption": "The full-screen pack open : the card art fills the screen with $/Card + Rarity + Finish (Titan Shadow \u2014 Shadow \u2014 Diamond)."
+  },
+  {
+   "image": "frame-41.jpg",
+   "section": "15 SFX, VFX & ceremonies",
+   "caption": "Each finish gets its own color and glow (Wind Slayer \u2014 Transcendent \u2014 Diamond). Rarity reads instantly from the frame and shine."
+  },
+  {
+   "image": "frame-42.jpg",
+   "section": "16 Clippable moments",
+   "caption": "436,410 views ANIME CARD FARMING ROBLOX \ud83d\ude31 GamerBlox"
+  },
+  {
+   "image": "frame-43.jpg",
+   "section": "16 Clippable moments",
+   "caption": "52,993 views Starting as Noob with OP CARD in Anime Card Farm Roblox! NagRoblox"
+  },
+  {
+   "image": "frame-44.jpg",
+   "section": "16 Clippable moments",
+   "caption": "35,683 views *UPDATE CODES* ALL WORKING CODES FOR ANIME CARD FARM IN JUNE 2026 ROBLOX ANIME CARD FARM CODES Codes Zone Gaming"
+  },
+  {
+   "image": "frame-45.jpg",
+   "section": "16 Clippable moments",
+   "caption": "11,768 views *NEW* all WORKING CODES in Anime Card Farm IN 2026! Beastly.Roblox"
+  },
+  {
+   "image": "frame-46.jpg",
+   "section": "16 Clippable moments",
+   "caption": "11,144 views The NEW fastest way to become OP in Anime Card Farm StarkiIIer"
+  },
+  {
+   "image": "frame-47.jpg",
+   "section": "16 Clippable moments",
+   "caption": "7,836 views HOW TO BECOME OP FAST IN ANIME CARD FARM StarkiIIer"
+  },
+  {
+   "image": "frame-48.jpg",
+   "section": "16 Clippable moments",
+   "caption": "6,265 views New Update Anime Card Farm \ud83e\udd2f Roblox NaveenCombat"
+  },
+  {
+   "image": "frame-49.jpg",
+   "section": "16 Clippable moments",
+   "caption": "5,917 views \ud83d\udd25 I Found the RAREST Card in the BIG UPDATE! \ud83d\ude31 | Anime Card Farm Roblox bagaskara"
+  },
+  {
+   "image": "frame-50.jpg",
+   "section": "16 Clippable moments",
+   "caption": "5,682 views \ud83d\udd25 How to Get Craft Powerful Cards in Anime Card Farm Roblox! Complete Crafting Guide (2026) bagaskara"
+  },
+  {
+   "image": "frame-51.jpg",
+   "section": "16 Clippable moments",
+   "caption": "5,394 views *\ud83d\udd28CRAFT UPDATE* ALL WORKING CODES FOR ANIME CARD FARM IN JULY 2026! ROBLOX ANIME CARD FARM EdgedSwordHD"
+  },
+  {
+   "image": "frame-52.jpg",
+   "section": "16 Clippable moments",
+   "caption": "5,012 views STRONGEST Anime Card in anime card Farm in Roblox! \u2694\ufe0f\ud83d\udcb0 RJ Blox"
+  },
+  {
+   "image": "frame-53.jpg",
+   "section": "16 Clippable moments",
+   "caption": "4,581 views \ud83d\udd25 Anime Card Farm Roblox RAID Gameplay | Quick Way to Farm Mythic, Secret & Rare Cards (Full Guide) bagaskara"
+  }
+ ]
+}

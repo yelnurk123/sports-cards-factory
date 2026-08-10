@@ -17,4 +17,4 @@
 | M2 task (leveling + full 45-rung ladder) | owed | M1.1 + user playtest + foil spec | |
 | Spec state labels (shelf/cart/built/cut on milestones + roster packs) | owed | readability | per alignment pack §6 |
 | Flow spec v1.1 (frame+transcript verified) | **landed** 2026-08-10 | — | 53 frames extracted, 17 key viewed, 6/6 transcripts read; reconciliation note + dated rulings committed |
-| Reference frames unpacked to `reference/images/` | tasked 2026-08-10-003 | build chat | **hub unblocked** (local extract + viewing done 2026-08-10); repo commit still on build chat so lanes/future chats can route. Note: mailbox task 2026-08-09-001 is the reusable-tool version; 003 first, tool after |
+| Reference frames unpacked to `reference/images/` | **landed** 2026-08-10 (hub) | — | 53 JPEGs + images/index.json, pushed by hub directly after verification prompt; mailbox task 2026-08-10-003 closed via result note. Reusable-tool version remains as mailbox task 2026-08-09-001 |
