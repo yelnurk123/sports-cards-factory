@@ -178,7 +178,13 @@ function HudController.OnStart(self: any)
 	end)
 
 	momentary("Sell", function()
-		teleportTo(PlotLayout.SellSpot)
+		-- env v1.1 E0.3: Sell teleports to your OWN base's vendor, not the Plaza
+		local idx = player:GetAttribute("PlotIndex")
+		if idx then
+			teleportTo((PlotLayout.baseFrame(idx) * CFrame.new(PlotLayout.VendorSpotLocal)).Position)
+		else
+			HudController:Toast("No plot yet!")
+		end
 	end)
 
 	-- left rail (spec §11): Index works; Shop/Upgrade/Items are Coming Soon

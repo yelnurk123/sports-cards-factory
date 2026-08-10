@@ -1,13 +1,14 @@
 --!strict
--- IncomeService — the drip (flow spec v1.2 F3, rewritten for M1.2). Canon
--- numbers unchanged (economy §2f): each DISPLAYED card drops one token worth
--- its current $/Card every ~5s; "$/s" = Σ ÷ 5. Tokens drop onto the token
--- lane ADJACENT to the card's pedestal and ride to that lane's box point at
--- the base's front edge. Box mechanics (v1.2, hub ruling 2026-08-11): a box
--- fills with exactly 8 token-cards → a new empty box spawns ON TOP (vertical
--- stack, cap 5 — the drip pauses while a 6th would be needed); "E Carry $X"
--- takes the TOP box (value = the cards physically in it, partial or full).
--- The "You make: $X/s" sign and BEST CARD board keep ticking regardless.
+-- IncomeService — the drip (flow spec v1.3 F3). Canon numbers unchanged
+-- (economy §2f): each DISPLAYED card drops one token worth its current $/Card
+-- every ~5s; "$/s" = Σ ÷ 5. Tokens drop onto the token lane ADJACENT to the
+-- card's pedestal and ride to that lane's box point at the base's front edge.
+-- Box mechanics (v1.2/v1.3, hub rulings 2026-08-11): a box fills with exactly
+-- 8 token-cards → a new empty box spawns ON TOP (vertical stack, cap 5 — the
+-- drip pauses while a 6th would be needed); "E Carry $X" takes the WHOLE
+-- stack (value = Σ of all token-cards in all boxes, shown on the prompt), a
+-- fresh empty box starts filling after. The "You make: $X/s" sign and BEST
+-- CARD board keep ticking regardless.
 
 local Players = game:GetService("Players")
 local ProximityPromptService = game:GetService("ProximityPromptService")
@@ -63,7 +64,8 @@ local function getStack(player: Player, laneIdx: number): { Box }
 end
 
 -- Rebuilds one lane's box-stack visuals from state (≤5 boxes) and refreshes
--- the carry prompt ("$X · n/8") + the floating box-point label.
+-- the carry prompt (Σ of the WHOLE stack, flow v1.3 F3.18) + the floating
+-- box-point label (the top box's own fill).
 local function rebuildLaneVisuals(player: Player, laneIdx: number)
 	local plot = WorldService:GetPlot(player)
 	if not plot then
@@ -107,7 +109,14 @@ local function rebuildLaneVisuals(player: Player, laneIdx: number)
 		end
 	end
 	local top = stack[#stack]
-	lane.carryPrompt.ObjectText = EconomyConfig.formatMoney(top.value) .. " · " .. tostring(top.fill) .. "/" .. tostring(BOX_FILL)
+	local sum = 0
+	for _, box in stack do
+		sum += box.value
+	end
+	lane.carryPrompt.ObjectText = EconomyConfig.formatMoney(sum)
+		.. " · "
+		.. tostring(#stack)
+		.. (if #stack == 1 then " box" else " boxes")
 	lane.valueLabel.Text = tostring(top.fill) .. "/" .. tostring(BOX_FILL) .. " · " .. EconomyConfig.formatMoney(top.value)
 end
 
@@ -183,8 +192,9 @@ local function dropToken(player: Player, slotKey: string, value: number)
 end
 
 function IncomeService.OnStart(self: any)
-	-- carry: the TOP box of a lane's stack becomes a carried box (v1.2 F3.18);
-	-- the stack below keeps its boxes; a fresh empty box starts filling on top
+	-- carry: the WHOLE stack at a box point goes into hand (flow v1.3 F3.18) —
+	-- value = Σ of every token-card in every stacked box; a fresh empty box
+	-- starts filling after. One carried batch at a time.
 	ProximityPromptService.PromptTriggered:Connect(function(prompt, player)
 		if prompt:GetAttribute("Tag") ~= "CarryBox" then
 			return
@@ -198,23 +208,22 @@ function IncomeService.OnStart(self: any)
 			return
 		end
 		local stack = getStack(player, laneIdx)
-		local top = stack[#stack]
-		if not top or top.value <= 0 then
-			PlacementService:Notify(player, "Top box is empty — displayed cards drip tokens into it every " .. tostring(EconomyConfig.BOX_INTERVAL) .. "s")
+		local sum = 0
+		for _, box in stack do
+			sum += box.value
+		end
+		if sum <= 0 then
+			PlacementService:Notify(player, "Boxes are empty — displayed cards drip tokens into them every " .. tostring(EconomyConfig.BOX_INTERVAL) .. "s")
 			return
 		end
-		local value = top.value
-		local ok, err = CarryService:GiveBox(player, value)
+		local ok, err = CarryService:GiveBox(player, sum)
 		if not ok then
-			PlacementService:Notify(player, err or "Can't carry that box right now")
+			PlacementService:Notify(player, err or "Can't carry those boxes right now")
 			return
 		end
-		table.remove(stack) -- the top box leaves with the player
-		if #stack == 0 or stack[#stack].fill >= BOX_FILL then
-			table.insert(stack, { fill = 0, value = 0 }) -- fresh empty box fills on top
-		end
+		stacks[player][laneIdx] = { { fill = 0, value = 0 } } -- fresh empty box starts filling
 		rebuildLaneVisuals(player, laneIdx)
-		PlacementService:Notify(player, "Carrying " .. EconomyConfig.formatMoney(value) .. " — walk it into the green Sell zone!")
+		PlacementService:Notify(player, "Carrying " .. EconomyConfig.formatMoney(sum) .. " — sell it to your plot's Sell vendor!")
 	end)
 
 	Players.PlayerRemoving:Connect(function(player)
@@ -261,7 +270,7 @@ function IncomeService.OnStart(self: any)
 		end
 	end)
 
-	print("[IncomeService] Ready (v1.2: tokens → lane box points; 8-fill boxes stack to 5; Carry takes the top)")
+	print("[IncomeService] Ready (v1.3: tokens → lane box points; 8-fill boxes stack to 5; Carry takes the whole stack)")
 end
 
 return IncomeService

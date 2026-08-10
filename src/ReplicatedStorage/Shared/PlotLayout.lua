@@ -41,6 +41,8 @@ end
 
 -- Named spots for HUD teleports (mirror WorldService's plaza build).
 PlotLayout.PlazaSpot = Vector3.new(0, 4, 0)
-PlotLayout.SellSpot = Vector3.new(0, 4, 62) -- in front of the Sell zone pad
+-- Sell teleport targets the player's OWN base vendor (env v1.1 E0.3): this is
+-- the landing spot on his zone pad, in the base's local frame.
+PlotLayout.VendorSpotLocal = Vector3.new(5.5, 3, -21.5)
 
 return PlotLayout

@@ -1,9 +1,11 @@
 --!strict
--- SellService — cashing out (flow spec v1.1 F4, rewritten for M1.1).
+-- SellService — cashing out (flow spec v1.3 F4, M1.2.1).
 -- TWO paths, frame-verified:
---  1. CARD BOXES: walking into the green Sell zone while carrying a box cashes
---     it instantly at 1:1 (boxes ARE earned income; the 50% rate never applies).
---  2. CARD HUNTER DIALOG (inventory only): the 5 reference options verbatim;
+--  1. CARD BOXES: walking into a green "Sell Card Boxes!" zone while carrying
+--     boxes cashes them instantly at 1:1 (boxes ARE earned income; the 50%
+--     rate never applies). The canonical zone is each base's OWN vendor pad
+--     (env v1.1 E1.16a, owner-only); the plaza Sell zone is a duplicate.
+--  2. VENDOR DIALOG (inventory only): the 5 reference options verbatim;
 --     cards sell at the deliberate 50% of value. Bulk options show a quote
 --     enumerating contents (count per type + total payout) and only commit on
 --     an explicit confirm (hub ruling 2026-08-10: no silent card selling).
@@ -137,21 +139,18 @@ local function commitQuote(player: Player, data: any, quote: Quote)
 	print(("[SellService] %s sold via dialog for $%d"):format(player.Name, quote.total))
 end
 
--- Walk-in box cash-out (flow spec F4.22): carrying a box into the Sell zone
--- pays its full value instantly, 1:1.
-local function onZoneTouched(hit: BasePart)
-	local player = Players:GetPlayerFromCharacter(hit.Parent)
-		or Players:GetPlayerFromCharacter(hit.Parent and hit.Parent.Parent)
-	if not player then
-		return
-	end
+-- Walk-in box cash-out (flow spec v1.3 F4.22–23): carrying boxes into a Sell
+-- zone pays their full value instantly, 1:1. The canonical sell point is each
+-- base's OWN vendor zone (env v1.1 E1.16a, owner-only); the plaza zone stays
+-- as a duplicate convenience for anyone.
+local function cashCarriedBox(player: Player): boolean
 	local now = os.clock()
 	if lastZoneSell[player] and now - lastZoneSell[player] < 0.5 then
-		return
+		return false
 	end
 	local data = DataService:GetData(player)
 	if not data or (data.carried.boxValue or 0) <= 0 then
-		return
+		return false
 	end
 	lastZoneSell[player] = now
 	local value = CarryService:TakeBox(player)
@@ -159,6 +158,34 @@ local function onZoneTouched(hit: BasePart)
 	DataService:SyncMirror(player)
 	PlacementService:Notify(player, "Box sold: +" .. EconomyConfig.formatMoney(value))
 	print(("[SellService] %s sold a box for $%s (1:1 zone)"):format(player.Name, tostring(value)))
+	return true
+end
+
+local function onZoneTouched(hit: BasePart)
+	local player = Players:GetPlayerFromCharacter(hit.Parent)
+		or Players:GetPlayerFromCharacter(hit.Parent and hit.Parent.Parent)
+	if player then
+		cashCarriedBox(player)
+	end
+end
+
+-- Per-base vendor zone: only the plot OWNER's boxes cash out here (v1.3).
+local function onBaseZoneTouched(plot: any, hit: BasePart)
+	local player = Players:GetPlayerFromCharacter(hit.Parent)
+		or Players:GetPlayerFromCharacter(hit.Parent and hit.Parent.Parent)
+	if not player then
+		return
+	end
+	if plot.owner ~= player then
+		local now = os.clock()
+		if lastZoneSell[player] and now - lastZoneSell[player] < 0.5 then
+			return
+		end
+		lastZoneSell[player] = now
+		PlacementService:Notify(player, "That's not your vendor!")
+		return
+	end
+	cashCarriedBox(player)
 end
 
 function SellService.OnStart(self: any)
@@ -211,7 +238,13 @@ function SellService.OnStart(self: any)
 		commitQuote(player, data, quote)
 	end)
 
-	WorldService:GetSellZone().Touched:Connect(onZoneTouched)
+	WorldService:GetSellZone().Touched:Connect(onZoneTouched) -- plaza duplicate
+	-- per-base vendor zones (env v1.1 E1.16a): owner-only cash-out
+	for _, plot in WorldService:GetPlots() do
+		plot.sellZone.Touched:Connect(function(hit)
+			onBaseZoneTouched(plot, hit)
+		end)
+	end
 
 	Players.PlayerRemoving:Connect(function(player)
 		lastZoneSell[player] = nil

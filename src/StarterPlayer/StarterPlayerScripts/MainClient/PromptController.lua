@@ -4,6 +4,7 @@
 -- anything not tagged for it; OpenPack is handled entirely server-side).
 
 local ProximityPromptService = game:GetService("ProximityPromptService")
+local Players = game:GetService("Players")
 
 local PackInfoController = require(script.Parent.PackInfoController)
 local SellController = require(script.Parent.SellController)
@@ -20,6 +21,14 @@ function PromptController.OnStart(self: any)
 				PackInfoController:Open(packId, if type(foil) == "string" then foil else nil)
 			end
 		elseif tag == "SellStall" then
+			-- per-base vendors answer only their plot's owner (env v1.1 E1.16a);
+			-- the plaza stall has no OwnerUserId and serves everyone (duplicate)
+			local ownerId = prompt:GetAttribute("OwnerUserId")
+			if type(ownerId) == "number" and ownerId ~= Players.LocalPlayer.UserId then
+				local HudController = require(script.Parent.HudController)
+				HudController:Toast("That's not your vendor!")
+				return
+			end
 			SellController:Open()
 		end
 		-- SpawnPack / PlacePack / OpenPack / CarryBox are handled server-side

@@ -42,6 +42,8 @@ export type PlotRec = {
 	spawnPodiumPrompt: ProximityPrompt, -- per-base Spawn Pack podium (owner only)
 	rateSignLabel: TextLabel, -- "You make: $X/s" beside the box points
 	bestCardLabel: TextLabel, -- BEST CARD board at the back fence
+	sellZone: Part, -- the base's own "Sell Card Boxes!" pad (env v1.1 E1.16a)
+	sellPrompt: ProximityPrompt, -- the base vendor's Talk prompt (owner only)
 	owner: Player?,
 }
 
@@ -131,6 +133,21 @@ local function makePrompt(parent: Instance, name: string, action: string, object
 	prompt:SetAttribute("Tag", tag)
 	prompt.Parent = parent
 	return prompt
+end
+
+-- Blocky vendor mannequin (zero custom meshes): the plaza Card Hunter and
+-- every base's own Sell vendor share this treatment (env v1.1 E1.16a).
+local function mannequin(parent: Instance, name: string, cf: CFrame): Part
+	local npc = Instance.new("Model")
+	npc.Name = name
+	local torso = part(npc, "Torso", Vector3.new(2, 2, 1), cf * CFrame.new(0, 3.9, 0), Color3.fromRGB(80, 60, 120))
+	part(npc, "Head", Vector3.new(1.2, 1.2, 1.2), cf * CFrame.new(0, 5.5, 0), Color3.fromRGB(245, 205, 160))
+	part(npc, "LegL", Vector3.new(0.9, 1.9, 1), cf * CFrame.new(-0.55, 2, 0), Color3.fromRGB(50, 50, 60))
+	part(npc, "LegR", Vector3.new(0.9, 1.9, 1), cf * CFrame.new(0.55, 2, 0), Color3.fromRGB(50, 50, 60))
+	part(npc, "ArmL", Vector3.new(0.8, 2, 0.9), cf * CFrame.new(-1.45, 3.9, 0), Color3.fromRGB(245, 205, 160))
+	part(npc, "ArmR", Vector3.new(0.8, 2, 0.9), cf * CFrame.new(1.45, 3.9, 0), Color3.fromRGB(245, 205, 160))
+	npc.Parent = parent
+	return torso
 end
 
 --[[ island ground + road circuit ]]--
@@ -267,15 +284,12 @@ local function buildPlaza()
 	buildStall(worldFolder, "UpgradeStall", 18, 52, Color3.fromRGB(70, 110, 190), Color3.fromRGB(240, 240, 240), "UPGRADE\n(coming with the upgrade milestone)")
 
 	-- Card Hunter NPC behind the Sell counter (blocky mannequin; the prompt
-	-- lives on the counter — flow spec F4's 5-option dialog is unchanged)
+	-- lives on the counter — flow spec F4's 5-option dialog is unchanged).
+	-- The plaza stall is a DUPLICATE convenience (env v1.1 E2.19): the
+	-- canonical sell point is each base's own vendor (E1.16a).
 	local npc = Instance.new("Model")
 	npc.Name = "CardHunter"
-	part(npc, "Torso", Vector3.new(2, 2, 1), CFrame.new(0, 4.9, 49.5), Color3.fromRGB(80, 60, 120))
-	part(npc, "Head", Vector3.new(1.2, 1.2, 1.2), CFrame.new(0, 6.5, 49.5), Color3.fromRGB(245, 205, 160))
-	part(npc, "LegL", Vector3.new(0.9, 1.9, 1), CFrame.new(-0.55, 3, 49.5), Color3.fromRGB(50, 50, 60))
-	part(npc, "LegR", Vector3.new(0.9, 1.9, 1), CFrame.new(0.55, 3, 49.5), Color3.fromRGB(50, 50, 60))
-	part(npc, "ArmL", Vector3.new(0.8, 2, 0.9), CFrame.new(-1.45, 4.9, 49.5), Color3.fromRGB(245, 205, 160))
-	part(npc, "ArmR", Vector3.new(0.8, 2, 0.9), CFrame.new(1.45, 4.9, 49.5), Color3.fromRGB(245, 205, 160))
+	local npcTorso = mannequin(npc, "Body", CFrame.new(0, 1, 49.5))
 	billboard(npc, "Name", "Card Hunter", Vector2.new(160, 30), 8.2, Color3.fromRGB(255, 230, 150), 40)
 	npc.Parent = worldFolder
 
@@ -479,6 +493,18 @@ local function buildBase(index: number): PlotRec
 	local rateBb = billboard(signPost, "Rate", "You make: $0/s", Vector2.new(240, 40), 3.2, Color3.fromRGB(180, 230, 255), 45)
 	local rateSignLabel = rateBb:FindFirstChild("Text") :: TextLabel
 
+	-- Zone C2: the base's OWN Sell vendor (env v1.1 E1.16a) at the front edge
+	-- beside the box points, facing the walkway; his green "Sell Card Boxes!"
+	-- zone pad in front cashes carried boxes 1:1 (owner only). He also opens
+	-- the 5-option inventory dialog (cards 50%). This vendor, not any plaza
+	-- stall, is the canonical sell point.
+	local vendorTorso = mannequin(model, "SellVendor", L(5.5, 0, -18.5))
+	billboard(vendorTorso, "Name", "Sell Vendor", Vector2.new(160, 30), 4.6, Color3.fromRGB(255, 230, 150), 40)
+	local sellPrompt = makePrompt(vendorTorso, "SellVendorPrompt", "Talk", "Sell Vendor (sell inventory)", "SellStall")
+	local baseSellZone = part(model, "SellZone", Vector3.new(4, 0.4, 3), L(5.5, 0.2, -21.5), Color3.fromRGB(60, 200, 90))
+	baseSellZone.Transparency = 0.15
+	billboard(baseSellZone, "Sign", "Sell Card Boxes!\nWalk in while carrying (1:1)", Vector2.new(320, 44), 2.4, Color3.fromRGB(200, 255, 200), 40)
+
 	-- BEST CARD billboard at the back fence (env v1 E1.16; road-readable)
 	part(model, "BestPostL", Vector3.new(0.5, 9, 0.5), L(-6, 4.5, 23.4), Color3.fromRGB(110, 84, 60))
 	part(model, "BestPostR", Vector3.new(0.5, 9, 0.5), L(6, 4.5, 23.4), Color3.fromRGB(110, 84, 60))
@@ -543,6 +569,8 @@ local function buildBase(index: number): PlotRec
 		spawnPodiumPrompt = spawnPodiumPrompt,
 		rateSignLabel = rateSignLabel,
 		bestCardLabel = bestCardLabel,
+		sellZone = baseSellZone,
+		sellPrompt = sellPrompt,
 		owner = nil,
 	}
 end
@@ -577,6 +605,7 @@ function WorldService.ClaimPlot(self: any, player: Player): PlotRec?
 				lane.stackFolder:ClearAllChildren()
 			end
 			plot.spawnPodiumPrompt:SetAttribute("OwnerUserId", player.UserId)
+			plot.sellPrompt:SetAttribute("OwnerUserId", player.UserId)
 			-- fresh readouts for the new owner (IncomeService owns the values)
 			plot.rateSignLabel.Text = "You make: $0/s"
 			plot.bestCardLabel.Text = "BEST CARD $0/Card"
@@ -624,6 +653,7 @@ function WorldService.ReleasePlot(self: any, player: Player)
 		lane.valueLabel.Text = "0/8 · $0"
 	end
 	plot.spawnPodiumPrompt:SetAttribute("OwnerUserId", nil)
+	plot.sellPrompt:SetAttribute("OwnerUserId", nil)
 	local bb = plot.model:FindFirstChild("OwnerPost") and (plot.model:FindFirstChild("OwnerPost") :: Part):FindFirstChild("OwnerLabel")
 	local text = bb and bb:FindFirstChild("Text")
 	if text and text:IsA("TextLabel") then
