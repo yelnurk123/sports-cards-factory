@@ -1,8 +1,9 @@
-# PLAYER FLOW MICRO-SPEC v1.2 — the connecting tissue
-### The exact step-by-step physical flow of the core loop. Canon, 2026-08-11 (v1.2: user-playthrough box mechanics + per-base lanes).
+# PLAYER FLOW MICRO-SPEC v1.3 — the connecting tissue
+### The exact step-by-step physical flow of the core loop. Canon, 2026-08-11 (v1.3: per-plot Sell vendor + whole-stack carry — user first-hand).
 **Why this file exists:** the master spec pins the seven-step skeleton; this file pins the micro-beats BETWEEN the steps — who carries what, what spawns where, what the player's hands are doing. When this conflicts with a coarse reading of the master spec, this file wins for flow.
 **Evidence tags:** [REF] = flow reconstruction · [TD] = teardown · [USER] = user-confirmed from play · [FRAME-nn] = extracted teardown frame (index in `notes/transcript-frame-reconciliation-2026-08-10.md`) · [VIDEO-0n] = Gemini transcript in `evidence/` · [US-n] = user's own reference-playthrough screenshots, `evidence/user-playthrough-2026-08-10/` (US-1 world plaza · US-2 spawn structure · US-3 plot lanes · US-4 box fill). Numbers still come from economy v1.1; this file owns FLOW, not numbers. PLACE (what stands where) lives in `sports-card-farm-environment-v1.md`.
-**v1.2 changes (2026-08-11, hub ruling on the user's first-hand evidence):** box = exactly 8 token-cards, new box spawns ON TOP when full, Carry takes the top box (F3) · token lanes run per pedestal-column-pair, each ending in its own box point (F3) · pack belt is per-base, not a shared plaza belt (F1; supersedes M1.1 deviation 5).
+**v1.3 changes (2026-08-11, hub ruling on user first-hand correction):** **each plot has its OWN Sell vendor** — boxes are sold at your base, not carried to the Plaza (F4; kills the "plaza walk is the retention beat" inference) · **Carry takes the WHOLE stack** of boxes at a box point, not just the top box (F3.18 — the v1.2 ruling was wrong, user-verified).
+**v1.2 changes (2026-08-11, hub ruling on the user's first-hand evidence):** box = exactly 8 token-cards, new box spawns ON TOP when full (F3) · token lanes run per pedestal-column-pair, each ending in its own box point (F3) · pack belt is per-base, not a shared plaza belt (F1; supersedes M1.1 deviation 5).
 **v1.1 changes (2026-08-10, hub ruling after viewing 17 key frames + all 6 transcripts):** pack foil pre-roll visible at buy (F1) · token lane + crate replaces per-plot mini-belts (F3) · Sell = walk-in zone for boxes + NPC dialog for inventory (F4) · tutorial rail recorded (F0).
 
 ---
@@ -34,29 +35,28 @@ Six bottom-banner steps, in order: **[Tutorial]: SPAWN & BUY YOUR FIRST PACK** �
 15. Tokens drop onto the **token lane adjacent to the card's pedestal** — navy chevron strips running back → front through the plot, interleaved with the pedestal columns (two pedestal columns per lane; a 10-pedestal starter base has 2 lanes), **separate belts from the pack belt**. [US-3; USER: "the conveyor of your plot, seperate to the conveyor where packs appear"]
 16. Each lane terminates at the base's front edge in a **box point**. A box **fills with exactly 8 token-cards; when full, a new empty box spawns ON TOP** (vertical stack). Token value accumulates inside the box they're in. [US-4: box visibly holding ~7 cards, "E Carry $188.5K"; USER 2026-08-10: "it needs 8 cards to be added to fill up and have a new box spawn on top"; REF-A16 boxes stacked by belt]
 17. Stack cap = **5 boxes per point** (tuning, not canon); the drip pauses while a 6th box would be needed. [cap lineage: M1's 5-box rule]
-18. **"E Carry $X" takes the TOP box** of the stack (value = the token-cards physically in it, partial or full) — the box becomes an item in hand; the stack below keeps its boxes; a fresh empty box starts filling on top. One carried box at a time (M1.1 deviation 4). [US-4; VIDEO-06 "$146B On Carry"] Playtest-verifiable: if players expect to take the WHOLE stack, this flips (open questions).
+18. **"E Carry $X" takes the WHOLE stack** at the box point — every stacked box goes into hand; carried value = Σ of all token-cards in all of them. A fresh empty box starts filling. One carry action, one batch. [USER 2026-08-11: "when you pick up the boxes you pick up all of them not just the top one"; US-4 "E Carry $188.5K" shows the stack total] One carried batch at a time (M1.1 deviation 4).
 19. Late game: conveyor upgrades / Auto Conveyor pass **auto-sell at the lane's end** — the manual carry loop is the early/mid game, automation is the unlock. [VIDEO-03 "boxes automatically sell at the end of the belt"; FRAME-11 Auto Conveyor ⬡899] M-later, not M1.x.
 20. A **"You make: $X/s"** sign sits by the center box point; **"BEST CARD $X/Card"** billboard at the back fence + HUD strip. All are rate readouts, not balances. [FRAME-08/10, VIDEO-02/06, US-1]
 
 **NOT this:** one mini-conveyor per plot (v1 wording — superseded), nor one single crate per base (v1.1 wording — superseded by per-lane box stacks, v1.2).
 
-## F4 · Collecting & selling (income is a carry loop, not a cash faucet)
-21. Collection = the **"E Carry" on a box point** (F3.18): top box into hand, carried value shown ("On Carry" style). [USER, FRAME-08 "CARRY YOUR ANIME CARD BOX", VIDEO-06 "$146B On Carry"]
-22. The player **carries the box to the Sell area** (Plaza hub; bases ring the Plaza [FRAME-17, US-1]; teleports Plaza / Base / Sell [FRAME-04]).
-23. **Box cash-out = walk into the Sell zone carrying boxes** → carried boxes cash instantly at **1:1**. [VIDEO-01 00:55: walks into green "Sell Card Boxes!" zone, box vanishes, cash 85→100; VIDEO-02 02:51; REF-A9] Boxes ARE earned income; the 50% rate does NOT apply to them.
-24. The **Sell stall NPC** ("Card Hunter" in the reference) stands at the same spot and opens the inventory dialog — verbatim reference options: **"Got anything to sell?" → 1) I want to sell my Inventory · 2) I want to sell this · 3) I want to sell my cards only · 4) I want to sell my packs only · 5) Nevermind.** Cards sell at the deliberate **50% of value**. [FRAME-09, TD; KB classification: "Cash (soft, from selling cards ~50% of value)"]
+## F4 · Collecting & selling (income is a carry loop — to YOUR OWN vendor)
+21. Collection = the **"E Carry" on a box point** (F3.18): the whole stack into hand, carried value shown ("On Carry" style). [USER, FRAME-08 "CARRY YOUR ANIME CARD BOX", VIDEO-06 "$146B On Carry"]
+22. **Each plot has its own Sell vendor** — an NPC standing on/at the player's base. The player carries boxes a few steps to him. [USER 2026-08-11: "there's a vendor that exists on each plot where you sell him the boxes"; REF-A9 base-side "Sell Card Boxes!" sign; VIDEO-01's short sell runs] The Plaza Sell stall (frame-09) is a duplicate convenience surface, not the box loop.
+23. **Box cash-out = walk into the vendor's green "Sell Card Boxes!" zone carrying boxes** → they cash instantly at **1:1**. [VIDEO-01 00:55: walks into the green zone, box vanishes, cash 85→100; REF-A9] Boxes ARE earned income; the 50% rate does NOT apply to them.
+24. The **same vendor** opens the inventory dialog — verbatim reference options: **"Got anything to sell?" → 1) I want to sell my Inventory · 2) I want to sell this · 3) I want to sell my cards only · 4) I want to sell my packs only · 5) Nevermind.** Cards sell at the deliberate **50% of value**. [FRAME-09, TD; KB classification: "Cash (soft, from selling cards ~50% of value)"]
 25. **Guardrail (hub ruling 2026-08-10):** bulk options ("sell my Inventory") include unplaced CARDS — the reference burns players with this [VIDEO-01 11:27: player loses a wanted Sakura card]. Our bulk options must show a confirmation enumerating contents (count per type + total payout) before committing. Same 5 options, no silent trap.
 26. Only after selling does cash land. [economy §2f]
 
-**NOT this:** boxes auto-crediting cash on touch at the crate (M1 blockout shortcut — replaced by F4). The walk to the Sell stall is the retention beat: it keeps the player circulating through the Plaza where the stations and offers live.
+**NOT this:** boxes auto-crediting cash on touch at the box point (M1 blockout shortcut — replaced by F4), nor a Plaza-only sell point (v1.1/v1.2 inference — the vendor is per-plot, user-verified). The carry beat stays physical: crate → vendor is a real walk inside your own base.
 
 ## F5 · The whole loop, one breath
-Spawn kiosk → one pack on your base's belt (foil visible) → buy → pack in hand → carry to plot → place → timer → press to open → full-screen reveal → card displays on its pedestal → tokens drip onto the adjacent lane → box fills (8 cards) → new box stacks on top → Carry the top box → box in hand → carry to Sell → walk into zone → cash → walk back richer → spawn the next, pricier pack. [TD seven-step loop, micro-beats per F1–F4, frame + user-playthrough verified]
+Spawn kiosk → one pack on your base's belt (foil visible) → buy → pack in hand → carry to plot → place → timer → press to open → full-screen reveal → card displays on its pedestal → tokens drip onto the adjacent lane → box fills (8 cards) → new box stacks on top → Carry the whole stack → box in hand → walk to your plot's vendor → step into his zone → cash → walk back richer → spawn the next, pricier pack. [TD seven-step loop, micro-beats per F1–F4, frame + user-playthrough verified]
 
 ---
 
 ## Open flow questions (for user playtest, not invented)
-- Carry granularity: v1.2 rules Carry takes the TOP box of a stack [US-4]. If playtest says players expect the whole stack, flip.
-- Base-side sell: reference has ONE central Plaza stall [FRAME-09/17]. v1.2 keeps ONE stall. If playtest says the base-side sell matters, it becomes a convenience unlock, not a second free NPC.
+- Plaza Sell stall: kept as a duplicate convenience (frame-09 shows it exists). If it never gets used, it goes; decide after real playtime.
 - Whether unbought packs on the belt despawn/return (Recover Pack ⬡24 exists for a reason [FRAME-04]) — M1.x: pack on belt persists until bought or plot reset.
 - Offer cycling cadence (how fast the spawner rotates declined offers) = conveyor-settings milestone, not M1.x.
