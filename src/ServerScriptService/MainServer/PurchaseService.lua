@@ -2,11 +2,13 @@
 -- PurchaseService — owns every way cash/Robux turns into a thing:
 -- 1. MarketplaceService receipts (pipeline reused from World Cup RNG; M1 ships
 --    NO real products — every id in MonetizationConfig is 0).
--- 2. PACK ACQUISITION (flow spec v1.1 F1, M1.1): the Spawn Pack kiosk puts ONE
---    pack at the center of the pack belt — the cheapest unbought rung the
---    player can afford — with its FOIL ROLLED AT SPAWN and shown on the label
---    (finish · tier · name · price). Buying it off the belt puts the pack in
---    the player's hand (CarryService); PlacementService takes over at placing.
+-- 2. PACK ACQUISITION (flow spec v1.2 F1, M1.2): each base has its OWN pack
+--    belt at the brick spawn structure. The base's Spawn Pack podium puts ONE
+--    pack on THAT BASE'S belt — the cheapest unbought rung the player can
+--    afford — with its FOIL ROLLED AT SPAWN and shown on the label
+--    (finish · tier · name · price). Buying it off your own belt (owner only)
+--    puts the pack in the player's hand (CarryService); PlacementService
+--    takes over at placing. The M1.1 shared plaza belt (deviation 5) is gone.
 
 local MarketplaceService = game:GetService("MarketplaceService")
 local Players            = game:GetService("Players")
@@ -27,10 +29,10 @@ local PurchaseService = {}
 
 local rng = Random.new()
 
--- ONE pack on the belt at a time (flow spec F1); owned by whoever spawned it.
--- "Unbought offer passes" — a new spawn replaces it. Conveyor cycling/settings
--- UI is a later milestone.
-local beltPack: { model: Part?, owner: Player?, packID: string, foil: string } = nil :: any
+-- ONE pack per base belt at a time (flow spec F1), keyed by the owning
+-- player. A new spawn replaces your own previous pack. Conveyor
+-- cycling/settings UI is a later milestone.
+local beltPacks: { [Player]: { model: Part, packID: string, foil: string } } = {}
 local boughtRungs: { [Player]: { [string]: boolean } } = {} -- runtime ladder state
 local lastSpawnAt: { [Player]: number } = {}
 
@@ -107,19 +109,22 @@ local function refreshGamepasses(player: Player, data: any)
 	end
 end
 
---[[ pack belt (flow spec v1.1 F1) ]]--
+--[[ per-base pack belt (flow spec v1.2 F1) ]]--
 
-local function clearBeltPack()
+local function clearBeltPack(player: Player)
+	local beltPack = beltPacks[player]
 	if beltPack and beltPack.model and beltPack.model.Parent then
 		beltPack.model:Destroy()
 	end
-	beltPack = nil
+	beltPacks[player] = nil
 end
 
-local function buildBeltPack(packID: string, foil: string): Part
+local function buildBeltPack(player: Player, packID: string, foil: string): Part?
+	local plot = WorldService:GetPlot(player)
+	if not plot then
+		return nil
+	end
 	local pack = PackConfig.get(packID)
-	local conveyor = WorldService:GetConveyor()
-	local center = (conveyor.startPos + conveyor.endPos) / 2
 
 	local model = Instance.new("Part")
 	model.Name = "BeltPack"
@@ -129,7 +134,7 @@ local function buildBeltPack(packID: string, foil: string): Part
 	model.Anchored = true
 	model.CanCollide = false
 	model.CanQuery = true
-	model.CFrame = CFrame.new(center)
+	model.CFrame = CFrame.new(plot.beltCenter)
 
 	-- label stack (flow spec F1.3): finish · tier · name · price — foil shown
 	-- BEFORE buy, displayed = rolled
@@ -137,7 +142,8 @@ local function buildBeltPack(packID: string, foil: string): Part
 	bb.Name = "PackBillboard"
 	bb.Size = UDim2.fromOffset(300, 96)
 	bb.StudsOffset = Vector3.new(0, 3, 0)
-	bb.AlwaysOnTop = true
+	bb.AlwaysOnTop = false
+	bb.MaxDistance = 45
 	bb.Parent = model
 	local stack = Instance.new("TextLabel")
 	stack.Name = "Stack"
@@ -168,12 +174,18 @@ local function buildBeltPack(packID: string, foil: string): Part
 	return model
 end
 
--- Kiosk press: spawn ONE pack at the belt's center. Which pack (M1.1 rule):
--- the cheapest unbought rung the player can afford; if every unbought rung is
--- out of reach, the cheapest affordable rung (the belt never dead-ends).
+-- Podium press: spawn ONE pack on the player's OWN base belt. Which pack
+-- (M1.1 rule, kept): the cheapest unbought rung the player can afford; if
+-- every unbought rung is out of reach, the cheapest affordable rung (the belt
+-- never dead-ends).
 function PurchaseService.SpawnPack(self: any, player: Player)
 	local data = DataService:GetData(player)
 	if not data then
+		return
+	end
+	local plot = WorldService:GetPlot(player)
+	if not plot then
+		PlacementService:Notify(player, "Claim a base first!")
 		return
 	end
 	local now = os.clock()
@@ -204,28 +216,26 @@ function PurchaseService.SpawnPack(self: any, player: Player)
 		return
 	end
 
-	if beltPack and beltPack.owner and beltPack.owner ~= player and beltPack.owner.Parent == Players then
-		PlacementService:Notify(beltPack.owner, "Your pack offer on the belt passed.")
-	end
-	clearBeltPack()
+	clearBeltPack(player) -- your new offer replaces your old one (per-base belt)
 
 	local foil = FoilConfig.roll(rng) -- foil rolls AT SPAWN (flow spec v1.1 F1.3)
-	local model = buildBeltPack(choice, foil)
-	model.Parent = workspace
-	beltPack = { model = model, owner = player, packID = choice, foil = foil }
-	local pack = PackConfig.get(choice)
-	PlacementService:Notify(player, pack.displayName .. " (" .. FoilConfig.get(foil).displayName .. ") on the belt — " .. EconomyConfig.formatMoney(pack.price))
-end
-
--- Server-authoritative buy off the belt. The client already saw the odds
--- panel; this validates ownership + cash, deducts, and puts the pack IN HAND.
-function PurchaseService.BuyPack(self: any, player: Player)
-	if not beltPack or not beltPack.model or not beltPack.model.Parent then
-		PlacementService:Notify(player, "No pack on the belt — press the Spawn Pack kiosk first")
+	local model = buildBeltPack(player, choice, foil)
+	if not model then
 		return
 	end
-	if beltPack.owner ~= player then
-		PlacementService:Notify(player, "That pack isn't yours — spawn your own at the kiosk")
+	model.Parent = workspace
+	beltPacks[player] = { model = model, packID = choice, foil = foil }
+	local pack = PackConfig.get(choice)
+	PlacementService:Notify(player, pack.displayName .. " (" .. FoilConfig.get(foil).displayName .. ") on YOUR belt — " .. EconomyConfig.formatMoney(pack.price))
+end
+
+-- Server-authoritative buy off the player's OWN base belt. The client already
+-- saw the odds panel; this validates the belt pack + cash, deducts, and puts
+-- the pack IN HAND.
+function PurchaseService.BuyPack(self: any, player: Player)
+	local beltPack = beltPacks[player]
+	if not beltPack or not beltPack.model or not beltPack.model.Parent then
+		PlacementService:Notify(player, "No pack on your belt — press the Spawn Pack podium at your base first")
 		return
 	end
 	local data = DataService:GetData(player)
@@ -245,7 +255,7 @@ function PurchaseService.BuyPack(self: any, player: Player)
 	end
 	data.cash -= pack.price
 	boughtRungs[player][packID] = true
-	clearBeltPack()
+	clearBeltPack(player)
 	DataService:SyncMirror(player)
 	PlacementService:Notify(player, pack.displayName .. " in hand — carry it to your plot and place it!")
 	print(("[PurchaseService] %s bought %s (%s) for $%d"):format(player.Name, packID, foil, pack.price))
@@ -273,7 +283,7 @@ function PurchaseService.OnStart(self: any)
 		task.spawn(refreshGamepasses, player, data)
 	end)
 
-	-- pack acquisition remotes + prompts (flow spec v1.1 F1)
+	-- pack acquisition remotes + prompts (flow spec v1.2 F1)
 	local remotes = ReplicatedStorage:FindFirstChild("Remotes") or Instance.new("Folder")
 	remotes.Name = "Remotes"
 	remotes.Parent = ReplicatedStorage
@@ -285,20 +295,24 @@ function PurchaseService.OnStart(self: any)
 	end)
 
 	ProximityPromptService.PromptTriggered:Connect(function(prompt, player)
-		if prompt:GetAttribute("Tag") == "SpawnPack" then
-			PurchaseService:SpawnPack(player)
+		if prompt:GetAttribute("Tag") ~= "SpawnPack" then
+			return
 		end
+		-- per-base podiums only answer the base owner (flow v1.2: owner-only)
+		if prompt:GetAttribute("OwnerUserId") ~= player.UserId then
+			PlacementService:Notify(player, "That's not your podium — use the one on YOUR base!")
+			return
+		end
+		PurchaseService:SpawnPack(player)
 	end)
 
 	Players.PlayerRemoving:Connect(function(player)
 		boughtRungs[player] = nil
 		lastSpawnAt[player] = nil
-		if beltPack and beltPack.owner == player then
-			clearBeltPack()
-		end
+		clearBeltPack(player)
 	end)
 
-	print("[PurchaseService] Ready (kiosk spawns one pack, foil rolled at spawn; all SKUs placeholder id 0)")
+	print("[PurchaseService] Ready (per-base belts: podium spawns one pack on YOUR belt, foil rolled at spawn)")
 end
 
 return PurchaseService

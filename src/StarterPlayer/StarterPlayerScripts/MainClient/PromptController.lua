@@ -22,7 +22,7 @@ function PromptController.OnStart(self: any)
 		elseif tag == "SellStall" then
 			SellController:Open()
 		end
-		-- SpawnPack / PlacePack / OpenPack / CollectCrate are handled server-side
+		-- SpawnPack / PlacePack / OpenPack / CarryBox are handled server-side
 	end)
 
 	print("[PromptController] Ready")

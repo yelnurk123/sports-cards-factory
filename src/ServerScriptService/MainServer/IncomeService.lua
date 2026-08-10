@@ -1,14 +1,13 @@
 --!strict
--- IncomeService — the drip (flow spec v1.1 F3, rewritten for M1.1). Canon
--- numbers unchanged (economy §2f + hub ruling 2026-08-10): each DISPLAYED card
--- drops one token worth its current $/Card every ~5s; "$/s" = Σ ÷ 5. The M1
--- blockout spawned touch-to-collect cash boxes per plot — replaced by the
--- frame-verified topology: tokens ride the plot's ONE shared token lane
--- (separate from the pack belt) into ONE wooden crate at the lane's end. The
--- crate accumulates (value = Σ tokens since last collect, 5-box cap kept);
--- collecting puts the box in the player's hand (CarryService) and a fresh
--- crate starts filling. The "You make: $X/s" sign by the crate is a rate
--- readout and keeps ticking regardless of collection state.
+-- IncomeService — the drip (flow spec v1.2 F3, rewritten for M1.2). Canon
+-- numbers unchanged (economy §2f): each DISPLAYED card drops one token worth
+-- its current $/Card every ~5s; "$/s" = Σ ÷ 5. Tokens drop onto the token
+-- lane ADJACENT to the card's pedestal and ride to that lane's box point at
+-- the base's front edge. Box mechanics (v1.2, hub ruling 2026-08-11): a box
+-- fills with exactly 8 token-cards → a new empty box spawns ON TOP (vertical
+-- stack, cap 5 — the drip pauses while a 6th would be needed); "E Carry $X"
+-- takes the TOP box (value = the cards physically in it, partial or full).
+-- The "You make: $X/s" sign and BEST CARD board keep ticking regardless.
 
 local Players = game:GetService("Players")
 local ProximityPromptService = game:GetService("ProximityPromptService")
@@ -25,11 +24,15 @@ local PlacementService = require(script.Parent.PlacementService)
 
 local IncomeService = {}
 
-local TOKEN_RIDE_TIME = 1.6 -- seconds from lane start into the crate
-local CRATE_FILL_MAX = 2.6 -- studs of fill at the cap
+local TOKEN_RIDE_TIME = 1.6 -- seconds from pedestal to the box point
+local BOX_SIZE = Vector3.new(3.2, 1.8, 3.2)
+local BOX_FILL = EconomyConfig.BOX_FILL_COUNT -- exactly 8 token-cards per box
+local STACK_CAP = EconomyConfig.MAX_UNCOLLECTED_BOXES -- 5 boxes per box point
 
-local crateValue: { [Player]: number } = {} -- Σ tokens since last collect
-local lastSum: { [Player]: number } = {} -- Σ displayed at the latest tick (cap base + sign)
+type Box = { fill: number, value: number }
+
+-- per-player, per-lane box stacks; the LAST entry is the top box
+local stacks: { [Player]: { [number]: { Box } } } = {}
 
 local function displayedSum(data: any): number
 	local sum = 0
@@ -42,34 +45,113 @@ local function displayedSum(data: any): number
 	return sum
 end
 
-local function updateCrateVisuals(player: Player)
+local function getStack(player: Player, laneIdx: number): { Box }
+	local perPlayer = stacks[player]
+	if not perPlayer then
+		perPlayer = {}
+		stacks[player] = perPlayer
+	end
+	local stack = perPlayer[laneIdx]
+	if not stack then
+		stack = {}
+		perPlayer[laneIdx] = stack
+	end
+	if #stack == 0 then
+		table.insert(stack, { fill = 0, value = 0 })
+	end
+	return stack
+end
+
+-- Rebuilds one lane's box-stack visuals from state (≤5 boxes) and refreshes
+-- the carry prompt ("$X · n/8") + the floating box-point label.
+local function rebuildLaneVisuals(player: Player, laneIdx: number)
 	local plot = WorldService:GetPlot(player)
 	if not plot then
 		return
 	end
-	local value = crateValue[player] or 0
-	plot.crateValueLabel.Text = EconomyConfig.formatMoney(value)
-	local cap = math.max((lastSum[player] or 0) * EconomyConfig.MAX_UNCOLLECTED_BOXES, 1)
-	local frac = math.clamp(value / cap, 0, 1)
-	local height = 0.2 + CRATE_FILL_MAX * frac
-	plot.crateFill.Size = Vector3.new(2.4, height, 2.4)
-	local crateCF = plot.cratePart.CFrame
-	plot.crateFill.CFrame = CFrame.new(crateCF.X, crateCF.Y - 1.5 + height / 2, crateCF.Z)
-	plot.crateFill.Color = if frac >= 1 then Color3.fromRGB(255, 120, 80) else Color3.fromRGB(255, 205, 40)
-end
-
-local function updateRateSign(player: Player, sum: number)
-	local plot = WorldService:GetPlot(player)
-	if plot then
-		plot.crateSignLabel.Text = "You make: " .. EconomyConfig.formatRate(EconomyConfig.incomePerSecond(sum))
+	local lane = plot.lanes[laneIdx]
+	if not lane then
+		return
 	end
+	local stack = getStack(player, laneIdx)
+	lane.stackFolder:ClearAllChildren()
+	local baseCF = lane.pallet.CFrame
+	for i, box in stack do
+		local boxPart = Instance.new("Part")
+		boxPart.Name = "Box" .. i
+		boxPart.Size = BOX_SIZE
+		boxPart.Color = Color3.fromRGB(196, 150, 95)
+		boxPart.Material = Enum.Material.Cardboard
+		boxPart.Anchored = true
+		boxPart.CanCollide = false
+		boxPart.CFrame = baseCF * CFrame.new(0, 0.2 + (i - 0.5) * BOX_SIZE.Y, 0)
+		boxPart.Parent = lane.stackFolder
+		-- the TOP box shows the token-cards physically inside it (flow v1.2)
+		if i == #stack and box.fill > 0 then
+			for j = 1, box.fill do
+				local mini = Instance.new("Part")
+				mini.Name = "Token" .. j
+				mini.Size = Vector3.new(0.7, 1, 0.15)
+				mini.Color = Color3.fromRGB(245, 240, 220)
+				mini.Material = Enum.Material.SmoothPlastic
+				mini.Anchored = true
+				mini.CanCollide = false
+				mini.CanQuery = false
+				local col = (j - 1) % 4
+				local row = math.floor((j - 1) / 4)
+				mini.CFrame = boxPart.CFrame
+					* CFrame.new(-1.05 + col * 0.7, BOX_SIZE.Y / 2 + 0.4, -0.45 + row * 0.9)
+					* CFrame.Angles(0, math.rad(-8 + col * 5), 0)
+				mini.Parent = lane.stackFolder
+			end
+		end
+	end
+	local top = stack[#stack]
+	lane.carryPrompt.ObjectText = EconomyConfig.formatMoney(top.value) .. " · " .. tostring(top.fill) .. "/" .. tostring(BOX_FILL)
+	lane.valueLabel.Text = tostring(top.fill) .. "/" .. tostring(BOX_FILL) .. " · " .. EconomyConfig.formatMoney(top.value)
 end
 
--- One token per displayed card per tick: spawns at the lane start, rides into
--- the crate, and its value lands in the crate total on arrival.
-local function dropToken(player: Player, value: number)
+local function updateRateSigns(player: Player, sum: number)
 	local plot = WorldService:GetPlot(player)
 	if not plot then
+		return
+	end
+	plot.rateSignLabel.Text = "You make: " .. EconomyConfig.formatRate(EconomyConfig.incomePerSecond(sum))
+	plot.bestCardLabel.Text = "BEST CARD " .. EconomyConfig.formatMoney(player:GetAttribute("BestCardValue") or 0) .. "/Card"
+end
+
+-- Adds one arrived token to the top box of a lane; spawns a fresh empty box
+-- ON TOP when one fills (v1.2 F3.16). Returns false when the stack is capped.
+local function addToken(player: Player, laneIdx: number, value: number)
+	local stack = getStack(player, laneIdx)
+	local top = stack[#stack]
+	if top.fill >= BOX_FILL then
+		if #stack >= STACK_CAP then
+			return false -- drip paused at the 5-box cap (v1.2 F3.17)
+		end
+		table.insert(stack, { fill = 0, value = 0 })
+		top = stack[#stack]
+	end
+	top.fill += 1
+	top.value += value
+	if top.fill >= BOX_FILL and #stack < STACK_CAP then
+		table.insert(stack, { fill = 0, value = 0 }) -- new empty box spawns ON TOP
+	end
+	rebuildLaneVisuals(player, laneIdx)
+	return true
+end
+
+-- One token per displayed card per tick: spawns at the card's pedestal, rides
+-- its adjacent lane to the box point, and lands in the top box on arrival.
+local function dropToken(player: Player, slotKey: string, value: number)
+	local plot = WorldService:GetPlot(player)
+	if not plot then
+		return
+	end
+	local laneIdx = plot.displaySlotLane[slotKey]
+	local lane = laneIdx and plot.lanes[laneIdx]
+	local slotCF = plot.displaySlots[slotKey]
+	if not lane or not slotCF then
 		return
 	end
 	local token = Instance.new("Part")
@@ -80,18 +162,17 @@ local function dropToken(player: Player, value: number)
 	token.Anchored = true
 	token.CanCollide = false
 	token.CanQuery = false
-	token.CFrame = CFrame.new(plot.laneStart)
+	token.CFrame = slotCF * CFrame.new(0, 1.5, 0)
 	token.Parent = workspace
 
-	local tween = TweenService:Create(token, TweenInfo.new(TOKEN_RIDE_TIME, Enum.EasingStyle.Linear), { CFrame = CFrame.new(plot.laneEnd) })
+	local tween = TweenService:Create(token, TweenInfo.new(TOKEN_RIDE_TIME, Enum.EasingStyle.Linear), { CFrame = CFrame.new(lane.tokenTarget) })
 	tween:Play()
 	tween.Completed:Connect(function()
 		token:Destroy()
 		if not player:IsDescendantOf(Players) then
 			return
 		end
-		crateValue[player] = (crateValue[player] or 0) + value
-		updateCrateVisuals(player)
+		addToken(player, laneIdx, value)
 	end)
 	-- failsafe so a cancelled tween never leaks parts
 	task.delay(TOKEN_RIDE_TIME + 2, function()
@@ -102,36 +183,45 @@ local function dropToken(player: Player, value: number)
 end
 
 function IncomeService.OnStart(self: any)
-	-- collect: the crate becomes a carried box; a fresh crate starts filling
+	-- carry: the TOP box of a lane's stack becomes a carried box (v1.2 F3.18);
+	-- the stack below keeps its boxes; a fresh empty box starts filling on top
 	ProximityPromptService.PromptTriggered:Connect(function(prompt, player)
-		if prompt:GetAttribute("Tag") ~= "CollectCrate" then
+		if prompt:GetAttribute("Tag") ~= "CarryBox" then
 			return
 		end
 		if prompt:GetAttribute("OwnerUserId") ~= player.UserId then
-			PlacementService:Notify(player, "That's not your crate!")
+			PlacementService:Notify(player, "That's not your box point!")
 			return
 		end
-		local value = crateValue[player] or 0
-		if value <= 0 then
-			PlacementService:Notify(player, "Crate is empty — displayed cards drip tokens into it every " .. tostring(EconomyConfig.BOX_INTERVAL) .. "s")
+		local laneIdx = prompt:GetAttribute("Lane")
+		if type(laneIdx) ~= "number" then
 			return
 		end
+		local stack = getStack(player, laneIdx)
+		local top = stack[#stack]
+		if not top or top.value <= 0 then
+			PlacementService:Notify(player, "Top box is empty — displayed cards drip tokens into it every " .. tostring(EconomyConfig.BOX_INTERVAL) .. "s")
+			return
+		end
+		local value = top.value
 		local ok, err = CarryService:GiveBox(player, value)
 		if not ok then
 			PlacementService:Notify(player, err or "Can't carry that box right now")
 			return
 		end
-		crateValue[player] = 0
-		updateCrateVisuals(player)
+		table.remove(stack) -- the top box leaves with the player
+		if #stack == 0 or stack[#stack].fill >= BOX_FILL then
+			table.insert(stack, { fill = 0, value = 0 }) -- fresh empty box fills on top
+		end
+		rebuildLaneVisuals(player, laneIdx)
 		PlacementService:Notify(player, "Carrying " .. EconomyConfig.formatMoney(value) .. " — walk it into the green Sell zone!")
 	end)
 
 	Players.PlayerRemoving:Connect(function(player)
-		crateValue[player] = nil
-		lastSum[player] = nil
+		stacks[player] = nil
 	end)
 
-	-- one shared tick (economy §2f cadence); per-player crate accumulation
+	-- one shared tick (economy §2f cadence); per-player, per-lane accumulation
 	task.spawn(function()
 		while true do
 			task.wait(EconomyConfig.BOX_INTERVAL)
@@ -141,28 +231,37 @@ function IncomeService.OnStart(self: any)
 					continue
 				end
 				local sum = displayedSum(data)
-				lastSum[player] = sum
 				player:SetAttribute("IncomeRate", EconomyConfig.incomePerSecond(sum))
-				updateRateSign(player, sum)
+				updateRateSigns(player, sum)
 				if sum <= 0 then
 					continue
 				end
-				-- 5-box uncollected cap (canon): the drip pauses while the
-				-- crate holds 5 ticks' worth; the rate sign keeps ticking
-				if (crateValue[player] or 0) >= sum * EconomyConfig.MAX_UNCOLLECTED_BOXES then
+				local plot = WorldService:GetPlot(player)
+				if not plot then
 					continue
 				end
-				for _, uid in data.displayed do
+				for slotKey, uid in data.displayed do
 					local rec = data.storage[uid]
-					if rec then
-						dropToken(player, rec.valueCache)
+					if not rec then
+						continue
+					end
+					-- per-lane cap check (v1.2 F3.17): the drip pauses on a lane
+					-- whose stack holds 5 boxes with a full one on top
+					local laneIdx = plot.displaySlotLane[slotKey]
+					if laneIdx then
+						local stack = getStack(player, laneIdx)
+						local top = stack[#stack]
+						if top.fill >= BOX_FILL and #stack >= STACK_CAP then
+							continue
+						end
+						dropToken(player, slotKey, rec.valueCache)
 					end
 				end
 			end
 		end
 	end)
 
-	print("[IncomeService] Ready (tokens ride the lane into the crate, every " .. tostring(EconomyConfig.BOX_INTERVAL) .. "s)")
+	print("[IncomeService] Ready (v1.2: tokens → lane box points; 8-fill boxes stack to 5; Carry takes the top)")
 end
 
 return IncomeService

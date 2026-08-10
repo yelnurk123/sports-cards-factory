@@ -170,7 +170,8 @@ function HudController.OnStart(self: any)
 	momentary("Base", function()
 		local idx = player:GetAttribute("PlotIndex")
 		if idx then
-			teleportTo(PlotLayout.center(idx).Position + Vector3.new(0, 4, -14))
+			-- land on the owned base's front edge (ring layout, environment v1)
+			teleportTo((PlotLayout.baseFrame(idx) * CFrame.new(0, 3, -16)).Position)
 		else
 			HudController:Toast("No plot yet!")
 		end

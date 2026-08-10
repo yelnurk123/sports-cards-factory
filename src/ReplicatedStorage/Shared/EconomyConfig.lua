@@ -10,12 +10,16 @@ local EconomyConfig = {}
 -- Onboarding (economy §8): fresh players start with exactly one rung-1 pack.
 EconomyConfig.START_CASH = 100
 
--- The drip (economy §2f): every ~5s a box spawns worth Σ(all displayed cards'
--- current values); HUD "$/s" = Σ ÷ 5 (hub ruling 2026-08-10: the economy file
--- wins on numbers — this is Σ÷5, NOT ×0.15).
-EconomyConfig.BOX_INTERVAL = 5 -- seconds between box spawns
+-- The drip (economy §2f): every ~5s each displayed card drops one token worth
+-- its current $/Card onto its adjacent token lane; HUD "$/s" = Σ ÷ 5 (hub
+-- ruling 2026-08-10: the economy file wins on numbers — Σ÷5, NOT ×0.15).
+EconomyConfig.BOX_INTERVAL = 5 -- seconds between token drops
 EconomyConfig.INCOME_PER_SECOND_DIVISOR = 5 -- $/s = Σ(displayed values) ÷ this
-EconomyConfig.MAX_UNCOLLECTED_BOXES = 5 -- blockout cap; spawn pauses while at cap
+-- Box mechanics (flow spec v1.2 F3.16–18, canon 2026-08-11): a box fills with
+-- exactly 8 token-cards; when full a new empty box spawns ON TOP; the stack
+-- caps at 5 boxes and the drip pauses while a 6th would be needed.
+EconomyConfig.BOX_FILL_COUNT = 8
+EconomyConfig.MAX_UNCOLLECTED_BOXES = 5 -- box stack cap per lane box point
 
 -- Sell stall (canon §2/§5): 50% of card value.
 EconomyConfig.SELL_RATE = 0.5
