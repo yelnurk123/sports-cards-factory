@@ -1,0 +1,63 @@
+id,old_name,new_name,reason
+soc-sa-3,Figo the Galactico,Figo Galactico,"the removal"
+soc-sl-4,Pirlo the Architect,Pirlo Architect,"the removal"
+soc-ss-1,Zlatan the Lion,Zlatan Lion,"the removal"
+soc-ss-3,Drogba the Drog,Drogba Drog,"the removal"
+soc-wc-3,Toni the Sniper,Toni Cross,"the removal + avoids Viktor Sniper collision; Kroos=Cross pun + crossing"
+soc-ga-2,Al the Shearer,Big Al,"the removal + his real nickname; also distances from real surname"
+soc-le-4,Totti of Rome,Totti Emperor,"the removal + his real nickname (Emperor of Rome)"
+soc-et-3,Gianluca the Bald Eagle,Gianluca Baldeagle,"the removal"
+soc-gt-1,Leo the GOAT,Leo GOAT,"the removal"
+soc-ws-2,Ramos the Wall,Ramos Wall,"the removal"
+soc-lg-2,Erik the Robot,Erik Robot,"the removal"
+--- REMAINING 53 CARDS: already the-free, no change ---
+soc-ac-1,Jude Anthem,Jude Anthem,keep
+soc-ac-2,Vini Samba,Vini Samba,keep
+soc-ac-3,Rodri Engine,Rodri Engine,keep
+soc-ac-4,Sonny,Sonny,keep
+soc-al-1,Xavi Brain,Xavi Brain,keep
+soc-al-2,Iniesta Ghost,Iniesta Ghost,keep
+soc-al-3,Busi,Busi,keep
+soc-al-4,Captain Puyol,Captain Puyol,keep
+soc-pr-1,Harry K,Harry K,keep
+soc-pr-2,Griezy,Griezy,keep
+soc-pr-3,Kun,Kun,keep
+soc-pr-4,El Pistolero,El Pistolero,"keep - Spanish article, iconic nickname not the English the-pattern"
+soc-sa-1,Kaka Smile,Kaka Smile,keep
+soc-sa-2,Rivaldo Lefty,Rivaldo Lefty,keep
+soc-sa-4,Baggio Ponytail,Baggio Ponytail,keep
+soc-sl-1,Stevie G,Stevie G,keep
+soc-sl-2,Lamps,Lamps,keep
+soc-sl-3,Scholsey,Scholsey,keep
+soc-ss-2,Wazza,Wazza,keep
+soc-ss-4,Etoo Cheetah,Etoo Cheetah,keep
+soc-ic-1,Gigi Wall,Gigi Wall,keep
+soc-ic-2,Iker Saint,Iker Saint,keep
+soc-ic-3,Paolo M,Paolo M,keep
+soc-ic-4,Canna Wall,Canna Wall,keep
+soc-wc-1,Lewy,Lewy,keep
+soc-wc-2,Benzy,Benzy,keep
+soc-wc-4,Alessandro Del,Alessandro Del,keep
+soc-ga-1,R9 Phenomenon,R9 Phenomenon,keep
+soc-ga-3,Michael Speed,Michael Speed,keep
+soc-ga-4,Batigol,Batigol,"keep - real nickname, perfect parody"
+soc-le-1,Johan Total,Johan Total,keep
+soc-le-2,Marco Volley,Marco Volley,keep
+soc-le-3,Romario Short,Romario Short,keep
+soc-im-1,Der Kaiser,Der Kaiser,"keep - German article, iconic nickname"
+soc-im-2,Garrincha Joy,Garrincha Joy,keep
+soc-im-3,Eusebio Panther,Eusebio Panther,keep
+soc-im-4,Sir Bobby,Sir Bobby,"keep - actual knighthood title"
+soc-et-1,Zico 10,Zico 10,keep
+soc-et-2,Platini Elegant,Platini Elegant,keep
+soc-et-4,Kalle,Kalle,keep
+soc-gt-2,C-Roni,C-Roni,keep
+soc-gt-3,Pello,Pello,keep
+soc-gt-4,Diego D10s,Diego D10s,keep
+soc-ws-1,Luka Magic,Luka Magic,keep
+soc-ws-3,Manuel Sweeper,Manuel Sweeper,keep
+soc-ws-4,Ney Flair,Ney Flair,keep
+soc-lg-1,K. M'Bop,K. M'Bop,keep
+soc-lg-3,Kelvin Laser,Kelvin Laser,keep
+soc-lg-4,Mo Pharaoh,Mo Pharaoh,keep
+soc-sl-1-stevie note,pack mapping note,"Sunday League tier: academy pack (soc-ac) + street pack (soc-sl: Stevie G, Lamps, Scholsey, Pirlo Architect)","tier placement"
