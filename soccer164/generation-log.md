@@ -21,3 +21,6 @@ IMPROVEMENT NOTE for batch 5: pin the signature body shape of celebration/cult p
 IMPROVEMENT NOTE (for the next set, not a next batch): Sunday League teen rows skew toward foot-on-ball static poses when the pose word is a finish (curler/tap-in/finish) — pin "ball in motion toward goal" for finish rows and reserve foot-on-ball for conductors/calm personas; the flat documentary light makes static poses read flatter here than in any other tier.
 
 ## Run complete — 100/100 cards generated (5x20), total 3 regens (all batch 2), all QC'd from sheets, manifest flipped to generated.
+
+## Hub checkpoint 2026-08-12 — PASS, 100/100 approved
+Hub visual sweep on sheets: 24/100 sampled across all 5 batches and all 5 tiers (sheets 1-1, 2-2, 3-1, 4-3, 4-5, 5-2). Verified: blocky toy style holds, kits generic (no club/league/logos), tier-FX ladder legible top to bottom (GOAT gold+sepia > International red > First Team night stadium > Academy cyan edge > Sunday flat documentary), culture moments delivered (bicycle kick ac-12, frost-pitch su-8, robot dance su-16 per lane notes). Lane 7-axis QC claims confirmed on sample; 3 regens all batch 2, resolved. Manifest rows flipped generated → approved (both copies: soccer164/ and manifests/).
